@@ -1,0 +1,39 @@
+\begin{table}[htbp]
+  \centering
+  \caption{Per-condition whole-pretoken absorption. Per matched pair: the held-out fraction of pretokens emitted as a single token \citep{reddy2025diminishing-tokenization}, per arm with a 95\% molecule-resampled bootstrap CI, and the cross-arm gap $\Delta$abs (BPE $-$ UL). BPE absorbs almost every pretoken whole; Unigram-LM (UL) splits far more, the per-pretoken face of the fertility gap (\S\ref{ssec:r-mechanism}).}
+  \label{tab:results-absorption}
+  \footnotesize
+  \begin{tabular}{@{}l r l r r r@{}}
+    \toprule
+    & & & \multicolumn{2}{c}{abs} & \\
+    \cmidrule(lr){4-5}
+    Corpus & $V$ & Bnd & BPE & UL & $\Delta$abs \\
+    \midrule
+    PubChem & 256 & NMB & 0.952 [0.951, 0.952] & 0.723 [0.723, 0.724] & $+0.228$ \\
+     & 256 & MB & 0.974 [0.974, 0.974] & 0.738 [0.738, 0.738] & $+0.237$ \\
+     & 512 & NMB & 0.967 [0.966, 0.967] & 0.724 [0.724, 0.724] & $+0.243$ \\
+     & 512 & MB & 0.993 [0.993, 0.993] & 0.739 [0.738, 0.739] & $+0.255$ \\
+     & 1024 & NMB & 0.970 [0.970, 0.970] & 0.724 [0.724, 0.724] & $+0.246$ \\
+     & 1024 & MB & 0.997 [0.997, 0.998] & 0.739 [0.739, 0.739] & $+0.259$ \\
+     & 2048 & NMB & 0.971 [0.971, 0.971] & 0.724 [0.724, 0.724] & $+0.247$ \\
+     & 2048 & MB & 0.999 [0.999, 0.999] & 0.739 [0.739, 0.739] & $+0.260$ \\
+    \addlinespace
+    ZINC-22 & 256 & NMB & 0.931 [0.931, 0.931] & 0.715 [0.715, 0.715] & $+0.216$ \\
+     & 256 & MB & 0.982 [0.982, 0.982] & 0.716 [0.715, 0.716] & $+0.266$ \\
+     & 512 & NMB & 0.945 [0.945, 0.945] & 0.715 [0.715, 0.715] & $+0.229$ \\
+     & 512 & MB & 0.998 [0.998, 0.998] & 0.716 [0.716, 0.716] & $+0.282$ \\
+     & 1024 & NMB & 0.946 [0.946, 0.946] & 0.715 [0.715, 0.715] & $+0.231$ \\
+     & 1024 & MB & 1.000 [1.000, 1.000] & 0.716 [0.716, 0.716] & $+0.284$ \\
+    \addlinespace
+    COCONUT & 256 & NMB & 0.888 [0.887, 0.889] & 0.723 [0.722, 0.723] & $+0.166$ \\
+     & 256 & MB & 0.990 [0.990, 0.991] & 0.724 [0.723, 0.725] & $+0.266$ \\
+     & 512 & NMB & 0.895 [0.894, 0.895] & 0.723 [0.722, 0.724] & $+0.171$ \\
+     & 512 & MB & 0.998 [0.998, 0.998] & 0.724 [0.724, 0.725] & $+0.274$ \\
+     & 1024 & NMB & 0.896 [0.895, 0.897] & 0.723 [0.722, 0.724] & $+0.173$ \\
+     & 1024 & MB & 1.000 [1.000, 1.000] & 0.724 [0.724, 0.725] & $+0.275$ \\
+    \addlinespace
+    REAL-Space & 1024 & NMB & 0.970 [0.970, 0.970] & 0.708 [0.708, 0.709] & $+0.262$ \\
+     & 1024 & MB & 1.000 [1.000, 1.000] & 0.709 [0.708, 0.709] & $+0.291$ \\
+    \bottomrule
+  \end{tabular}
+\end{table}

@@ -1,0 +1,28 @@
+{
+  "audit": "prune_schedule",
+  "comparisons": [
+    {
+      "baseline_cell": "pubchem__smirk_unigram_v256_mb",
+      "baseline_multi_glyph_count": 97,
+      "baseline_shrinking_factor": 0.75,
+      "multi_glyph_jaccard": 0.8653846153846154,
+      "multi_glyph_symmetric_difference_count": 14,
+      "probe_cell": "pubchem__smirk_unigram_v256_mb_prune_shrink_0_9",
+      "probe_multi_glyph_count": 97,
+      "probe_shrinking_factor": 0.9,
+      "status": "done"
+    },
+    {
+      "baseline_cell": "pubchem__smirk_unigram_v512_mb",
+      "baseline_multi_glyph_count": 353,
+      "baseline_shrinking_factor": 0.75,
+      "multi_glyph_jaccard": 0.9237057220708447,
+      "multi_glyph_symmetric_difference_count": 28,
+      "probe_cell": "pubchem__smirk_unigram_v512_mb_prune_shrink_0_9",
+      "probe_multi_glyph_count": 353,
+      "probe_shrinking_factor": 0.9,
+      "status": "done"
+    }
+  ],
+  "schema_version": 1
+}

@@ -1,0 +1,36 @@
+{
+  "boundary": "nmb",
+  "bpe": {
+    "absorbed_ci": [
+      0.9702289047052558,
+      0.9703828239546953
+    ],
+    "absorbed_fraction": 0.9703046128555189,
+    "arm": "bpe",
+    "bootstrap_seed": 3945190207,
+    "boundary": "nmb",
+    "cell_id": "real_space__smirk_gpe_v50000_nmb_merge_exhaustion",
+    "cross_chunk_ci": null,
+    "cross_chunk_fraction": null,
+    "eval_split_sha": "6cbe68f87c92fb2a253f536715b5ec69",
+    "n_absorbed": 29961812,
+    "n_chunks": 30878769,
+    "n_cross_chunk_total": null,
+    "n_molecules": 1000352,
+    "n_resamples": 1000,
+    "training_corpus_sha": "140534c1544cd9f2ce760709417f23dd"
+  },
+  "corpus": "real_space",
+  "delta_absorbed": null,
+  "delta_cross_chunk": null,
+  "extras_kind": "merge_exhaustion",
+  "extras_label": "merge_exhaustion",
+  "missing_arm": "unigram",
+  "pair_key": "real_space__v50000_nmb__merge_exhaustion",
+  "pair_status": "single_arm",
+  "schema_version": 1,
+  "tier": "extras_merge_exhaustion",
+  "unigram": null,
+  "unpaired_reason": "extras_single_arm_knob",
+  "vocab_size": 50000
+}

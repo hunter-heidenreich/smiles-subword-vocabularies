@@ -1,0 +1,32 @@
+{
+  "any_arm_unsafe": true,
+  "both_arms_unsafe": false,
+  "boundary": "nmb",
+  "bpe": {
+    "arm": "bpe",
+    "cell_id": "real_space__smirk_gpe_v50000_nmb_merge_exhaustion",
+    "clearance_by_n": {
+      "100": 0.4671462829736211,
+      "200": 0.411031175059952,
+      "50": 0.5270983213429257
+    },
+    "embedding_tail_unsafe": true,
+    "headline_clearance": 0.4671462829736211,
+    "n_non_atomic": 4170,
+    "training_corpus_sha": "140534c1544cd9f2ce760709417f23dd",
+    "v_observed": 4337
+  },
+  "corpus": "real_space",
+  "delta_fp": null,
+  "extras_kind": "merge_exhaustion",
+  "extras_label": "merge_exhaustion",
+  "headline_delta_f": null,
+  "missing_arm": "unigram",
+  "pair_key": "real_space__v50000_nmb__merge_exhaustion",
+  "pair_status": "single_arm",
+  "schema_version": 1,
+  "tier": "extras_merge_exhaustion",
+  "unigram": null,
+  "unpaired_reason": "extras_single_arm_knob",
+  "vocab_size": 50000
+}

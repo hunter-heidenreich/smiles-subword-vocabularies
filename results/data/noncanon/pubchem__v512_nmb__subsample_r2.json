@@ -1,0 +1,187 @@
+{
+  "boundary": "nmb",
+  "bpe": {
+    "arm": "bpe",
+    "axes": {
+      "explicitH": {
+        "bag_instab": 0.8111932044665894,
+        "bag_instab_ci": [
+          0.809805285303733,
+          0.8124838383810695
+        ],
+        "n": 10000,
+        "rel_dfert": 2.6694543778557023,
+        "rel_dfert_ci": [
+          2.6473612741168604,
+          2.691549671863859
+        ]
+      },
+      "kekule": {
+        "bag_instab": 0.40779194742658686,
+        "bag_instab_ci": [
+          0.4042903235876317,
+          0.41111775893779146
+        ],
+        "n": 8112,
+        "rel_dfert": 0.07383828377000884,
+        "rel_dfert_ci": [
+          0.07211039747723767,
+          0.07561651456942695
+        ]
+      },
+      "obcanon": {
+        "bag_instab": 0.23042362692355928,
+        "bag_instab_ci": [
+          0.22685508373049817,
+          0.23406928668802376
+        ],
+        "n": 9983,
+        "rel_dfert": 0.03714283618498669,
+        "rel_dfert_ci": [
+          0.03584549937815235,
+          0.03836437381659011
+        ]
+      },
+      "random": {
+        "bag_instab": 0.37463673541624937,
+        "bag_instab_ci": [
+          0.3718068939424933,
+          0.37732313506482
+        ],
+        "n": 10000,
+        "rel_dfert": 0.18527328141843602,
+        "rel_dfert_ci": [
+          0.1826421409973802,
+          0.18809835612467635
+        ]
+      },
+      "ringperm": {
+        "bag_instab": 0.21773215465626367,
+        "bag_instab_ci": [
+          0.21591063853086098,
+          0.21984023993658722
+        ],
+        "n": 9215,
+        "rel_dfert": 0.0,
+        "rel_dfert_ci": [
+          0.0,
+          0.0
+        ]
+      }
+    },
+    "bootstrap_seed": 2624993440,
+    "boundary": "nmb",
+    "cell_id": "pubchem__smirk_gpe_v512_nmb_subsample_r2",
+    "eval_split_sha": "7c52af1451b2e5c900acfc6d6f012489",
+    "mean_canon_fert": 41.9098,
+    "mean_rand_fert": 47.3093,
+    "n_molecules": 10000,
+    "n_resamples": 1000,
+    "training_corpus_sha": "a0855e8adcc618ca53061bf9dfe1bd7d"
+  },
+  "corpus": "pubchem",
+  "delta_bag_instab": {
+    "explicitH": 0.12436404028535719,
+    "kekule": -0.04360519928112816,
+    "obcanon": 0.08448650065795557,
+    "random": 0.15491851283135613,
+    "ringperm": 0.048971547355603884
+  },
+  "delta_rel_dfert": {
+    "explicitH": 0.4274032182247063,
+    "kekule": -0.0015807842744528233,
+    "obcanon": -0.008246385297792397,
+    "random": 0.03062799242010497,
+    "ringperm": 0.0
+  },
+  "extras_kind": "subsample_redraw",
+  "extras_label": "r2",
+  "gap_canon": 1.3118411445533027,
+  "gap_rand": 1.2764567431773457,
+  "missing_arm": null,
+  "pair_key": "pubchem__v512_nmb__subsample_r2",
+  "pair_status": "matched",
+  "schema_version": 1,
+  "tier": "extras_subsample_redraw",
+  "unigram": {
+    "arm": "unigram",
+    "axes": {
+      "explicitH": {
+        "bag_instab": 0.6868291641812322,
+        "bag_instab_ci": [
+          0.6851898244409488,
+          0.6884869298917384
+        ],
+        "n": 10000,
+        "rel_dfert": 2.242051159630996,
+        "rel_dfert_ci": [
+          2.2170274176998808,
+          2.2707151815805955
+        ]
+      },
+      "kekule": {
+        "bag_instab": 0.451397146707715,
+        "bag_instab_ci": [
+          0.44799174610127085,
+          0.4548350036057029
+        ],
+        "n": 8112,
+        "rel_dfert": 0.07541906804446166,
+        "rel_dfert_ci": [
+          0.0740471886515456,
+          0.0769693627165303
+        ]
+      },
+      "obcanon": {
+        "bag_instab": 0.1459371262656037,
+        "bag_instab_ci": [
+          0.14347443740214158,
+          0.14842861751975384
+        ],
+        "n": 9983,
+        "rel_dfert": 0.04538922148277909,
+        "rel_dfert_ci": [
+          0.04379484037863462,
+          0.04703921448904433
+        ]
+      },
+      "random": {
+        "bag_instab": 0.21971822258489324,
+        "bag_instab_ci": [
+          0.2176631953043864,
+          0.2218965491251135
+        ],
+        "n": 10000,
+        "rel_dfert": 0.15464528899833105,
+        "rel_dfert_ci": [
+          0.15130588733555692,
+          0.15765812602439191
+        ]
+      },
+      "ringperm": {
+        "bag_instab": 0.16876060730065978,
+        "bag_instab_ci": [
+          0.1671594970355139,
+          0.17053064851768512
+        ],
+        "n": 9215,
+        "rel_dfert": 0.0,
+        "rel_dfert_ci": [
+          0.0,
+          0.0
+        ]
+      }
+    },
+    "bootstrap_seed": 1379246797,
+    "boundary": "nmb",
+    "cell_id": "pubchem__smirk_unigram_v512_nmb_subsample_r2",
+    "eval_split_sha": "7c52af1451b2e5c900acfc6d6f012489",
+    "mean_canon_fert": 54.979,
+    "mean_rand_fert": 60.388275,
+    "n_molecules": 10000,
+    "n_resamples": 1000,
+    "training_corpus_sha": "a0855e8adcc618ca53061bf9dfe1bd7d"
+  },
+  "unpaired_reason": null,
+  "vocab_size": 512
+}

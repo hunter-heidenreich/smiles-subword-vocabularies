@@ -1,0 +1,2192 @@
+{
+  "jaccard": 0.010362694300518135,
+  "length_profile": {
+    "bpe": {
+      "histogram": {
+        "2": 35,
+        "3": 34,
+        "4": 21,
+        "5": 8
+      },
+      "max_length": 5,
+      "mean": 3.020408163265306,
+      "median": 3.0,
+      "n_pieces": 98
+    },
+    "unigram": {
+      "histogram": {
+        "10": 1,
+        "11": 1,
+        "12": 1,
+        "3": 1,
+        "4": 4,
+        "5": 11,
+        "6": 18,
+        "7": 25,
+        "8": 19,
+        "9": 16
+      },
+      "max_length": 12,
+      "mean": 7.072164948453608,
+      "median": 7.0,
+      "n_pieces": 97
+    }
+  },
+  "pair_key": "zinc22__v256_nmb",
+  "partition": {
+    "bpe_only": [
+      "-c",
+      "=C",
+      "=CC",
+      "=N",
+      "=NC",
+      "=O",
+      "=S",
+      "=c",
+      "C#",
+      "C#N",
+      "C=",
+      "C=C",
+      "C=CC",
+      "C@",
+      "C@@",
+      "C@@H",
+      "C@H",
+      "CC",
+      "CCC",
+      "CCCC",
+      "CCCCC",
+      "CCCCN",
+      "CCCN",
+      "CCCO",
+      "CCCc",
+      "CCN",
+      "CCN=c",
+      "CCNC",
+      "CCO",
+      "CCOC",
+      "CCOCC",
+      "CCOc",
+      "CCS",
+      "CCc",
+      "CCn",
+      "CN",
+      "CN=c",
+      "CNC",
+      "CNS",
+      "CO",
+      "COC",
+      "COCC",
+      "COCc",
+      "CONC",
+      "COc",
+      "CS",
+      "CSC",
+      "CSc",
+      "Cc",
+      "Cn",
+      "N#",
+      "N+",
+      "N=c",
+      "NC",
+      "NCC",
+      "NCCC",
+      "NCc",
+      "NNC",
+      "NOCC",
+      "NS",
+      "Nc",
+      "O-",
+      "O=C",
+      "O=S",
+      "OC",
+      "OCC",
+      "Oc",
+      "SC",
+      "cc",
+      "ccc",
+      "cccc",
+      "cccnc",
+      "cccs",
+      "ccn",
+      "ccnc",
+      "ccncc",
+      "ccsc",
+      "cn",
+      "cnc",
+      "cncc",
+      "cnn",
+      "coc",
+      "cs",
+      "csc",
+      "nH",
+      "nc",
+      "ncc",
+      "nccc",
+      "ncccc",
+      "ncs",
+      "nn",
+      "nnc",
+      "no",
+      "oc",
+      "on",
+      "sc"
+    ],
+    "shared": [
+      "ccccc",
+      "ncnc"
+    ],
+    "unigram_only": [
+      "=NCC=CCN",
+      "=NCCCCCCN",
+      "=NCCCCN",
+      "=NCCCN",
+      "=NCCCOCCN",
+      "=NCCNC",
+      "=NCCOCCN",
+      "C#CC",
+      "C#CC#CC",
+      "C#CCCCC",
+      "C#CCCCCCC",
+      "C#CCCCCON",
+      "C#CCCCON",
+      "C#CCCCS",
+      "C#CCCN",
+      "C#CCCOCC",
+      "C#CCCON",
+      "C#CCCS",
+      "C#CCN",
+      "C#CCOCCC",
+      "C#CCOCCON",
+      "C#CCON",
+      "C#CCSCC",
+      "C=C=CCC",
+      "C=CC=CC",
+      "C=CC=CCC",
+      "C=CCCCCCN",
+      "C=CCCCCCS",
+      "C=CCCCON",
+      "C=CCCCS",
+      "C=CCCOCC",
+      "C=CCCON",
+      "C=CCCS",
+      "C=CCOCCCC",
+      "C=CCOCCCN",
+      "C=CCON",
+      "C=CCS",
+      "C=CCSCC",
+      "C=COCCON",
+      "CC#CCS",
+      "CC=CC=CC",
+      "CCCCC#",
+      "CCCCCCCCC",
+      "CCCCCCCCCCON",
+      "CCCCCCCCOCC",
+      "CCCCCCCCS",
+      "CCCCCCN=",
+      "CCCCCCNC",
+      "CCCCN=",
+      "CCCCSCC",
+      "CCOCCCS",
+      "CCOCCN=",
+      "CCOCCNC",
+      "CCOCCON",
+      "CCOCCS",
+      "CCSCC",
+      "COCCCCS",
+      "COCCCOCC",
+      "COCCCON",
+      "COCCOCC=C",
+      "COCCOCCC",
+      "COCCOCCOCC",
+      "COCCOCCS",
+      "COCCON",
+      "CSCCCCC",
+      "CSCCCCCCC",
+      "CSCCCN",
+      "CSCCN",
+      "CSCCON",
+      "CSCCS",
+      "CSSCC",
+      "N#C",
+      "N#CCCCC",
+      "N#CCCCS",
+      "N#CCCN",
+      "N#CCCS",
+      "NCC#C",
+      "NCC=CCN",
+      "NCCCCCCC",
+      "NCCCCCCCC",
+      "NCCCCCCN=",
+      "NCCCCN=",
+      "NCCCN=",
+      "NCCCOCCN",
+      "NCCOCCCN",
+      "NCCOCCN",
+      "NCCOCCN=",
+      "NCCOCCOCC",
+      "NOCC#",
+      "NOCC=C",
+      "NOCCOCC",
+      "SCC#",
+      "SCCC#",
+      "SCCCS",
+      "SCCS"
+    ]
+  },
+  "rank_frequency": {
+    "bpe_holdout": [
+      {
+        "freq": 875555,
+        "piece": "=O",
+        "rank": 1
+      },
+      {
+        "freq": 361641,
+        "piece": "CC",
+        "rank": 2
+      },
+      {
+        "freq": 284340,
+        "piece": "C@H",
+        "rank": 3
+      },
+      {
+        "freq": 275750,
+        "piece": "C@@H",
+        "rank": 4
+      },
+      {
+        "freq": 233065,
+        "piece": "cc",
+        "rank": 5
+      },
+      {
+        "freq": 164848,
+        "piece": "NC",
+        "rank": 6
+      },
+      {
+        "freq": 163179,
+        "piece": "ccc",
+        "rank": 7
+      },
+      {
+        "freq": 125577,
+        "piece": "CCC",
+        "rank": 8
+      },
+      {
+        "freq": 124381,
+        "piece": "nH",
+        "rank": 9
+      },
+      {
+        "freq": 122390,
+        "piece": "Cc",
+        "rank": 10
+      },
+      {
+        "freq": 122099,
+        "piece": "nc",
+        "rank": 11
+      },
+      {
+        "freq": 74978,
+        "piece": "O=C",
+        "rank": 12
+      },
+      {
+        "freq": 69384,
+        "piece": "CN",
+        "rank": 13
+      },
+      {
+        "freq": 53868,
+        "piece": "cccc",
+        "rank": 14
+      },
+      {
+        "freq": 52443,
+        "piece": "CCCC",
+        "rank": 15
+      },
+      {
+        "freq": 52179,
+        "piece": "CCN",
+        "rank": 16
+      },
+      {
+        "freq": 49736,
+        "piece": "Nc",
+        "rank": 17
+      },
+      {
+        "freq": 49218,
+        "piece": "ccccc",
+        "rank": 18
+      },
+      {
+        "freq": 45421,
+        "piece": "CNC",
+        "rank": 19
+      },
+      {
+        "freq": 34793,
+        "piece": "OC",
+        "rank": 20
+      },
+      {
+        "freq": 34469,
+        "piece": "ncc",
+        "rank": 21
+      },
+      {
+        "freq": 34365,
+        "piece": "CO",
+        "rank": 22
+      },
+      {
+        "freq": 32651,
+        "piece": "CCc",
+        "rank": 23
+      },
+      {
+        "freq": 31748,
+        "piece": "NS",
+        "rank": 24
+      },
+      {
+        "freq": 30171,
+        "piece": "C@",
+        "rank": 25
+      },
+      {
+        "freq": 29663,
+        "piece": "N=c",
+        "rank": 26
+      },
+      {
+        "freq": 28293,
+        "piece": "C@@",
+        "rank": 27
+      },
+      {
+        "freq": 26930,
+        "piece": "-c",
+        "rank": 28
+      },
+      {
+        "freq": 25790,
+        "piece": "COC",
+        "rank": 29
+      },
+      {
+        "freq": 24617,
+        "piece": "nn",
+        "rank": 30
+      },
+      {
+        "freq": 23406,
+        "piece": "cn",
+        "rank": 31
+      },
+      {
+        "freq": 22999,
+        "piece": "cnc",
+        "rank": 32
+      },
+      {
+        "freq": 22782,
+        "piece": "CCO",
+        "rank": 33
+      },
+      {
+        "freq": 22542,
+        "piece": "COc",
+        "rank": 34
+      },
+      {
+        "freq": 22355,
+        "piece": "=N",
+        "rank": 35
+      },
+      {
+        "freq": 20874,
+        "piece": "sc",
+        "rank": 36
+      },
+      {
+        "freq": 19945,
+        "piece": "CCCN",
+        "rank": 37
+      },
+      {
+        "freq": 17529,
+        "piece": "=NC",
+        "rank": 38
+      },
+      {
+        "freq": 17322,
+        "piece": "CCOC",
+        "rank": 39
+      },
+      {
+        "freq": 15738,
+        "piece": "NCC",
+        "rank": 40
+      },
+      {
+        "freq": 15086,
+        "piece": "N+",
+        "rank": 41
+      },
+      {
+        "freq": 14357,
+        "piece": "nnc",
+        "rank": 42
+      },
+      {
+        "freq": 14304,
+        "piece": "C=C",
+        "rank": 43
+      },
+      {
+        "freq": 13912,
+        "piece": "CN=c",
+        "rank": 44
+      },
+      {
+        "freq": 13820,
+        "piece": "C#N",
+        "rank": 45
+      },
+      {
+        "freq": 13816,
+        "piece": "O-",
+        "rank": 46
+      },
+      {
+        "freq": 13434,
+        "piece": "CS",
+        "rank": 47
+      },
+      {
+        "freq": 13421,
+        "piece": "CCCCC",
+        "rank": 48
+      },
+      {
+        "freq": 13288,
+        "piece": "cs",
+        "rank": 49
+      },
+      {
+        "freq": 13211,
+        "piece": "Cn",
+        "rank": 50
+      },
+      {
+        "freq": 12818,
+        "piece": "C=",
+        "rank": 51
+      },
+      {
+        "freq": 12371,
+        "piece": "NCc",
+        "rank": 52
+      },
+      {
+        "freq": 11526,
+        "piece": "oc",
+        "rank": 53
+      },
+      {
+        "freq": 11202,
+        "piece": "CCS",
+        "rank": 54
+      },
+      {
+        "freq": 11166,
+        "piece": "=C",
+        "rank": 55
+      },
+      {
+        "freq": 10320,
+        "piece": "csc",
+        "rank": 56
+      },
+      {
+        "freq": 10294,
+        "piece": "CCNC",
+        "rank": 57
+      },
+      {
+        "freq": 9611,
+        "piece": "OCC",
+        "rank": 58
+      },
+      {
+        "freq": 9263,
+        "piece": "CCCO",
+        "rank": 59
+      },
+      {
+        "freq": 8602,
+        "piece": "no",
+        "rank": 60
+      },
+      {
+        "freq": 8491,
+        "piece": "CCOCC",
+        "rank": 61
+      },
+      {
+        "freq": 8210,
+        "piece": "C#",
+        "rank": 62
+      },
+      {
+        "freq": 8182,
+        "piece": "cnn",
+        "rank": 63
+      },
+      {
+        "freq": 7932,
+        "piece": "NNC",
+        "rank": 64
+      },
+      {
+        "freq": 7590,
+        "piece": "ccnc",
+        "rank": 65
+      },
+      {
+        "freq": 7228,
+        "piece": "CCCc",
+        "rank": 66
+      },
+      {
+        "freq": 6996,
+        "piece": "CCn",
+        "rank": 67
+      },
+      {
+        "freq": 6778,
+        "piece": "cncc",
+        "rank": 68
+      },
+      {
+        "freq": 6482,
+        "piece": "CSc",
+        "rank": 69
+      },
+      {
+        "freq": 6414,
+        "piece": "C=CC",
+        "rank": 70
+      },
+      {
+        "freq": 6154,
+        "piece": "cccnc",
+        "rank": 71
+      },
+      {
+        "freq": 6095,
+        "piece": "ccn",
+        "rank": 72
+      },
+      {
+        "freq": 5907,
+        "piece": "ncnc",
+        "rank": 73
+      },
+      {
+        "freq": 5781,
+        "piece": "coc",
+        "rank": 74
+      },
+      {
+        "freq": 5644,
+        "piece": "Oc",
+        "rank": 75
+      },
+      {
+        "freq": 5369,
+        "piece": "N#",
+        "rank": 76
+      },
+      {
+        "freq": 5245,
+        "piece": "nccc",
+        "rank": 77
+      },
+      {
+        "freq": 5138,
+        "piece": "COCc",
+        "rank": 78
+      },
+      {
+        "freq": 5061,
+        "piece": "ccsc",
+        "rank": 79
+      },
+      {
+        "freq": 4982,
+        "piece": "=CC",
+        "rank": 80
+      },
+      {
+        "freq": 4868,
+        "piece": "CONC",
+        "rank": 81
+      },
+      {
+        "freq": 4767,
+        "piece": "CCOc",
+        "rank": 82
+      },
+      {
+        "freq": 4724,
+        "piece": "NOCC",
+        "rank": 83
+      },
+      {
+        "freq": 4682,
+        "piece": "ccncc",
+        "rank": 84
+      },
+      {
+        "freq": 4630,
+        "piece": "COCC",
+        "rank": 85
+      },
+      {
+        "freq": 4588,
+        "piece": "SC",
+        "rank": 86
+      },
+      {
+        "freq": 4460,
+        "piece": "ncccc",
+        "rank": 87
+      },
+      {
+        "freq": 4263,
+        "piece": "CSC",
+        "rank": 88
+      },
+      {
+        "freq": 4245,
+        "piece": "CCCCN",
+        "rank": 89
+      },
+      {
+        "freq": 4048,
+        "piece": "on",
+        "rank": 90
+      },
+      {
+        "freq": 3959,
+        "piece": "O=S",
+        "rank": 91
+      },
+      {
+        "freq": 3914,
+        "piece": "NCCC",
+        "rank": 92
+      },
+      {
+        "freq": 3844,
+        "piece": "CNS",
+        "rank": 93
+      },
+      {
+        "freq": 3777,
+        "piece": "CCN=c",
+        "rank": 94
+      },
+      {
+        "freq": 3741,
+        "piece": "ncs",
+        "rank": 95
+      },
+      {
+        "freq": 3646,
+        "piece": "cccs",
+        "rank": 96
+      },
+      {
+        "freq": 3005,
+        "piece": "=S",
+        "rank": 97
+      },
+      {
+        "freq": 176,
+        "piece": "=c",
+        "rank": 98
+      }
+    ],
+    "bpe_train": [
+      {
+        "freq": 16645998,
+        "piece": "=O",
+        "rank": 1
+      },
+      {
+        "freq": 6853297,
+        "piece": "CC",
+        "rank": 2
+      },
+      {
+        "freq": 5393965,
+        "piece": "C@H",
+        "rank": 3
+      },
+      {
+        "freq": 5245126,
+        "piece": "C@@H",
+        "rank": 4
+      },
+      {
+        "freq": 4443288,
+        "piece": "cc",
+        "rank": 5
+      },
+      {
+        "freq": 3137030,
+        "piece": "NC",
+        "rank": 6
+      },
+      {
+        "freq": 3093947,
+        "piece": "ccc",
+        "rank": 7
+      },
+      {
+        "freq": 2394193,
+        "piece": "CCC",
+        "rank": 8
+      },
+      {
+        "freq": 2370622,
+        "piece": "nH",
+        "rank": 9
+      },
+      {
+        "freq": 2329621,
+        "piece": "Cc",
+        "rank": 10
+      },
+      {
+        "freq": 2318388,
+        "piece": "nc",
+        "rank": 11
+      },
+      {
+        "freq": 1426223,
+        "piece": "O=C",
+        "rank": 12
+      },
+      {
+        "freq": 1325128,
+        "piece": "CN",
+        "rank": 13
+      },
+      {
+        "freq": 1022037,
+        "piece": "cccc",
+        "rank": 14
+      },
+      {
+        "freq": 999010,
+        "piece": "CCCC",
+        "rank": 15
+      },
+      {
+        "freq": 988695,
+        "piece": "CCN",
+        "rank": 16
+      },
+      {
+        "freq": 941570,
+        "piece": "Nc",
+        "rank": 17
+      },
+      {
+        "freq": 931772,
+        "piece": "ccccc",
+        "rank": 18
+      },
+      {
+        "freq": 865469,
+        "piece": "CNC",
+        "rank": 19
+      },
+      {
+        "freq": 661896,
+        "piece": "OC",
+        "rank": 20
+      },
+      {
+        "freq": 658779,
+        "piece": "ncc",
+        "rank": 21
+      },
+      {
+        "freq": 651722,
+        "piece": "CO",
+        "rank": 22
+      },
+      {
+        "freq": 619646,
+        "piece": "CCc",
+        "rank": 23
+      },
+      {
+        "freq": 606551,
+        "piece": "NS",
+        "rank": 24
+      },
+      {
+        "freq": 574221,
+        "piece": "C@",
+        "rank": 25
+      },
+      {
+        "freq": 563077,
+        "piece": "N=c",
+        "rank": 26
+      },
+      {
+        "freq": 534045,
+        "piece": "C@@",
+        "rank": 27
+      },
+      {
+        "freq": 508040,
+        "piece": "-c",
+        "rank": 28
+      },
+      {
+        "freq": 492061,
+        "piece": "COC",
+        "rank": 29
+      },
+      {
+        "freq": 466416,
+        "piece": "nn",
+        "rank": 30
+      },
+      {
+        "freq": 443516,
+        "piece": "cn",
+        "rank": 31
+      },
+      {
+        "freq": 436608,
+        "piece": "cnc",
+        "rank": 32
+      },
+      {
+        "freq": 432825,
+        "piece": "CCO",
+        "rank": 33
+      },
+      {
+        "freq": 428358,
+        "piece": "COc",
+        "rank": 34
+      },
+      {
+        "freq": 423906,
+        "piece": "=N",
+        "rank": 35
+      },
+      {
+        "freq": 396490,
+        "piece": "sc",
+        "rank": 36
+      },
+      {
+        "freq": 380662,
+        "piece": "CCCN",
+        "rank": 37
+      },
+      {
+        "freq": 334004,
+        "piece": "=NC",
+        "rank": 38
+      },
+      {
+        "freq": 329889,
+        "piece": "CCOC",
+        "rank": 39
+      },
+      {
+        "freq": 300205,
+        "piece": "NCC",
+        "rank": 40
+      },
+      {
+        "freq": 285919,
+        "piece": "N+",
+        "rank": 41
+      },
+      {
+        "freq": 274837,
+        "piece": "nnc",
+        "rank": 42
+      },
+      {
+        "freq": 269108,
+        "piece": "C=C",
+        "rank": 43
+      },
+      {
+        "freq": 264619,
+        "piece": "CN=c",
+        "rank": 44
+      },
+      {
+        "freq": 262690,
+        "piece": "C#N",
+        "rank": 45
+      },
+      {
+        "freq": 261637,
+        "piece": "O-",
+        "rank": 46
+      },
+      {
+        "freq": 255150,
+        "piece": "CS",
+        "rank": 47
+      },
+      {
+        "freq": 253128,
+        "piece": "CCCCC",
+        "rank": 48
+      },
+      {
+        "freq": 251579,
+        "piece": "cs",
+        "rank": 49
+      },
+      {
+        "freq": 245044,
+        "piece": "C=",
+        "rank": 50
+      },
+      {
+        "freq": 235791,
+        "piece": "NCc",
+        "rank": 51
+      },
+      {
+        "freq": 218131,
+        "piece": "oc",
+        "rank": 52
+      },
+      {
+        "freq": 214311,
+        "piece": "=C",
+        "rank": 53
+      },
+      {
+        "freq": 208507,
+        "piece": "CCS",
+        "rank": 54
+      },
+      {
+        "freq": 196680,
+        "piece": "CCNC",
+        "rank": 55
+      },
+      {
+        "freq": 196180,
+        "piece": "csc",
+        "rank": 56
+      },
+      {
+        "freq": 183039,
+        "piece": "OCC",
+        "rank": 57
+      },
+      {
+        "freq": 176029,
+        "piece": "CCCO",
+        "rank": 58
+      },
+      {
+        "freq": 165253,
+        "piece": "no",
+        "rank": 59
+      },
+      {
+        "freq": 162907,
+        "piece": "CCOCC",
+        "rank": 60
+      },
+      {
+        "freq": 156574,
+        "piece": "C#",
+        "rank": 61
+      },
+      {
+        "freq": 153824,
+        "piece": "cnn",
+        "rank": 62
+      },
+      {
+        "freq": 151215,
+        "piece": "NNC",
+        "rank": 63
+      },
+      {
+        "freq": 145715,
+        "piece": "ccnc",
+        "rank": 64
+      },
+      {
+        "freq": 135181,
+        "piece": "CCn",
+        "rank": 65
+      },
+      {
+        "freq": 135146,
+        "piece": "CCCc",
+        "rank": 66
+      },
+      {
+        "freq": 128830,
+        "piece": "cncc",
+        "rank": 67
+      },
+      {
+        "freq": 122706,
+        "piece": "CSc",
+        "rank": 68
+      },
+      {
+        "freq": 122213,
+        "piece": "C=CC",
+        "rank": 69
+      },
+      {
+        "freq": 118134,
+        "piece": "cccnc",
+        "rank": 70
+      },
+      {
+        "freq": 117489,
+        "piece": "ccn",
+        "rank": 71
+      },
+      {
+        "freq": 111093,
+        "piece": "coc",
+        "rank": 72
+      },
+      {
+        "freq": 110987,
+        "piece": "ncnc",
+        "rank": 73
+      },
+      {
+        "freq": 107891,
+        "piece": "Oc",
+        "rank": 74
+      },
+      {
+        "freq": 102722,
+        "piece": "nccc",
+        "rank": 75
+      },
+      {
+        "freq": 100664,
+        "piece": "N#",
+        "rank": 76
+      },
+      {
+        "freq": 98224,
+        "piece": "COCc",
+        "rank": 77
+      },
+      {
+        "freq": 96279,
+        "piece": "ccsc",
+        "rank": 78
+      },
+      {
+        "freq": 93009,
+        "piece": "=CC",
+        "rank": 79
+      },
+      {
+        "freq": 91324,
+        "piece": "CONC",
+        "rank": 80
+      },
+      {
+        "freq": 91162,
+        "piece": "CCOc",
+        "rank": 81
+      },
+      {
+        "freq": 91157,
+        "piece": "ccncc",
+        "rank": 82
+      },
+      {
+        "freq": 90258,
+        "piece": "NOCC",
+        "rank": 83
+      },
+      {
+        "freq": 88639,
+        "piece": "COCC",
+        "rank": 84
+      },
+      {
+        "freq": 86227,
+        "piece": "ncccc",
+        "rank": 85
+      },
+      {
+        "freq": 85531,
+        "piece": "SC",
+        "rank": 86
+      },
+      {
+        "freq": 79888,
+        "piece": "CCCCN",
+        "rank": 87
+      },
+      {
+        "freq": 79530,
+        "piece": "CSC",
+        "rank": 88
+      },
+      {
+        "freq": 77059,
+        "piece": "on",
+        "rank": 89
+      },
+      {
+        "freq": 76184,
+        "piece": "O=S",
+        "rank": 90
+      },
+      {
+        "freq": 73571,
+        "piece": "NCCC",
+        "rank": 91
+      },
+      {
+        "freq": 73265,
+        "piece": "CNS",
+        "rank": 92
+      },
+      {
+        "freq": 70968,
+        "piece": "cccs",
+        "rank": 93
+      },
+      {
+        "freq": 70720,
+        "piece": "ncs",
+        "rank": 94
+      },
+      {
+        "freq": 70163,
+        "piece": "CCN=c",
+        "rank": 95
+      },
+      {
+        "freq": 56799,
+        "piece": "=S",
+        "rank": 96
+      },
+      {
+        "freq": 3690,
+        "piece": "=c",
+        "rank": 97
+      }
+    ],
+    "unigram_holdout": [
+      {
+        "freq": 49218,
+        "piece": "ccccc",
+        "rank": 1
+      },
+      {
+        "freq": 6868,
+        "piece": "ncnc",
+        "rank": 2
+      },
+      {
+        "freq": 5227,
+        "piece": "N#C",
+        "rank": 3
+      },
+      {
+        "freq": 3988,
+        "piece": "C#CC",
+        "rank": 4
+      },
+      {
+        "freq": 1974,
+        "piece": "CCSCC",
+        "rank": 5
+      },
+      {
+        "freq": 724,
+        "piece": "C=CCON",
+        "rank": 6
+      },
+      {
+        "freq": 696,
+        "piece": "CSCCN",
+        "rank": 7
+      },
+      {
+        "freq": 554,
+        "piece": "C#CCN",
+        "rank": 8
+      },
+      {
+        "freq": 538,
+        "piece": "C#CCCCC",
+        "rank": 9
+      },
+      {
+        "freq": 501,
+        "piece": "C#CCON",
+        "rank": 10
+      },
+      {
+        "freq": 443,
+        "piece": "C=CCS",
+        "rank": 11
+      },
+      {
+        "freq": 434,
+        "piece": "CSCCS",
+        "rank": 12
+      },
+      {
+        "freq": 418,
+        "piece": "NOCC=C",
+        "rank": 13
+      },
+      {
+        "freq": 346,
+        "piece": "CC=CC=CC",
+        "rank": 14
+      },
+      {
+        "freq": 341,
+        "piece": "CCOCCNC",
+        "rank": 15
+      },
+      {
+        "freq": 281,
+        "piece": "CCCCN=",
+        "rank": 16
+      },
+      {
+        "freq": 270,
+        "piece": "=NCCCN",
+        "rank": 17
+      },
+      {
+        "freq": 245,
+        "piece": "C=CCCON",
+        "rank": 18
+      },
+      {
+        "freq": 228,
+        "piece": "CCCCSCC",
+        "rank": 19
+      },
+      {
+        "freq": 224,
+        "piece": "NCCCN=",
+        "rank": 20
+      },
+      {
+        "freq": 219,
+        "piece": "NCC=CCN",
+        "rank": 21
+      },
+      {
+        "freq": 214,
+        "piece": "NCCOCCCN",
+        "rank": 22
+      },
+      {
+        "freq": 205,
+        "piece": "=NCCNC",
+        "rank": 23
+      },
+      {
+        "freq": 205,
+        "piece": "C#CCCON",
+        "rank": 24
+      },
+      {
+        "freq": 186,
+        "piece": "CCCCCCNC",
+        "rank": 25
+      },
+      {
+        "freq": 185,
+        "piece": "C=CC=CCC",
+        "rank": 26
+      },
+      {
+        "freq": 162,
+        "piece": "CCCCCCCCC",
+        "rank": 27
+      },
+      {
+        "freq": 162,
+        "piece": "NCCCCN=",
+        "rank": 28
+      },
+      {
+        "freq": 157,
+        "piece": "C=C=CCC",
+        "rank": 29
+      },
+      {
+        "freq": 154,
+        "piece": "C=CCCOCC",
+        "rank": 30
+      },
+      {
+        "freq": 150,
+        "piece": "SCCS",
+        "rank": 31
+      },
+      {
+        "freq": 143,
+        "piece": "C#CCSCC",
+        "rank": 32
+      },
+      {
+        "freq": 141,
+        "piece": "CSSCC",
+        "rank": 33
+      },
+      {
+        "freq": 139,
+        "piece": "CSCCCCC",
+        "rank": 34
+      },
+      {
+        "freq": 134,
+        "piece": "COCCOCCC",
+        "rank": 35
+      },
+      {
+        "freq": 128,
+        "piece": "CCOCCS",
+        "rank": 36
+      },
+      {
+        "freq": 127,
+        "piece": "=NCCOCCN",
+        "rank": 37
+      },
+      {
+        "freq": 126,
+        "piece": "NCCCCCCC",
+        "rank": 38
+      },
+      {
+        "freq": 123,
+        "piece": "COCCON",
+        "rank": 39
+      },
+      {
+        "freq": 114,
+        "piece": "CCOCCON",
+        "rank": 40
+      },
+      {
+        "freq": 111,
+        "piece": "NCCOCCN=",
+        "rank": 41
+      },
+      {
+        "freq": 109,
+        "piece": "C#CCCN",
+        "rank": 42
+      },
+      {
+        "freq": 108,
+        "piece": "NCCOCCN",
+        "rank": 43
+      },
+      {
+        "freq": 107,
+        "piece": "C#CCCCCCC",
+        "rank": 44
+      },
+      {
+        "freq": 107,
+        "piece": "NCCCCCCCC",
+        "rank": 45
+      },
+      {
+        "freq": 105,
+        "piece": "=NCCCCN",
+        "rank": 46
+      },
+      {
+        "freq": 105,
+        "piece": "CCOCCN=",
+        "rank": 47
+      },
+      {
+        "freq": 99,
+        "piece": "=NCCCCCCN",
+        "rank": 48
+      },
+      {
+        "freq": 97,
+        "piece": "C=CCCCON",
+        "rank": 49
+      },
+      {
+        "freq": 95,
+        "piece": "=NCC=CCN",
+        "rank": 50
+      },
+      {
+        "freq": 92,
+        "piece": "COCCCON",
+        "rank": 51
+      },
+      {
+        "freq": 88,
+        "piece": "NCCCCCCN=",
+        "rank": 52
+      },
+      {
+        "freq": 87,
+        "piece": "C=CCCS",
+        "rank": 53
+      },
+      {
+        "freq": 86,
+        "piece": "C#CCCCON",
+        "rank": 54
+      },
+      {
+        "freq": 85,
+        "piece": "C=CCOCCCC",
+        "rank": 55
+      },
+      {
+        "freq": 82,
+        "piece": "CCCCCCN=",
+        "rank": 56
+      },
+      {
+        "freq": 78,
+        "piece": "C#CCCS",
+        "rank": 57
+      },
+      {
+        "freq": 74,
+        "piece": "C=CCCCS",
+        "rank": 58
+      },
+      {
+        "freq": 73,
+        "piece": "C#CCOCCC",
+        "rank": 59
+      },
+      {
+        "freq": 70,
+        "piece": "COCCCOCC",
+        "rank": 60
+      },
+      {
+        "freq": 69,
+        "piece": "=NCCCOCCN",
+        "rank": 61
+      },
+      {
+        "freq": 66,
+        "piece": "CCCCC#",
+        "rank": 62
+      },
+      {
+        "freq": 62,
+        "piece": "NCCCOCCN",
+        "rank": 63
+      },
+      {
+        "freq": 61,
+        "piece": "CSCCON",
+        "rank": 64
+      },
+      {
+        "freq": 60,
+        "piece": "C=CC=CC",
+        "rank": 65
+      },
+      {
+        "freq": 60,
+        "piece": "C=CCSCC",
+        "rank": 66
+      },
+      {
+        "freq": 58,
+        "piece": "SCCCS",
+        "rank": 67
+      },
+      {
+        "freq": 56,
+        "piece": "NCC#C",
+        "rank": 68
+      },
+      {
+        "freq": 54,
+        "piece": "COCCCCS",
+        "rank": 69
+      },
+      {
+        "freq": 53,
+        "piece": "N#CCCCC",
+        "rank": 70
+      },
+      {
+        "freq": 53,
+        "piece": "SCC#",
+        "rank": 71
+      },
+      {
+        "freq": 50,
+        "piece": "C#CCCCS",
+        "rank": 72
+      },
+      {
+        "freq": 46,
+        "piece": "CC#CCS",
+        "rank": 73
+      },
+      {
+        "freq": 45,
+        "piece": "CSCCCCCCC",
+        "rank": 74
+      },
+      {
+        "freq": 44,
+        "piece": "CCOCCCS",
+        "rank": 75
+      },
+      {
+        "freq": 44,
+        "piece": "CSCCCN",
+        "rank": 76
+      },
+      {
+        "freq": 44,
+        "piece": "N#CCCN",
+        "rank": 77
+      },
+      {
+        "freq": 44,
+        "piece": "NOCCOCC",
+        "rank": 78
+      },
+      {
+        "freq": 39,
+        "piece": "C=CCCCCCS",
+        "rank": 79
+      },
+      {
+        "freq": 38,
+        "piece": "COCCOCCS",
+        "rank": 80
+      },
+      {
+        "freq": 34,
+        "piece": "C#CCCOCC",
+        "rank": 81
+      },
+      {
+        "freq": 34,
+        "piece": "C#CCOCCON",
+        "rank": 82
+      },
+      {
+        "freq": 34,
+        "piece": "NOCC#",
+        "rank": 83
+      },
+      {
+        "freq": 33,
+        "piece": "NCCOCCOCC",
+        "rank": 84
+      },
+      {
+        "freq": 32,
+        "piece": "CCCCCCCCS",
+        "rank": 85
+      },
+      {
+        "freq": 32,
+        "piece": "SCCC#",
+        "rank": 86
+      },
+      {
+        "freq": 31,
+        "piece": "C=COCCON",
+        "rank": 87
+      },
+      {
+        "freq": 28,
+        "piece": "COCCOCC=C",
+        "rank": 88
+      },
+      {
+        "freq": 27,
+        "piece": "C=CCCCCCN",
+        "rank": 89
+      },
+      {
+        "freq": 26,
+        "piece": "COCCOCCOCC",
+        "rank": 90
+      },
+      {
+        "freq": 25,
+        "piece": "N#CCCS",
+        "rank": 91
+      },
+      {
+        "freq": 20,
+        "piece": "N#CCCCS",
+        "rank": 92
+      },
+      {
+        "freq": 19,
+        "piece": "C#CCCCCON",
+        "rank": 93
+      },
+      {
+        "freq": 16,
+        "piece": "CCCCCCCCOCC",
+        "rank": 94
+      },
+      {
+        "freq": 12,
+        "piece": "C#CC#CC",
+        "rank": 95
+      },
+      {
+        "freq": 9,
+        "piece": "C=CCOCCCN",
+        "rank": 96
+      },
+      {
+        "freq": 9,
+        "piece": "CCCCCCCCCCON",
+        "rank": 97
+      }
+    ],
+    "unigram_train": [
+      {
+        "freq": 931781,
+        "piece": "ccccc",
+        "rank": 1
+      },
+      {
+        "freq": 128967,
+        "piece": "ncnc",
+        "rank": 2
+      },
+      {
+        "freq": 97846,
+        "piece": "N#C",
+        "rank": 3
+      },
+      {
+        "freq": 77120,
+        "piece": "C#CC",
+        "rank": 4
+      },
+      {
+        "freq": 36934,
+        "piece": "CCSCC",
+        "rank": 5
+      },
+      {
+        "freq": 14837,
+        "piece": "C=CCON",
+        "rank": 6
+      },
+      {
+        "freq": 12941,
+        "piece": "CSCCN",
+        "rank": 7
+      },
+      {
+        "freq": 10882,
+        "piece": "C#CCN",
+        "rank": 8
+      },
+      {
+        "freq": 9524,
+        "piece": "C#CCCCC",
+        "rank": 9
+      },
+      {
+        "freq": 9142,
+        "piece": "C#CCON",
+        "rank": 10
+      },
+      {
+        "freq": 7992,
+        "piece": "C=CCS",
+        "rank": 11
+      },
+      {
+        "freq": 7736,
+        "piece": "NOCC=C",
+        "rank": 12
+      },
+      {
+        "freq": 7317,
+        "piece": "CSCCS",
+        "rank": 13
+      },
+      {
+        "freq": 6363,
+        "piece": "CCOCCNC",
+        "rank": 14
+      },
+      {
+        "freq": 5755,
+        "piece": "CC=CC=CC",
+        "rank": 15
+      },
+      {
+        "freq": 5672,
+        "piece": "CCCCN=",
+        "rank": 16
+      },
+      {
+        "freq": 5114,
+        "piece": "=NCCCN",
+        "rank": 17
+      },
+      {
+        "freq": 4887,
+        "piece": "C=CCCON",
+        "rank": 18
+      },
+      {
+        "freq": 4092,
+        "piece": "CCCCSCC",
+        "rank": 19
+      },
+      {
+        "freq": 4028,
+        "piece": "CCCCCCNC",
+        "rank": 20
+      },
+      {
+        "freq": 4001,
+        "piece": "NCCCN=",
+        "rank": 21
+      },
+      {
+        "freq": 3919,
+        "piece": "NCCOCCCN",
+        "rank": 22
+      },
+      {
+        "freq": 3873,
+        "piece": "=NCCNC",
+        "rank": 23
+      },
+      {
+        "freq": 3831,
+        "piece": "C#CCCON",
+        "rank": 24
+      },
+      {
+        "freq": 3536,
+        "piece": "NCC=CCN",
+        "rank": 25
+      },
+      {
+        "freq": 3459,
+        "piece": "C=CC=CCC",
+        "rank": 26
+      },
+      {
+        "freq": 3302,
+        "piece": "CCCCCCCCC",
+        "rank": 27
+      },
+      {
+        "freq": 2984,
+        "piece": "NCCCCN=",
+        "rank": 28
+      },
+      {
+        "freq": 2871,
+        "piece": "C#CCSCC",
+        "rank": 29
+      },
+      {
+        "freq": 2815,
+        "piece": "SCCS",
+        "rank": 30
+      },
+      {
+        "freq": 2628,
+        "piece": "CSCCCCC",
+        "rank": 31
+      },
+      {
+        "freq": 2622,
+        "piece": "C=CCCOCC",
+        "rank": 32
+      },
+      {
+        "freq": 2619,
+        "piece": "CSSCC",
+        "rank": 33
+      },
+      {
+        "freq": 2566,
+        "piece": "COCCOCCC",
+        "rank": 34
+      },
+      {
+        "freq": 2556,
+        "piece": "=NCCOCCN",
+        "rank": 35
+      },
+      {
+        "freq": 2525,
+        "piece": "C=C=CCC",
+        "rank": 36
+      },
+      {
+        "freq": 2335,
+        "piece": "C#CCCN",
+        "rank": 37
+      },
+      {
+        "freq": 2296,
+        "piece": "COCCON",
+        "rank": 38
+      },
+      {
+        "freq": 2286,
+        "piece": "=NCCCCN",
+        "rank": 39
+      },
+      {
+        "freq": 2214,
+        "piece": "CCOCCN=",
+        "rank": 40
+      },
+      {
+        "freq": 2155,
+        "piece": "CCOCCON",
+        "rank": 41
+      },
+      {
+        "freq": 2132,
+        "piece": "NCCOCCN",
+        "rank": 42
+      },
+      {
+        "freq": 2114,
+        "piece": "CCOCCS",
+        "rank": 43
+      },
+      {
+        "freq": 2077,
+        "piece": "NCCCCCCC",
+        "rank": 44
+      },
+      {
+        "freq": 1994,
+        "piece": "=NCC=CCN",
+        "rank": 45
+      },
+      {
+        "freq": 1972,
+        "piece": "C=CCCCON",
+        "rank": 46
+      },
+      {
+        "freq": 1967,
+        "piece": "NCCOCCN=",
+        "rank": 47
+      },
+      {
+        "freq": 1957,
+        "piece": "C#CCCCCCC",
+        "rank": 48
+      },
+      {
+        "freq": 1908,
+        "piece": "NCCCCCCCC",
+        "rank": 49
+      },
+      {
+        "freq": 1887,
+        "piece": "=NCCCCCCN",
+        "rank": 50
+      },
+      {
+        "freq": 1836,
+        "piece": "COCCCON",
+        "rank": 51
+      },
+      {
+        "freq": 1796,
+        "piece": "CCCCCCN=",
+        "rank": 52
+      },
+      {
+        "freq": 1716,
+        "piece": "C#CCCCON",
+        "rank": 53
+      },
+      {
+        "freq": 1647,
+        "piece": "NCCCCCCN=",
+        "rank": 54
+      },
+      {
+        "freq": 1589,
+        "piece": "C=CCCS",
+        "rank": 55
+      },
+      {
+        "freq": 1506,
+        "piece": "C=CCCCS",
+        "rank": 56
+      },
+      {
+        "freq": 1495,
+        "piece": "COCCCOCC",
+        "rank": 57
+      },
+      {
+        "freq": 1395,
+        "piece": "C=CCOCCCC",
+        "rank": 58
+      },
+      {
+        "freq": 1375,
+        "piece": "C=CC=CC",
+        "rank": 59
+      },
+      {
+        "freq": 1340,
+        "piece": "C#CCOCCC",
+        "rank": 60
+      },
+      {
+        "freq": 1332,
+        "piece": "CSCCON",
+        "rank": 61
+      },
+      {
+        "freq": 1326,
+        "piece": "SCCCS",
+        "rank": 62
+      },
+      {
+        "freq": 1252,
+        "piece": "C=CCSCC",
+        "rank": 63
+      },
+      {
+        "freq": 1196,
+        "piece": "CCCCC#",
+        "rank": 64
+      },
+      {
+        "freq": 1187,
+        "piece": "SCC#",
+        "rank": 65
+      },
+      {
+        "freq": 1130,
+        "piece": "=NCCCOCCN",
+        "rank": 66
+      },
+      {
+        "freq": 1125,
+        "piece": "NCCCOCCN",
+        "rank": 67
+      },
+      {
+        "freq": 1124,
+        "piece": "C#CCCCS",
+        "rank": 68
+      },
+      {
+        "freq": 1122,
+        "piece": "C#CCCS",
+        "rank": 69
+      },
+      {
+        "freq": 1026,
+        "piece": "NOCCOCC",
+        "rank": 70
+      },
+      {
+        "freq": 1022,
+        "piece": "CSCCCN",
+        "rank": 71
+      },
+      {
+        "freq": 1005,
+        "piece": "N#CCCCC",
+        "rank": 72
+      },
+      {
+        "freq": 941,
+        "piece": "COCCCCS",
+        "rank": 73
+      },
+      {
+        "freq": 914,
+        "piece": "CC#CCS",
+        "rank": 74
+      },
+      {
+        "freq": 898,
+        "piece": "CSCCCCCCC",
+        "rank": 75
+      },
+      {
+        "freq": 846,
+        "piece": "CCOCCCS",
+        "rank": 76
+      },
+      {
+        "freq": 795,
+        "piece": "N#CCCN",
+        "rank": 77
+      },
+      {
+        "freq": 776,
+        "piece": "NCC#C",
+        "rank": 78
+      },
+      {
+        "freq": 759,
+        "piece": "C=CCCCCCS",
+        "rank": 79
+      },
+      {
+        "freq": 728,
+        "piece": "CCCCCCCCS",
+        "rank": 80
+      },
+      {
+        "freq": 668,
+        "piece": "C#CCOCCON",
+        "rank": 81
+      },
+      {
+        "freq": 662,
+        "piece": "COCCOCCS",
+        "rank": 82
+      },
+      {
+        "freq": 645,
+        "piece": "C#CCCOCC",
+        "rank": 83
+      },
+      {
+        "freq": 617,
+        "piece": "NOCC#",
+        "rank": 84
+      },
+      {
+        "freq": 602,
+        "piece": "COCCOCCOCC",
+        "rank": 85
+      },
+      {
+        "freq": 580,
+        "piece": "NCCOCCOCC",
+        "rank": 86
+      },
+      {
+        "freq": 576,
+        "piece": "N#CCCS",
+        "rank": 87
+      },
+      {
+        "freq": 569,
+        "piece": "C=COCCON",
+        "rank": 88
+      },
+      {
+        "freq": 537,
+        "piece": "C#CCCCCON",
+        "rank": 89
+      },
+      {
+        "freq": 485,
+        "piece": "COCCOCC=C",
+        "rank": 90
+      },
+      {
+        "freq": 470,
+        "piece": "SCCC#",
+        "rank": 91
+      },
+      {
+        "freq": 442,
+        "piece": "N#CCCCS",
+        "rank": 92
+      },
+      {
+        "freq": 399,
+        "piece": "C=CCCCCCN",
+        "rank": 93
+      },
+      {
+        "freq": 300,
+        "piece": "CCCCCCCCOCC",
+        "rank": 94
+      },
+      {
+        "freq": 286,
+        "piece": "C=CCOCCCN",
+        "rank": 95
+      },
+      {
+        "freq": 256,
+        "piece": "C#CC#CC",
+        "rank": 96
+      },
+      {
+        "freq": 249,
+        "piece": "CCCCCCCCCCON",
+        "rank": 97
+      }
+    ]
+  }
+}

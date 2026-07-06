@@ -1,0 +1,22 @@
+{
+  "arm": "unigram",
+  "bootstrap_seed": 958407656,
+  "boundary": "nmb",
+  "eval_corpus": "cycpeptmpdb",
+  "eval_split_sha": "eade9794766a503aaed237f54aaa954e",
+  "fertility_ci": [
+    148.72621432148222,
+    150.64221331997996
+  ],
+  "fertility_mean": 149.7436154231347,
+  "glyphs_per_token_mean": 1.024481838428561,
+  "is_diagonal": false,
+  "n_molecules": 7988,
+  "n_resamples": 1000,
+  "oov_molecule_rate": 0.0,
+  "oov_token_rate": 0.0,
+  "total_tokens": 1196152,
+  "train_corpus": "pubchem",
+  "train_corpus_sha": "",
+  "vocab_size": 1024
+}

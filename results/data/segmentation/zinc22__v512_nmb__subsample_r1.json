@@ -1,0 +1,61 @@
+{
+  "boundary": "nmb",
+  "bpe": {
+    "arm": "bpe",
+    "bootstrap_seed": 0,
+    "boundary": "nmb",
+    "cell_id": "zinc22__smirk_gpe_v512_nmb_subsample_r1",
+    "entropy_per_glyph": 0.0,
+    "entropy_per_glyph_ci": [
+      0.0,
+      0.0
+    ],
+    "entropy_per_molecule_ci": [
+      0.0,
+      0.0
+    ],
+    "entropy_per_molecule_mean": 0.0,
+    "eval_split_sha": null,
+    "n_molecules": 0,
+    "n_resamples": 0,
+    "total_entropy_nats": 0.0,
+    "total_glyphs": 0,
+    "training_corpus_sha": "135364ea0bb1fc258bd8004d64c1fe38",
+    "verified_by_construction": true
+  },
+  "corpus": "zinc22",
+  "delta_entropy_per_glyph": 0.0006760302583542498,
+  "delta_entropy_per_molecule": 0.03083804158986347,
+  "extras_kind": "subsample_redraw",
+  "extras_label": "r1",
+  "missing_arm": null,
+  "pair_key": "zinc22__v512_nmb__subsample_r1",
+  "pair_status": "matched",
+  "schema_version": 1,
+  "tier": "extras_subsample_redraw",
+  "unigram": {
+    "arm": "unigram",
+    "bootstrap_seed": 274203669,
+    "boundary": "nmb",
+    "cell_id": "zinc22__smirk_unigram_v512_nmb_subsample_r1",
+    "entropy_per_glyph": 0.0006760302583542498,
+    "entropy_per_glyph_ci": [
+      0.0006697606431045601,
+      0.0006820895017363943
+    ],
+    "entropy_per_molecule_ci": [
+      0.030549956056520607,
+      0.031121950371697182
+    ],
+    "entropy_per_molecule_mean": 0.03083804158986347,
+    "eval_split_sha": "730dc2ddc8c4edd981244fa27433a1ea",
+    "n_molecules": 499545,
+    "n_resamples": 1000,
+    "total_entropy_nats": 15404.989486008348,
+    "total_glyphs": 22787426,
+    "training_corpus_sha": "135364ea0bb1fc258bd8004d64c1fe38",
+    "verified_by_construction": false
+  },
+  "unpaired_reason": null,
+  "vocab_size": 512
+}

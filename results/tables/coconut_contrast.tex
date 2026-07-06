@@ -1,0 +1,23 @@
+\begin{table}[htbp]
+  \centering
+  \caption{The COCONUT matched pair across $V$: each arm's multi-glyph vocabulary size, the three-way cross-algorithm split (shared / BPE-only / Unigram-LM-only), and the overlap $J$, under both boundary policies (UL denotes Unigram-LM).}
+  \label{tab:coconut-contrast}
+  \small
+  \begin{tabular}{@{}r r r r r r r@{}}
+    \toprule
+    & \multicolumn{2}{c}{Multi-glyph vocab.} & \multicolumn{3}{c}{Cross-arm split} & \\
+    \cmidrule(lr){2-3}\cmidrule(lr){4-6}
+    $V$ & BPE & UL & Shared & BPE-only & UL-only & $J$ \\
+    \midrule
+    \multicolumn{7}{@{}l}{\emph{No-merge-brackets (NMB)}} \\
+    256 & 98 & 97 & 24 & 74 & 73 & 0.140 \\
+    512 & 355 & 353 & 65 & 290 & 288 & 0.101 \\
+    1024 & 867 & 640 & 139 & 728 & 501 & 0.102 \\
+    \addlinespace[2pt]
+    \multicolumn{7}{@{}l}{\emph{Merge-brackets (MB)}} \\
+    256 & 98 & 97 & 27 & 71 & 70 & 0.161 \\
+    512 & 355 & 353 & 83 & 272 & 270 & 0.133 \\
+    1024 & 867 & 769 & 174 & 693 & 595 & 0.119 \\
+    \bottomrule
+  \end{tabular}
+\end{table}

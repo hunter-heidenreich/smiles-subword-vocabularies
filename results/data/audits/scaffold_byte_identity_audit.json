@@ -1,0 +1,275 @@
+{
+  "cells": [
+    {
+      "cell_id": "coconut__smirk_gpe_v256_nmb",
+      "reason": null,
+      "scaffold_log_sha": "a1125afe7b00102059c89df07608d40212e13ed833c824ebbd83f7edfc40b7f7",
+      "status": "already_done"
+    },
+    {
+      "cell_id": "real_space__smirk_gpe_v1024_nmb",
+      "reason": null,
+      "scaffold_log_sha": "e2d3835d3fa3c8466eb484c032a7bee3d6c9c09037a178f7d5efc8a375dcb572",
+      "status": "ok"
+    },
+    {
+      "cell_id": "real_space__smirk_gpe_v50000_nmb_merge_exhaustion",
+      "reason": null,
+      "scaffold_log_sha": "c67c1394bae61d8af700cf2c613bd5ec892fecc687d0bd9f3545653bbba3f902",
+      "status": "ok"
+    },
+    {
+      "cell_id": "real_space__smirk_gpe_v1024_mb",
+      "reason": null,
+      "scaffold_log_sha": "b8ddd1ab9c0b3ab87648ea60b3f8d3b22c6a72cde302e3c6f3c21e64b3731a37",
+      "status": "ok"
+    },
+    {
+      "cell_id": "pubchem__smirk_gpe_v256_nmb",
+      "reason": null,
+      "scaffold_log_sha": "d20523a7e53d6baf52b925be22dac402c2c3eb7c0a1c00c74de2512299dc949f",
+      "status": "ok"
+    },
+    {
+      "cell_id": "pubchem__smirk_gpe_v256_mb",
+      "reason": null,
+      "scaffold_log_sha": "fa5fd6450b8a1b5eba2d48b7d49bc07ff9b35538fb05f23fb303d83958e3fbc3",
+      "status": "ok"
+    },
+    {
+      "cell_id": "pubchem__smirk_gpe_v512_nmb",
+      "reason": null,
+      "scaffold_log_sha": "377212590225acc1dc9fe1f890b5e642209c6208a1a314b3bdff4e3c5447f9c5",
+      "status": "ok"
+    },
+    {
+      "cell_id": "pubchem__smirk_gpe_v512_mb",
+      "reason": null,
+      "scaffold_log_sha": "b41f2d1c23690e3450f0171bd3d3dfde31e0c60f852a0eebb8eb5c772655c0e9",
+      "status": "ok"
+    },
+    {
+      "cell_id": "pubchem__smirk_gpe_v1024_nmb",
+      "reason": null,
+      "scaffold_log_sha": "a67842531f9d8d2279a61231c3bd0a9b3728dbd6f2557ff489ed950b33e22548",
+      "status": "ok"
+    },
+    {
+      "cell_id": "pubchem__smirk_gpe_v1024_mb",
+      "reason": null,
+      "scaffold_log_sha": "f13a22b01dd1cb4f7a179e24c0e0fd8238f2681b4cac35ef74bcc8f26b0bc37e",
+      "status": "ok"
+    },
+    {
+      "cell_id": "pubchem__smirk_gpe_v512_nmb_subsample_r1",
+      "reason": null,
+      "scaffold_log_sha": "c5caa5f8caf0dab18fb901b833f55014439d481b17b495dde64cb63b8cc20c0d",
+      "status": "ok"
+    },
+    {
+      "cell_id": "pubchem__smirk_gpe_v512_nmb_subsample_r2",
+      "reason": null,
+      "scaffold_log_sha": "d9d2169168d0ee913b63aaf10a279f38b6dea093f355bab93285b8a8a4849aca",
+      "status": "ok"
+    },
+    {
+      "cell_id": "pubchem__smirk_gpe_v512_nmb_subsample_r3",
+      "reason": null,
+      "scaffold_log_sha": "e87eec3da6ff3b85ad632e659423858144a64e15a8e1f4d09b48a97cf4dffd80",
+      "status": "ok"
+    },
+    {
+      "cell_id": "pubchem__smirk_gpe_v512_nmb_size_5m",
+      "reason": null,
+      "scaffold_log_sha": "1216558554ba43233e65be19e2f140f4371a3610a8cb25a21a31f32054bcc0b4",
+      "status": "ok"
+    },
+    {
+      "cell_id": "pubchem__smirk_gpe_v512_nmb_size_15m",
+      "reason": null,
+      "scaffold_log_sha": "81c5b9cfd779c42463ccebf912d41d892163e57ee4371073f45b9c6ca2fe70e7",
+      "status": "ok"
+    },
+    {
+      "cell_id": "pubchem__smirk_gpe_v1024_nmb_sizematched_700k",
+      "reason": null,
+      "scaffold_log_sha": "0f15663534f705a2eb76d33ff228f7d234b8ce630c038f6d62cd9a31d5dc1bc7",
+      "status": "ok"
+    },
+    {
+      "cell_id": "pubchem__smirk_gpe_v1024_mb_sizematched_700k",
+      "reason": null,
+      "scaffold_log_sha": "f43ad3694b9f5ab2fb5fa8f83b6625e3362d3280d5c5f56772b460eb8f0c0d9d",
+      "status": "ok"
+    },
+    {
+      "cell_id": "pubchem__smirk_gpe_v512_nmb_sens_anchor",
+      "reason": null,
+      "scaffold_log_sha": "c79be9913b4d93638ffefca98a01280b4f5450fab13ad2669ca08a76def0ac76",
+      "status": "ok"
+    },
+    {
+      "cell_id": "pubchem__smirk_gpe_v512_nmb_minfreq_0",
+      "reason": null,
+      "scaffold_log_sha": "48c57d6b9dd881b2970bd848bd1860e121ffac3b7ae047b738594c07bf72e487",
+      "status": "ok"
+    },
+    {
+      "cell_id": "pubchem__smirk_gpe_v2048_mb",
+      "reason": null,
+      "scaffold_log_sha": "2a6b821dc01b278b8564c28edfd575131d09b59e95b27ec23ba1a938f04a70bd",
+      "status": "ok"
+    },
+    {
+      "cell_id": "pubchem__smirk_gpe_v512_nmb_minfreq_1",
+      "reason": null,
+      "scaffold_log_sha": "1c9d0c5f2a833be9aa37d814e9d10274af0d36981fb40e8ac5acda059d657eb7",
+      "status": "ok"
+    },
+    {
+      "cell_id": "pubchem__smirk_gpe_v2048_nmb",
+      "reason": null,
+      "scaffold_log_sha": "78a99b6dd325c9231f03bd2976dee032b51c510715bc1dec2502457010aea9e1",
+      "status": "ok"
+    },
+    {
+      "cell_id": "pubchem__smirk_gpe_v512_nmb_minfreq_4",
+      "reason": null,
+      "scaffold_log_sha": "74bc84e8b50148fe3e89b1d2b698282a49361236431c1f4ff73907df84ca271e",
+      "status": "ok"
+    },
+    {
+      "cell_id": "pubchem__smirk_gpe_v256_nmb_ix_bperef",
+      "reason": null,
+      "scaffold_log_sha": "4035481fa1ca11a6bca7477ca15589f50b9e31ecb5bc9a2a648ec3d80c3ec06e",
+      "status": "ok"
+    },
+    {
+      "cell_id": "pubchem__smirk_gpe_v512_nmb_minfreq_8",
+      "reason": null,
+      "scaffold_log_sha": "960237f791f76dfb6e55ccab3f851cf58eb22deb9a1db95950028b2340fac65c",
+      "status": "ok"
+    },
+    {
+      "cell_id": "pubchem__smirk_gpe_v1024_nmb_ix_bperef",
+      "reason": null,
+      "scaffold_log_sha": "0f15663534f705a2eb76d33ff228f7d234b8ce630c038f6d62cd9a31d5dc1bc7",
+      "status": "ok"
+    },
+    {
+      "cell_id": "zinc22__smirk_gpe_v256_nmb",
+      "reason": null,
+      "scaffold_log_sha": "4ef7b2181875d54101637c3db10e87cf3ad8f5bd0ce34811abb87dec75c8e38a",
+      "status": "ok"
+    },
+    {
+      "cell_id": "zinc22__smirk_gpe_v256_mb",
+      "reason": null,
+      "scaffold_log_sha": "8b01da894433968787f112cd284da5c3eae5bc59682e9341c929edf40e211d70",
+      "status": "ok"
+    },
+    {
+      "cell_id": "zinc22__smirk_gpe_v512_nmb",
+      "reason": null,
+      "scaffold_log_sha": "17234a8858a57b112489c0b3413a24557a1ca1eb2c15d54bcfa9628b7cc2752b",
+      "status": "ok"
+    },
+    {
+      "cell_id": "zinc22__smirk_gpe_v512_mb",
+      "reason": null,
+      "scaffold_log_sha": "508ef33d0a44409c5912c1721f6a678e6099cd51c798a28e268d487ce5f6b9ad",
+      "status": "ok"
+    },
+    {
+      "cell_id": "zinc22__smirk_gpe_v1024_nmb",
+      "reason": null,
+      "scaffold_log_sha": "6550f46d20164934b1b4dd12ee759236354861a34765f2a6090898794228d335",
+      "status": "ok"
+    },
+    {
+      "cell_id": "zinc22__smirk_gpe_v1024_mb",
+      "reason": null,
+      "scaffold_log_sha": "a0902e5f984c2a3992c7bb5d60f33b9725e980d4605e9258be3bd533442fa913",
+      "status": "ok"
+    },
+    {
+      "cell_id": "zinc22__smirk_gpe_v2048_nmb",
+      "reason": null,
+      "scaffold_log_sha": "444ad515faf9bde0103b476c90e0f411cc304d98da583cc76ab24d747c414ac3",
+      "status": "ok"
+    },
+    {
+      "cell_id": "zinc22__smirk_gpe_v512_nmb_subsample_r1",
+      "reason": null,
+      "scaffold_log_sha": "b564566f3deb825fea44db46706a1f11f6f2cdf814aea08a244814d48c0f8969",
+      "status": "ok"
+    },
+    {
+      "cell_id": "zinc22__smirk_gpe_v2048_mb",
+      "reason": null,
+      "scaffold_log_sha": "dc4c2f5770293d9cc7dc1c4253f86df2954578ab9742379339a5a9bf2b243aeb",
+      "status": "ok"
+    },
+    {
+      "cell_id": "zinc22__smirk_gpe_v512_nmb_subsample_r2",
+      "reason": null,
+      "scaffold_log_sha": "319beadb2f3b9e036889c44fc5c0ea81e9e047434e7741a69023bde119f4ea72",
+      "status": "ok"
+    },
+    {
+      "cell_id": "zinc22__smirk_gpe_v1024_nmb_sizematched_700k",
+      "reason": null,
+      "scaffold_log_sha": "45017b50a7641d24287861f7d4592b7f0175e6ce859bf7f25ccf10885332e78b",
+      "status": "ok"
+    },
+    {
+      "cell_id": "zinc22__smirk_gpe_v1024_mb_sizematched_700k",
+      "reason": null,
+      "scaffold_log_sha": "2617a6a0f68a13c265dfcdaed7a49547a4728f6db19929a7bf012746cedc5e0d",
+      "status": "ok"
+    },
+    {
+      "cell_id": "zinc22__smirk_gpe_v512_nmb_ix_bperef",
+      "reason": null,
+      "scaffold_log_sha": "8969d04fc6766deabd0e525b824a667c72546ddedc25d01c9e16e2d93995cd55",
+      "status": "ok"
+    },
+    {
+      "cell_id": "zinc22__smirk_gpe_v512_nmb_subsample_r3",
+      "reason": null,
+      "scaffold_log_sha": "1be6353d321b79614b1c6b30f9ccffb4c56d44530a9a67eaf27b1134a6c4868c",
+      "status": "ok"
+    },
+    {
+      "cell_id": "coconut__smirk_gpe_v256_mb",
+      "reason": null,
+      "scaffold_log_sha": "b8291edc6750350cb6ab3a81d42e1b83894985347234e14b11541a48b617cb2d",
+      "status": "ok"
+    },
+    {
+      "cell_id": "coconut__smirk_gpe_v512_nmb",
+      "reason": null,
+      "scaffold_log_sha": "859f277ff8986c85c53ae806f0165b6cd210f866a09c534947189c74129f5f63",
+      "status": "ok"
+    },
+    {
+      "cell_id": "coconut__smirk_gpe_v512_mb",
+      "reason": null,
+      "scaffold_log_sha": "b8d68d720d752397dd0517ad4b7d6200405ff8ab333f69698cc52a535d3d92fd",
+      "status": "ok"
+    },
+    {
+      "cell_id": "coconut__smirk_gpe_v1024_nmb",
+      "reason": null,
+      "scaffold_log_sha": "fcff7e8ad98dd44518a62e918226aa109ae4c093f2c8ce582a6fbb0160c552c4",
+      "status": "ok"
+    },
+    {
+      "cell_id": "coconut__smirk_gpe_v1024_mb",
+      "reason": null,
+      "scaffold_log_sha": "9ed19577e007f9cdb6a19e281ebc8e1d528450f97a6ca30a3024ce7f9e56927c",
+      "status": "ok"
+    }
+  ],
+  "schema_version": 1
+}

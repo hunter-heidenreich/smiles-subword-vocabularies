@@ -1,0 +1,31 @@
+{
+  "algo": "unigram",
+  "arm": "unigram",
+  "boundary": "nmb",
+  "canonical_digest": {
+    "algo": "unigram",
+    "log_probs_sha": "ba4222e6da8cd0e9ef16c64edae78146b3cd3122f93f265ac53dd22fca01c98b",
+    "merges_txt_sha": null,
+    "piece_set_sha": "cfd9a3fba6e04dbc3566ed276a1887b4d3612c6c8809d5994660a64c78f3c6eb",
+    "tokenizer_json_sha": "46f88109869bb5a43f9f3b8de38157fb59052282acc96ab69ec9fcb3bf4a97df",
+    "vocab_order_sha": "54ffea22c1aca74cc35ef505907929f524554261d60b938150025d8080e7cfcc"
+  },
+  "cell_id": "zinc22__smirk_unigram_v512_nmb",
+  "corpus": "zinc22",
+  "deterministic": true,
+  "expected_failure": false,
+  "mismatch_kind": null,
+  "rerun_digest": {
+    "algo": "unigram",
+    "log_probs_sha": "ba4222e6da8cd0e9ef16c64edae78146b3cd3122f93f265ac53dd22fca01c98b",
+    "merges_txt_sha": null,
+    "piece_set_sha": "cfd9a3fba6e04dbc3566ed276a1887b4d3612c6c8809d5994660a64c78f3c6eb",
+    "tokenizer_json_sha": "46f88109869bb5a43f9f3b8de38157fb59052282acc96ab69ec9fcb3bf4a97df",
+    "vocab_order_sha": "54ffea22c1aca74cc35ef505907929f524554261d60b938150025d8080e7cfcc"
+  },
+  "rerun_spread": 0,
+  "schema_version": 1,
+  "tier": "headline",
+  "training_corpus_sha": "2604e603ded8e77654016cd7b3f38cec",
+  "vocab_size": 512
+}

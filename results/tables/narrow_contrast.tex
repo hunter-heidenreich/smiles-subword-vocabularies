@@ -1,0 +1,23 @@
+\begin{table}[htbp]
+  \centering
+  \caption{The ZINC-22 matched pair across $V$: each arm's multi-glyph vocabulary size, the three-way cross-algorithm split (shared / BPE-only / Unigram-LM-only), and the overlap $J$, under both boundary policies (UL denotes Unigram-LM).}
+  \label{tab:narrow-contrast}
+  \small
+  \begin{tabular}{@{}r r r r r r r@{}}
+    \toprule
+    & \multicolumn{2}{c}{Multi-glyph vocab.} & \multicolumn{3}{c}{Cross-arm split} & \\
+    \cmidrule(lr){2-3}\cmidrule(lr){4-6}
+    $V$ & BPE & UL & Shared & BPE-only & UL-only & $J$ \\
+    \midrule
+    \multicolumn{7}{@{}l}{\emph{No-merge-brackets (NMB)}} \\
+    256 & 98 & 97 & 2 & 96 & 95 & 0.010 \\
+    512 & 355 & 310 & 18 & 337 & 292 & 0.028 \\
+    1024 & 867 & 310 & 99 & 768 & 211 & 0.092 \\
+    \addlinespace[2pt]
+    \multicolumn{7}{@{}l}{\emph{Merge-brackets (MB)}} \\
+    256 & 98 & 97 & 4 & 94 & 93 & 0.021 \\
+    512 & 355 & 353 & 25 & 330 & 328 & 0.037 \\
+    1024 & 867 & 357 & 126 & 741 & 231 & 0.115 \\
+    \bottomrule
+  \end{tabular}
+\end{table}

@@ -1,0 +1,7 @@
+# canon_dedup_v1 on ZINC-22 (flat raw_v1 -> RDKit isomeric canon + exact
+# dedup). bucket mode bounds the intermediate working set for the ~83.7M-row
+# tranche union.
+name: zinc22
+input_dir: data/processed/zinc22/canon_dedup_v1_input
+output_dir: data/processed/zinc22/canon_dedup_v1_full
+mode: bucket

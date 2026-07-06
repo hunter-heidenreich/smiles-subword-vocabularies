@@ -1,0 +1,61 @@
+{
+  "boundary": "mb",
+  "corpus": "pubchem",
+  "extras_kind": "seed_cap",
+  "extras_label": "uncapped",
+  "missing_arm": "bpe",
+  "pair_key": "pubchem__v1024_mb__seed_uncapped",
+  "pair_status": "single_arm",
+  "present_arm": "unigram",
+  "schema_version": 1,
+  "tier": "extras_seed_cap",
+  "unigram": {
+    "arm": "unigram",
+    "bootstrap_seed": 4279120666,
+    "boundary": "mb",
+    "cell_id": "pubchem__smirk_unigram_v1024_mb_seed_uncapped",
+    "class_bonds": {
+      "C#N": 62155,
+      "C=N": 104772,
+      "C=O": 1224571,
+      "C=S": 19793,
+      "N=O": 40505,
+      "P=O": 19539,
+      "S=O": 244043,
+      "other": 19619
+    },
+    "class_local": {
+      "C#N": 13635,
+      "C=N": 21857,
+      "C=O": 260,
+      "C=S": 346,
+      "N=O": 0,
+      "P=O": 1452,
+      "S=O": 7222,
+      "other": 2191
+    },
+    "class_locality": {
+      "C#N": 0.21937092751990991,
+      "C=N": 0.20861489710991488,
+      "C=O": 0.00021231925302820335,
+      "C=S": 0.017480927600666902,
+      "N=O": 0.0,
+      "P=O": 0.07431291263626592,
+      "S=O": 0.029593145470265488,
+      "other": 0.11167745552780468
+    },
+    "eval_split_sha": "7c52af1451b2e5c900acfc6d6f012489",
+    "locality": 0.027068058330936597,
+    "locality_ci": [
+      0.02671926292961031,
+      0.027429944028990585
+    ],
+    "n_bonds": 1734997,
+    "n_local": 46963,
+    "n_molecules": 999286,
+    "n_resamples": 1000,
+    "training_corpus_sha": "d471aba7d34c2d2875e958d3df2abfcc"
+  },
+  "unpaired_reason": "extras_single_arm_knob",
+  "vocab_size": 1024
+}

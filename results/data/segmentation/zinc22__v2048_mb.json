@@ -1,0 +1,39 @@
+{
+  "boundary": "mb",
+  "bpe": {
+    "arm": "bpe",
+    "bootstrap_seed": 0,
+    "boundary": "mb",
+    "cell_id": "zinc22__smirk_gpe_v2048_mb",
+    "entropy_per_glyph": 0.0,
+    "entropy_per_glyph_ci": [
+      0.0,
+      0.0
+    ],
+    "entropy_per_molecule_ci": [
+      0.0,
+      0.0
+    ],
+    "entropy_per_molecule_mean": 0.0,
+    "eval_split_sha": null,
+    "n_molecules": 0,
+    "n_resamples": 0,
+    "total_entropy_nats": 0.0,
+    "total_glyphs": 0,
+    "training_corpus_sha": "2604e603ded8e77654016cd7b3f38cec",
+    "verified_by_construction": true
+  },
+  "corpus": "zinc22",
+  "delta_entropy_per_glyph": null,
+  "delta_entropy_per_molecule": null,
+  "extras_kind": null,
+  "extras_label": null,
+  "missing_arm": "unigram",
+  "pair_key": "zinc22__v2048_mb",
+  "pair_status": "single_arm",
+  "schema_version": 1,
+  "tier": "conditional",
+  "unigram": null,
+  "unpaired_reason": "conditional_negative_branch",
+  "vocab_size": 2048
+}

@@ -1,0 +1,49 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+# Root-anchored: the setuptools artifacts live at the repo root. Unanchored
+# ``build/`` would also swallow ``results/build/`` (the renderers).
+/build/
+/dist/
+.venv/
+.pytest_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+.pyright/
+
+# uv: the lock IS committed for reproducible resolution (not ignored).
+
+# Data (large corpora / artifacts are deposited to Zenodo, not git)
+/data/raw/
+/data/processed/
+/data/external/
+/artifacts/
+
+# Dispatch caches written by the grid/extras runners
+**/.dispatch_cache*/
+
+# LaTeX build artifacts
+paper/*.aux
+paper/*.log
+paper/*.out
+paper/*.fls
+paper/*.fdb_latexmk
+paper/*.blg
+paper/*.bbl
+paper/*.synctex.gz
+paper/paper.pdf
+
+# Build-time copies synced from results/ by `make paper` (canonical lives in results/)
+/paper/tables/
+/paper/figures/
+
+# Internal docs — kept local, not shipped
+/CLAUDE.md
+/paper/SHIP-PLAN.md
+/paper/DEPOSIT.md
+
+# OS
+.DS_Store

@@ -1,0 +1,20 @@
+# tmQM (Balcells & Skjelstad 2020) transition-metal complexes. The upstream
+# `tmQM_y.csv` is SEMICOLON-delimited with a header; SMILES under `SMILES`, id
+# under `CSD_code`. normalize_names off to preserve the upstream column casing.
+name: tmqm
+source: tmqm
+manifest_id: tmqm-tmQM-y
+raw_path: data/raw/tmqm/tmQM_y.csv
+output_dir: data/processed/tmqm/raw_v1
+csv_read_mode: named
+delim: ";"
+has_header: true
+file_compression: none
+normalize_names: false
+drop_null_smiles: true
+id_column: CSD_code
+smiles_column: SMILES
+shard_target_bytes: 67108864
+rows_per_batch: 16384
+parquet_compression: zstd
+parquet_compression_level: 3

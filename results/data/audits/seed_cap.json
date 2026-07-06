@@ -1,0 +1,13 @@
+{
+  "audit": "seed_cap",
+  "baseline_cell": "pubchem__smirk_unigram_v1024_mb",
+  "baseline_multi_glyph_count": 865,
+  "baseline_seed_size": 1000000,
+  "inert": true,
+  "multi_glyph_jaccard": 1.0,
+  "probe_cell": "pubchem__smirk_unigram_v1024_mb_seed_uncapped",
+  "probe_multi_glyph_count": 865,
+  "probe_seed_size": 8000000,
+  "schema_version": 1,
+  "symmetric_difference_count": 0
+}

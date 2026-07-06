@@ -1,0 +1,30 @@
+{
+  "boundary": "nmb",
+  "bpe": {
+    "arm": "bpe",
+    "boundary": "nmb",
+    "c_bin": 1.0,
+    "c_full": 0.5676567656765676,
+    "c_orph": 0.0,
+    "cell_id": "zinc22__smirk_gpe_v2048_nmb",
+    "n_bin_closed": 1891,
+    "n_bracket_nonclosed": 0,
+    "n_full_closed": 1032,
+    "n_ge3": 1818,
+    "n_multi": 1891,
+    "n_orphan": 0,
+    "training_corpus_sha": "2604e603ded8e77654016cd7b3f38cec",
+    "vocab_size": 2048
+  },
+  "corpus": "zinc22",
+  "extras_kind": null,
+  "extras_label": null,
+  "missing_arm": "unigram",
+  "pair_key": "zinc22__v2048_nmb",
+  "pair_status": "single_arm",
+  "present_arm": "bpe",
+  "schema_version": 1,
+  "tier": "conditional",
+  "unpaired_reason": "conditional_negative_branch",
+  "vocab_size": 2048
+}

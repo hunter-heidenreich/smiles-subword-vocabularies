@@ -1,0 +1,13 @@
+# Training-subsample spot-check, ZINC redraw r1. Independent ~5M draw of the
+# headline ZINC-22 training corpus, paired with r2 / r3 to bound subsample
+# noise on the (V=512, ZINC-22, NMB) contrast triple (J, |Δfertility|, |ΔD|).
+#
+# Source: the headline ZINC-22 `canon_dedup_v1/train` (~9.5M rows,
+# test-set-disjoint by construction). target_n=5M (< source size) so the
+# draw genuinely subsamples the training pool, exposing the sampling-noise
+# effect. Distinct `hash_domain` per redraw → independent.
+name: zinc22
+input_dir: data/processed/zinc22/canon_dedup_v1/train
+output_dir: data/processed/zinc22/canon_dedup_v1_extras/redraw_r1
+target_n: 5000000
+hash_domain: canon_dedup_v1.redraw.r1

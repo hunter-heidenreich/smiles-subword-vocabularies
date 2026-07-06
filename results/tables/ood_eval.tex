@@ -1,0 +1,16 @@
+\begin{table}[htbp]
+  \centering
+  \caption{Out-of-distribution generalization: the PubChem diverse-corpus generalist ($V{=}1024$, NMB) read on adversarial in-spec chemistry it was not fit to. Fertility is mean tokens per molecule; bootstrap CIs negligible at these $n$. rel$|\Delta f|$ is the cross-arm relative fertility gap (Eq.~\ref{eq:fertility}). The BPE-coarser / Unigram-finer divergence persists off-distribution, and atom-level OOV stays negligible (shared $165$-token base), so the contrast is genuine granularity, not coverage.}
+  \label{tab:ood-eval}
+  \small
+  \begin{tabular}{@{}l r rr r rr@{}}
+    \toprule
+    & & \multicolumn{2}{c}{fertility} & & \multicolumn{2}{c}{atom OOV}\\
+    \cmidrule(lr){3-4}\cmidrule(lr){6-7}
+    corpus & $n$ & BPE & Unigram-LM & rel$|\Delta f|$ & BPE & Unigram-LM \\
+    \midrule
+    tmQM (metals) & 97,379 & 65.5 & 82.9 & 23.5\% & 0.002\% & 0.002\% \\
+    CycPeptMPDB (macrocycles) & 7,988 & 111.3 & 149.7 & 29.5\% & 0.000\% & 0.000\% \\
+    \bottomrule
+  \end{tabular}
+\end{table}

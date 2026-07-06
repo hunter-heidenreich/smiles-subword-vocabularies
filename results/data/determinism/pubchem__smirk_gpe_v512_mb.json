@@ -1,0 +1,31 @@
+{
+  "algo": "bpe",
+  "arm": "bpe",
+  "boundary": "mb",
+  "canonical_digest": {
+    "algo": "bpe",
+    "log_probs_sha": null,
+    "merges_txt_sha": "161e1dacd833919369f3c6b7fa1d636ac0685c26e15b995cdc62b0a1067876e9",
+    "piece_set_sha": null,
+    "tokenizer_json_sha": "534533976a3bf8410fbdb4b814d8ec69739ef9e8b9f7d32f55411fa783bcc7c1",
+    "vocab_order_sha": null
+  },
+  "cell_id": "pubchem__smirk_gpe_v512_mb",
+  "corpus": "pubchem",
+  "deterministic": true,
+  "expected_failure": false,
+  "mismatch_kind": null,
+  "rerun_digest": {
+    "algo": "bpe",
+    "log_probs_sha": null,
+    "merges_txt_sha": "161e1dacd833919369f3c6b7fa1d636ac0685c26e15b995cdc62b0a1067876e9",
+    "piece_set_sha": null,
+    "tokenizer_json_sha": "534533976a3bf8410fbdb4b814d8ec69739ef9e8b9f7d32f55411fa783bcc7c1",
+    "vocab_order_sha": null
+  },
+  "rerun_spread": 0,
+  "schema_version": 1,
+  "tier": "headline",
+  "training_corpus_sha": "d471aba7d34c2d2875e958d3df2abfcc",
+  "vocab_size": 512
+}

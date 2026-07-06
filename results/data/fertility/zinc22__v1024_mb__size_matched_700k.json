@@ -1,0 +1,64 @@
+{
+  "boundary": "mb",
+  "bpe": {
+    "arm": "bpe",
+    "bootstrap_seed": 595729393,
+    "boundary": "mb",
+    "cell_id": "zinc22__smirk_gpe_v1024_mb_sizematched_700k",
+    "eval_split_sha": "730dc2ddc8c4edd981244fa27433a1ea",
+    "fertility_ci": [
+      29.032905944409414,
+      29.06494309821938
+    ],
+    "fertility_mean": 29.049643175289514,
+    "glyphs_per_token_ci": [
+      1.5698606378327538,
+      1.5707558008507667
+    ],
+    "glyphs_per_token_mean": 1.5702899555417857,
+    "n_molecules": 499545,
+    "n_resamples": 1000,
+    "tokens_per_molecule_variance": 37.27377893662432,
+    "total_glyphs": 22787426,
+    "total_tokens": 14511604,
+    "training_corpus_sha": "e57489e8f72b2f5474a63e209b526199"
+  },
+  "corpus": "zinc22",
+  "delta_fertility": -12.334838703219926,
+  "delta_fertility_relative": 0.35025177621780174,
+  "delta_glyphs_per_token": 0.4680322777932999,
+  "extras_kind": "size_matched",
+  "extras_label": "700k",
+  "missing_arm": null,
+  "pair_key": "zinc22__v1024_mb__size_matched_700k",
+  "pair_status": "matched",
+  "schema_version": 1,
+  "tier": "extras_size_matched",
+  "total_glyphs_consistent": true,
+  "total_glyphs_delta": 0,
+  "unigram": {
+    "arm": "unigram",
+    "bootstrap_seed": 2553612830,
+    "boundary": "mb",
+    "cell_id": "zinc22__smirk_unigram_v1024_mb_sizematched_700k",
+    "eval_split_sha": "730dc2ddc8c4edd981244fa27433a1ea",
+    "fertility_ci": [
+      41.36228968361209,
+      41.405815291915644
+    ],
+    "fertility_mean": 41.38448187850944,
+    "glyphs_per_token_ci": [
+      1.1020641871950785,
+      1.1024504773861445
+    ],
+    "glyphs_per_token_mean": 1.1022576777484858,
+    "n_molecules": 499545,
+    "n_resamples": 1000,
+    "tokens_per_molecule_variance": 60.24466685388144,
+    "total_glyphs": 22787426,
+    "total_tokens": 20673411,
+    "training_corpus_sha": "e57489e8f72b2f5474a63e209b526199"
+  },
+  "unpaired_reason": null,
+  "vocab_size": 1024
+}

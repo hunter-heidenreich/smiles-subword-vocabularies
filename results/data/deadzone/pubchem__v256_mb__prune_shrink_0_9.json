@@ -1,0 +1,32 @@
+{
+  "any_arm_unsafe": false,
+  "both_arms_unsafe": false,
+  "boundary": "mb",
+  "bpe": null,
+  "corpus": "pubchem",
+  "delta_fp": null,
+  "extras_kind": "prune_schedule",
+  "extras_label": "shrink_0_9",
+  "headline_delta_f": null,
+  "missing_arm": "bpe",
+  "pair_key": "pubchem__v256_mb__prune_shrink_0_9",
+  "pair_status": "single_arm",
+  "schema_version": 1,
+  "tier": "extras_prune_schedule",
+  "unigram": {
+    "arm": "unigram",
+    "cell_id": "pubchem__smirk_unigram_v256_mb_prune_shrink_0_9",
+    "clearance_by_n": {
+      "100": 1.0,
+      "200": 1.0,
+      "50": 1.0
+    },
+    "embedding_tail_unsafe": false,
+    "headline_clearance": 1.0,
+    "n_non_atomic": 97,
+    "training_corpus_sha": "d471aba7d34c2d2875e958d3df2abfcc",
+    "v_observed": 262
+  },
+  "unpaired_reason": "extras_single_arm_knob",
+  "vocab_size": 256
+}

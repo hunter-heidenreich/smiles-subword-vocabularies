@@ -1,0 +1,31 @@
+{
+  "algo": "bpe",
+  "arm": "bpe",
+  "boundary": "nmb",
+  "canonical_digest": {
+    "algo": "bpe",
+    "log_probs_sha": null,
+    "merges_txt_sha": "96032cb5e49e33cfd8c548d40e2ffb591c2a41a36f9d9a945c6b1e5298ddcf6c",
+    "piece_set_sha": null,
+    "tokenizer_json_sha": "3a71eaa57231f78c3e84164b08dc04e9b62cb4e9e9a6a76f764402281ac03de7",
+    "vocab_order_sha": null
+  },
+  "cell_id": "real_space__smirk_gpe_v1024_nmb",
+  "corpus": "real_space",
+  "deterministic": true,
+  "expected_failure": false,
+  "mismatch_kind": null,
+  "rerun_digest": {
+    "algo": "bpe",
+    "log_probs_sha": null,
+    "merges_txt_sha": "96032cb5e49e33cfd8c548d40e2ffb591c2a41a36f9d9a945c6b1e5298ddcf6c",
+    "piece_set_sha": null,
+    "tokenizer_json_sha": "3a71eaa57231f78c3e84164b08dc04e9b62cb4e9e9a6a76f764402281ac03de7",
+    "vocab_order_sha": null
+  },
+  "rerun_spread": 0,
+  "schema_version": 1,
+  "tier": "anchor",
+  "training_corpus_sha": "140534c1544cd9f2ce760709417f23dd",
+  "vocab_size": 1024
+}

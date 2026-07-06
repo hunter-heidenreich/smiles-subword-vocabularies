@@ -1,0 +1,31 @@
+{
+  "algo": "bpe",
+  "arm": "bpe",
+  "boundary": "mb",
+  "canonical_digest": {
+    "algo": "bpe",
+    "log_probs_sha": null,
+    "merges_txt_sha": "2af579586975fc601735300f95da3cf6b9c4323257a024ec77b8ef2bae9b245c",
+    "piece_set_sha": null,
+    "tokenizer_json_sha": "3890691cdd418009abe93c1d40226199bd65c81942ec9cf06b7158b16feb7793",
+    "vocab_order_sha": null
+  },
+  "cell_id": "real_space__smirk_gpe_v1024_mb",
+  "corpus": "real_space",
+  "deterministic": true,
+  "expected_failure": false,
+  "mismatch_kind": null,
+  "rerun_digest": {
+    "algo": "bpe",
+    "log_probs_sha": null,
+    "merges_txt_sha": "2af579586975fc601735300f95da3cf6b9c4323257a024ec77b8ef2bae9b245c",
+    "piece_set_sha": null,
+    "tokenizer_json_sha": "3890691cdd418009abe93c1d40226199bd65c81942ec9cf06b7158b16feb7793",
+    "vocab_order_sha": null
+  },
+  "rerun_spread": 0,
+  "schema_version": 1,
+  "tier": "anchor",
+  "training_corpus_sha": "140534c1544cd9f2ce760709417f23dd",
+  "vocab_size": 1024
+}

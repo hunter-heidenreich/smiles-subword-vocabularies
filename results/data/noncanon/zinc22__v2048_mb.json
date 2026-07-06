@@ -1,0 +1,93 @@
+{
+  "boundary": "mb",
+  "bpe": {
+    "arm": "bpe",
+    "axes": {
+      "explicitH": {
+        "bag_instab": 0.8034740522663347,
+        "bag_instab_ci": [
+          0.8027293999164623,
+          0.8042053219585927
+        ],
+        "n": 10000,
+        "rel_dfert": 1.7536679538988873,
+        "rel_dfert_ci": [
+          1.7445206723895725,
+          1.7633166207761874
+        ]
+      },
+      "kekule": {
+        "bag_instab": 0.28415017260996894,
+        "bag_instab_ci": [
+          0.28167868835158083,
+          0.2862497378434962
+        ],
+        "n": 7235,
+        "rel_dfert": 0.04190543082843052,
+        "rel_dfert_ci": [
+          0.040642867537743425,
+          0.04306289653279857
+        ]
+      },
+      "obcanon": {
+        "bag_instab": 0.2055026775573963,
+        "bag_instab_ci": [
+          0.2030622132115099,
+          0.20805908870746762
+        ],
+        "n": 10000,
+        "rel_dfert": 0.017721264400797035,
+        "rel_dfert_ci": [
+          0.017032721045010517,
+          0.01839067810917917
+        ]
+      },
+      "random": {
+        "bag_instab": 0.3291659031017667,
+        "bag_instab_ci": [
+          0.327461153839263,
+          0.33083343676156085
+        ],
+        "n": 10000,
+        "rel_dfert": 0.12607326469326832,
+        "rel_dfert_ci": [
+          0.12459983330994842,
+          0.12768424507283851
+        ]
+      },
+      "ringperm": {
+        "bag_instab": 0.1761474398216897,
+        "bag_instab_ci": [
+          0.17485339468401168,
+          0.17732330870028604
+        ],
+        "n": 9288,
+        "rel_dfert": 0.0,
+        "rel_dfert_ci": [
+          0.0,
+          0.0
+        ]
+      }
+    },
+    "bootstrap_seed": 3926729218,
+    "boundary": "mb",
+    "cell_id": "zinc22__smirk_gpe_v2048_mb",
+    "eval_split_sha": "730dc2ddc8c4edd981244fa27433a1ea",
+    "mean_canon_fert": 26.1888,
+    "mean_rand_fert": 29.04985,
+    "n_molecules": 10000,
+    "n_resamples": 1000,
+    "training_corpus_sha": "2604e603ded8e77654016cd7b3f38cec"
+  },
+  "corpus": "zinc22",
+  "extras_kind": null,
+  "extras_label": null,
+  "missing_arm": "unigram",
+  "pair_key": "zinc22__v2048_mb",
+  "pair_status": "single_arm",
+  "present_arm": "bpe",
+  "schema_version": 1,
+  "tier": "conditional",
+  "unpaired_reason": "conditional_negative_branch",
+  "vocab_size": 2048
+}

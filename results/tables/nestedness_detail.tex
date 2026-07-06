@@ -1,0 +1,39 @@
+\begin{table}[htbp]
+  \centering
+  \caption{Per-condition cross-arm boundary nestedness. Per matched pair (\S\ref{ssec:measurements}). Both arms cut the same glyph stream, so their boundaries are subsets of the same inter-glyph positions. $J_{\partial}$ the boundary Jaccard over \emph{cut} positions (agree-cut over agree-cut $+$ nest $+$ conflict); \emph{nest} the share of positions where Unigram-LM cuts and BPE merges (the fertility gap of Table~\ref{tab:results-fertility} read positionally) and \emph{conflict} the share where BPE cuts and Unigram-LM merges (genuine crossing), both over all positions; \emph{nested} the fraction of molecules with zero conflict, i.e.\ whose BPE parse is a strict coarsening of Unigram-LM's. $\mathrm{cut}^{c}$ localizes conflict: the fraction of multi-glyph Unigram-LM pieces of class $c$ (heteroatom, unsaturated carbon, saturated carbon) that BPE cuts through, with no entry for a class the corpus never emits. Conflict is near zero in every condition.}
+  \label{tab:results-nestedness}
+  \footnotesize
+  \begin{tabular}{@{}l r l r r r r r r r@{}}
+    \toprule
+    & & & & & & & \multicolumn{3}{c}{Conflict $\mathrm{cut}^{c}$} \\
+    \cmidrule(lr){8-10}
+    Corpus & $V$ & Bnd & $J_{\partial}$ & conflict & nest & nested & het & uns & sat \\
+    \midrule
+    PubChem & 256 & NMB & 0.709 & 0.0052 & 0.274 & 0.818 & 0.465 & 0.348 & 0.164 \\
+     & 256 & MB & 0.726 & 0.0062 & 0.239 & 0.802 & 0.451 & 0.325 & 0.199 \\
+     & 512 & NMB & 0.703 & 0.0017 & 0.282 & 0.934 & 0.170 & 0.136 & 0.047 \\
+     & 512 & MB & 0.716 & 0.0024 & 0.249 & 0.913 & 0.182 & 0.152 & 0.052 \\
+     & 1024 & NMB & 0.702 & 0.0008 & 0.283 & 0.970 & 0.083 & 0.065 & 0.013 \\
+     & 1024 & MB & 0.716 & 0.0010 & 0.250 & 0.963 & 0.091 & 0.075 & 0.014 \\
+     & 2048 & NMB & 0.702 & 0.0003 & 0.284 & 0.986 & 0.039 & 0.034 & 0.004 \\
+     & 2048 & MB & 0.715 & 0.0004 & 0.251 & 0.984 & 0.041 & 0.036 & 0.005 \\
+    \addlinespace
+    ZINC-22 & 256 & NMB & 0.717 & 0.0015 & 0.277 & 0.951 & 1.000 & 1.000 & 1.000 \\
+     & 256 & MB & 0.687 & 0.0019 & 0.289 & 0.939 & 1.000 & 1.000 & 1.000 \\
+     & 512 & NMB & 0.709 & 0.0004 & 0.286 & 0.982 & 0.401 & 0.235 & 1.000 \\
+     & 512 & MB & 0.677 & 0.0005 & 0.300 & 0.977 & 0.427 & 0.320 & 0.550 \\
+     & 1024 & NMB & 0.709 & 0.0001 & 0.287 & 0.998 & 0.054 & 0.032 & 0.183 \\
+     & 1024 & MB & 0.677 & 0.0001 & 0.300 & 0.997 & 0.058 & 0.030 & 0.089 \\
+    \addlinespace
+    COCONUT & 256 & NMB & 0.738 & 0.0021 & 0.242 & 0.889 & 0.649 & 0.680 & 0.059 \\
+     & 256 & MB & 0.702 & 0.0027 & 0.239 & 0.858 & 0.751 & 0.701 & 0.053 \\
+     & 512 & NMB & 0.736 & 0.0004 & 0.245 & 0.973 & 0.197 & 0.330 & 0.011 \\
+     & 512 & MB & 0.700 & 0.0006 & 0.242 & 0.966 & 0.176 & 0.359 & 0.011 \\
+     & 1024 & NMB & 0.736 & 0.0001 & 0.245 & 0.993 & 0.053 & 0.072 & 0.004 \\
+     & 1024 & MB & 0.699 & 0.0001 & 0.243 & 0.991 & 0.051 & 0.083 & 0.003 \\
+    \addlinespace
+    REAL-Space & 1024 & NMB & 0.683 & 0.0000 & 0.315 & 0.998 & 0.074 & 0.009 & --- \\
+     & 1024 & MB & 0.652 & 0.0001 & 0.342 & 0.997 & 0.086 & 0.010 & --- \\
+    \bottomrule
+  \end{tabular}
+\end{table}

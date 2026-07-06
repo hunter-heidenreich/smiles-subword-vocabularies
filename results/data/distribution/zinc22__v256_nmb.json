@@ -1,0 +1,79 @@
+{
+  "abs_delta_d": 0.10883041809681537,
+  "boundary": "nmb",
+  "bpe": {
+    "arm": "bpe",
+    "bootstrap_seed": 2618585444,
+    "boundary": "nmb",
+    "cell_id": "zinc22__smirk_gpe_v256_nmb",
+    "d": 0.7981485437250323,
+    "d_ci": [
+      0.7980133573630394,
+      0.7982874872944358
+    ],
+    "eta": 0.5831853914636926,
+    "eta_ci": [
+      0.583067006385389,
+      0.5833037926288611
+    ],
+    "eval_split_sha": "730dc2ddc8c4edd981244fa27433a1ea",
+    "live_token_count": 132,
+    "n_molecules": 499545,
+    "n_resamples": 1000,
+    "renyi": 0.4499513695854152,
+    "renyi_ci": [
+      0.44983106652594307,
+      0.4500750121370701
+    ],
+    "total_tokens": 16318467,
+    "training_corpus_sha": "2604e603ded8e77654016cd7b3f38cec",
+    "v_effective": 256,
+    "vocab_size": 257
+  },
+  "corpus": "zinc22",
+  "delta_d": -0.10883041809681537,
+  "delta_d_exceeds_threshold": true,
+  "delta_eta": 0.10745773165343037,
+  "delta_renyi": 0.050935196168173325,
+  "extras_kind": null,
+  "extras_label": null,
+  "missing_arm": null,
+  "near_reference_threshold": false,
+  "pair_key": "zinc22__v256_nmb",
+  "pair_status": "matched",
+  "schema_version": 1,
+  "tier": "headline",
+  "unigram": {
+    "arm": "unigram",
+    "bootstrap_seed": 1941703496,
+    "boundary": "nmb",
+    "cell_id": "zinc22__smirk_unigram_v256_nmb",
+    "d": 0.9069789618218477,
+    "d_ci": [
+      0.9069259989637999,
+      0.907032901943368
+    ],
+    "eta": 0.47572765981026227,
+    "eta_ci": [
+      0.4756438725534007,
+      0.47580214972081064
+    ],
+    "eval_split_sha": "730dc2ddc8c4edd981244fa27433a1ea",
+    "live_token_count": 131,
+    "n_molecules": 499545,
+    "n_resamples": 1000,
+    "renyi": 0.3990161734172419,
+    "renyi_ci": [
+      0.39890210974420826,
+      0.39913088739099795
+    ],
+    "total_tokens": 22467719,
+    "training_corpus_sha": "2604e603ded8e77654016cd7b3f38cec",
+    "v_effective": 256,
+    "vocab_size": 256
+  },
+  "unpaired_reason": null,
+  "v_effective_consistent": true,
+  "v_effective_delta": 0,
+  "vocab_size": 256
+}

@@ -1,0 +1,6 @@
+# 5% held-out test split of REAL-Space. The 1e6 test_cap binds
+# (5% of ~262M >> 1e6). seed=20260426 is frozen and shared across all study
+# corpora.
+name: real_space
+input_dir: data/processed/real_space/conformant_v1_full
+output_dir: data/processed/real_space/canon_dedup_v1

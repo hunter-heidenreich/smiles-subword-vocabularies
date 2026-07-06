@@ -1,0 +1,55 @@
+{
+  "boundary": "nmb",
+  "bpe": {
+    "absorbed_ci": [
+      0.9446596677948524,
+      0.9448719562648283
+    ],
+    "absorbed_fraction": 0.9447638509437154,
+    "arm": "bpe",
+    "bootstrap_seed": 3164420877,
+    "boundary": "nmb",
+    "cell_id": "zinc22__smirk_gpe_v512_nmb_subsample_r2",
+    "cross_chunk_ci": null,
+    "cross_chunk_fraction": null,
+    "eval_split_sha": "730dc2ddc8c4edd981244fa27433a1ea",
+    "n_absorbed": 13707112,
+    "n_chunks": 14508506,
+    "n_cross_chunk_total": null,
+    "n_molecules": 499545,
+    "n_resamples": 1000,
+    "training_corpus_sha": "8ce656d7f84e3d09c2f9dd3284b5d439"
+  },
+  "corpus": "zinc22",
+  "delta_absorbed": 0.22900869324519013,
+  "delta_cross_chunk": null,
+  "extras_kind": "subsample_redraw",
+  "extras_label": "r2",
+  "missing_arm": null,
+  "pair_key": "zinc22__v512_nmb__subsample_r2",
+  "pair_status": "matched",
+  "schema_version": 1,
+  "tier": "extras_subsample_redraw",
+  "unigram": {
+    "absorbed_ci": [
+      0.7155978849811295,
+      0.7159177800905508
+    ],
+    "absorbed_fraction": 0.7157551576985253,
+    "arm": "unigram",
+    "bootstrap_seed": 3332292022,
+    "boundary": "nmb",
+    "cell_id": "zinc22__smirk_unigram_v512_nmb_subsample_r2",
+    "cross_chunk_ci": null,
+    "cross_chunk_fraction": null,
+    "eval_split_sha": "730dc2ddc8c4edd981244fa27433a1ea",
+    "n_absorbed": 10384538,
+    "n_chunks": 14508506,
+    "n_cross_chunk_total": null,
+    "n_molecules": 499545,
+    "n_resamples": 1000,
+    "training_corpus_sha": "8ce656d7f84e3d09c2f9dd3284b5d439"
+  },
+  "unpaired_reason": null,
+  "vocab_size": 512
+}

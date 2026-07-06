@@ -1,0 +1,50 @@
+{
+  "boundary": "nmb",
+  "bpe": {
+    "arm": "bpe",
+    "boundary": "nmb",
+    "cell_id": "pubchem__smirk_gpe_v512_nmb",
+    "n_merges": 355,
+    "scaffold_count": 2,
+    "scaffold_fraction_of_v": 0.0038910505836575876,
+    "scaffold_log_sha": "377212590225acc1dc9fe1f890b5e642209c6208a1a314b3bdff4e3c5447f9c5",
+    "surface_form_breakdown": {
+      "atomic": 2,
+      "bracket_internal": 0,
+      "structural": 0
+    },
+    "threshold": 36202,
+    "training_corpus_sha": "d471aba7d34c2d2875e958d3df2abfcc",
+    "verified_by_construction": false,
+    "vocab_size": 514
+  },
+  "corpus": "pubchem",
+  "delta_scaffold_fraction": 0.0038910505836575876,
+  "extras_kind": null,
+  "extras_label": null,
+  "missing_arm": null,
+  "pair_key": "pubchem__v512_nmb",
+  "pair_status": "matched",
+  "schema_version": 1,
+  "tier": "headline",
+  "unigram": {
+    "arm": "unigram",
+    "boundary": "nmb",
+    "cell_id": "pubchem__smirk_unigram_v512_nmb",
+    "n_merges": null,
+    "scaffold_count": 0,
+    "scaffold_fraction_of_v": 0.0,
+    "scaffold_log_sha": null,
+    "surface_form_breakdown": {
+      "atomic": 0,
+      "bracket_internal": 0,
+      "structural": 0
+    },
+    "threshold": null,
+    "training_corpus_sha": "d471aba7d34c2d2875e958d3df2abfcc",
+    "verified_by_construction": true,
+    "vocab_size": 512
+  },
+  "unpaired_reason": null,
+  "vocab_size": 512
+}

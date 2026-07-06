@@ -1,0 +1,50 @@
+{
+  "boundary": "nmb",
+  "bpe": {
+    "arm": "bpe",
+    "boundary": "nmb",
+    "cell_id": "coconut__smirk_gpe_v256_nmb",
+    "n_merges": 98,
+    "scaffold_count": 1,
+    "scaffold_fraction_of_v": 0.0038910505836575876,
+    "scaffold_log_sha": "a1125afe7b00102059c89df07608d40212e13ed833c824ebbd83f7edfc40b7f7",
+    "surface_form_breakdown": {
+      "atomic": 1,
+      "bracket_internal": 0,
+      "structural": 0
+    },
+    "threshold": 4013,
+    "training_corpus_sha": "178da507a91243087b03cbd8e9c67409",
+    "verified_by_construction": false,
+    "vocab_size": 257
+  },
+  "corpus": "coconut",
+  "delta_scaffold_fraction": 0.0038910505836575876,
+  "extras_kind": null,
+  "extras_label": null,
+  "missing_arm": null,
+  "pair_key": "coconut__v256_nmb",
+  "pair_status": "matched",
+  "schema_version": 1,
+  "tier": "headline",
+  "unigram": {
+    "arm": "unigram",
+    "boundary": "nmb",
+    "cell_id": "coconut__smirk_unigram_v256_nmb",
+    "n_merges": null,
+    "scaffold_count": 0,
+    "scaffold_fraction_of_v": 0.0,
+    "scaffold_log_sha": null,
+    "surface_form_breakdown": {
+      "atomic": 0,
+      "bracket_internal": 0,
+      "structural": 0
+    },
+    "threshold": null,
+    "training_corpus_sha": "178da507a91243087b03cbd8e9c67409",
+    "verified_by_construction": true,
+    "vocab_size": 256
+  },
+  "unpaired_reason": null,
+  "vocab_size": 256
+}

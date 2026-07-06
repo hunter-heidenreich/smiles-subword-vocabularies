@@ -1,0 +1,33 @@
+{
+  "boundary": "nmb",
+  "bpe": {
+    "arm": "bpe",
+    "boundary": "nmb",
+    "cell_id": "zinc22__smirk_gpe_v2048_nmb",
+    "n_merges": 1891,
+    "scaffold_count": 0,
+    "scaffold_fraction_of_v": 0.0,
+    "scaffold_log_sha": "444ad515faf9bde0103b476c90e0f411cc304d98da583cc76ab24d747c414ac3",
+    "surface_form_breakdown": {
+      "atomic": 0,
+      "bracket_internal": 0,
+      "structural": 0
+    },
+    "threshold": 11,
+    "training_corpus_sha": "2604e603ded8e77654016cd7b3f38cec",
+    "verified_by_construction": false,
+    "vocab_size": 2050
+  },
+  "corpus": "zinc22",
+  "delta_scaffold_fraction": null,
+  "extras_kind": null,
+  "extras_label": null,
+  "missing_arm": "unigram",
+  "pair_key": "zinc22__v2048_nmb",
+  "pair_status": "single_arm",
+  "schema_version": 1,
+  "tier": "conditional",
+  "unigram": null,
+  "unpaired_reason": "conditional_negative_branch",
+  "vocab_size": 2048
+}

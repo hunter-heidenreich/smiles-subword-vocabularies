@@ -1,0 +1,7 @@
+# Subsample PubChem to ~50M molecules after dedup. Acceptance-band
+# hash-partition keyed off the canonical SMILES; the realised kept count
+# fluctuates around target_n by binomial noise.
+name: pubchem
+input_dir: data/processed/pubchem/conformant_v1_full
+output_dir: data/processed/pubchem/conformant_v1_sub
+target_n: 50000000

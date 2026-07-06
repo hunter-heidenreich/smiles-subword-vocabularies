@@ -1,0 +1,9 @@
+{
+  "audit": "merge_exhaustion",
+  "cell": "real_space__smirk_gpe_v50000_nmb_merge_exhaustion",
+  "n_merges": 4172,
+  "natural_termination": true,
+  "schema_version": 1,
+  "vocab_size_cap": 50000,
+  "vocab_size_realised": 4331
+}

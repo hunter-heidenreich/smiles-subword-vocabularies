@@ -1,0 +1,9 @@
+name: pubchem
+source: pubchem
+manifest_id: pubchem-cid-smiles
+raw_path: data/raw/pubchem/CID-SMILES.gz
+output_dir: data/processed/pubchem/raw_v1
+shard_target_bytes: 268435456
+rows_per_batch: 131072
+parquet_compression: zstd
+parquet_compression_level: 3

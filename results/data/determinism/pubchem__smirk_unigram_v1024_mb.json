@@ -1,0 +1,31 @@
+{
+  "algo": "unigram",
+  "arm": "unigram",
+  "boundary": "mb",
+  "canonical_digest": {
+    "algo": "unigram",
+    "log_probs_sha": "441b0c2212492189b536acfe8b5a4ed16f05976cd298ec1aeba16ea675d24ca5",
+    "merges_txt_sha": null,
+    "piece_set_sha": "7bd024d37c52708d2728ecb385def4d60b71bdc00ce11e3cb785177cf31b9849",
+    "tokenizer_json_sha": "85123e5c7aa7786f432c889e96b9c65b678478dade124d63435ee3c92a550777",
+    "vocab_order_sha": "6e3815acfffc4c5f6196b3d12496abf7ada8eaa407c4178b5d84588303f97ebe"
+  },
+  "cell_id": "pubchem__smirk_unigram_v1024_mb",
+  "corpus": "pubchem",
+  "deterministic": true,
+  "expected_failure": false,
+  "mismatch_kind": null,
+  "rerun_digest": {
+    "algo": "unigram",
+    "log_probs_sha": "441b0c2212492189b536acfe8b5a4ed16f05976cd298ec1aeba16ea675d24ca5",
+    "merges_txt_sha": null,
+    "piece_set_sha": "7bd024d37c52708d2728ecb385def4d60b71bdc00ce11e3cb785177cf31b9849",
+    "tokenizer_json_sha": "85123e5c7aa7786f432c889e96b9c65b678478dade124d63435ee3c92a550777",
+    "vocab_order_sha": "6e3815acfffc4c5f6196b3d12496abf7ada8eaa407c4178b5d84588303f97ebe"
+  },
+  "rerun_spread": 0,
+  "schema_version": 1,
+  "tier": "headline",
+  "training_corpus_sha": "d471aba7d34c2d2875e958d3df2abfcc",
+  "vocab_size": 1024
+}

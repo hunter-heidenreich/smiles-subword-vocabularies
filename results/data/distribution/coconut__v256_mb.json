@@ -1,0 +1,79 @@
+{
+  "abs_delta_d": 0.07717803181851679,
+  "boundary": "mb",
+  "bpe": {
+    "arm": "bpe",
+    "bootstrap_seed": 243795924,
+    "boundary": "mb",
+    "cell_id": "coconut__smirk_gpe_v256_mb",
+    "d": 0.819148822465699,
+    "d_ci": [
+      0.8184957488992568,
+      0.8198435374872491
+    ],
+    "eta": 0.568939914701642,
+    "eta_ci": [
+      0.5682164009112264,
+      0.5696368348299431
+    ],
+    "eval_split_sha": "146cff0ba752459c61ed0bb687b06d73",
+    "live_token_count": 157,
+    "n_molecules": 36753,
+    "n_resamples": 1000,
+    "renyi": 0.44208422418356214,
+    "renyi_ci": [
+      0.4414295024570442,
+      0.4427416511683418
+    ],
+    "total_tokens": 1689213,
+    "training_corpus_sha": "178da507a91243087b03cbd8e9c67409",
+    "v_effective": 256,
+    "vocab_size": 257
+  },
+  "corpus": "coconut",
+  "delta_d": -0.07717803181851679,
+  "delta_d_exceeds_threshold": true,
+  "delta_eta": 0.08056538282824344,
+  "delta_renyi": 0.03510164211596428,
+  "extras_kind": null,
+  "extras_label": null,
+  "missing_arm": null,
+  "near_reference_threshold": false,
+  "pair_key": "coconut__v256_mb",
+  "pair_status": "matched",
+  "schema_version": 1,
+  "tier": "headline",
+  "unigram": {
+    "arm": "unigram",
+    "bootstrap_seed": 3779764581,
+    "boundary": "mb",
+    "cell_id": "coconut__smirk_unigram_v256_mb",
+    "d": 0.8963268542842158,
+    "d_ci": [
+      0.8959683698935883,
+      0.8967272004674203
+    ],
+    "eta": 0.4883745318733985,
+    "eta_ci": [
+      0.4879018535473498,
+      0.4888152289159299
+    ],
+    "eval_split_sha": "146cff0ba752459c61ed0bb687b06d73",
+    "live_token_count": 154,
+    "n_molecules": 36753,
+    "n_resamples": 1000,
+    "renyi": 0.40698258206759785,
+    "renyi_ci": [
+      0.40618733436594273,
+      0.40776602483565516
+    ],
+    "total_tokens": 2372617,
+    "training_corpus_sha": "178da507a91243087b03cbd8e9c67409",
+    "v_effective": 256,
+    "vocab_size": 256
+  },
+  "unpaired_reason": null,
+  "v_effective_consistent": true,
+  "v_effective_delta": 0,
+  "vocab_size": 256
+}

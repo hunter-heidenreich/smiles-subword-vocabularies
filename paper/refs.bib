@@ -1,0 +1,744 @@
+% =============================================================================
+% Bibliography for `paper.tex`.
+%
+% Order: pre-tokenization thread, compression-vs-quality, Renyi /
+% intrinsic-metric debates, vocabulary scaling, subword foundations,
+% empirical evidence of tokenizer effects, algorithmic variants,
+% tokenizer-free alternatives, chemistry-side notations, chemistry-side
+% tokenizers, chemistry-side corpora, and additional chemistry-side references.
+% =============================================================================
+
+
+% -----------------------------------------------------------------------------
+% Pre-tokenization is the ceiling (Reddy 2025, Schmidt 2025, Alqahtani 2026)
+% -----------------------------------------------------------------------------
+
+@misc{reddy2025diminishing-tokenization,
+  author    = {Reddy, Varshini and Schmidt, Craig W. and Pinter, Yuval and Tanner, Chris},
+  title     = {How Much is Enough? The Diminishing Returns of Tokenization Training Data},
+  year      = {2025},
+  eprint    = {2502.20273},
+  archiveprefix = {arXiv},
+  primaryclass  = {cs.CL},
+  url       = {https://arxiv.org/abs/2502.20273},
+  note      = {ICML 2025 Tokenization Workshop (TokShop)},
+  annotation      = {Mechanistic argument that pre-tokenization sets the ceiling on tokenizer quality. Pretoken absorption (Fig.~7) is ``remarkably high across all algorithms, increasing with vocabulary size'' and essentially overlapping at 128K--256K (BPE/UnigramLM/WordPiece all $\sim$0.75--0.90 on NL; no large cross-algorithm gap, unlike chemistry small-$V$). Tokenizer quality plateaus around 150 GB English / 200 GB Russian.},
+}
+
+@inproceedings{schmidt2025boundless-bpe,
+  author    = {Schmidt, Craig W. and Reddy, Varshini and Tanner, Chris and Pinter, Yuval},
+  title     = {Boundless Byte Pair Encoding: Breaking the Pre-tokenization Barrier},
+  booktitle = {Conference on Language Modeling (COLM)},
+  year      = {2025},
+  eprint    = {2504.00178},
+  archiveprefix = {arXiv},
+  primaryclass  = {cs.CL},
+  url       = {https://arxiv.org/abs/2504.00178},
+  annotation      = {BoundlessBPE: supermerges + PickyBPE deletions + BOUNDLESS\_PATTERN regex. 9--15\% bytes/tok gain over BPE/WordPiece/UnigramLM on English MiniPILE at V $\in\{$40,960; 65,536; 98,304; 131,072$\}$. No downstream LM training; intrinsic metrics only.},
+}
+
+@inproceedings{alqahtani2026stop,
+  author    = {Alqahtani, Sawsan and Nayeem, Mir Tafseer and Laskar, Md Tahmid Rahman and Mohiuddin, Tasnim and Bari, M Saiful},
+  title     = {Stop Taking Tokenizers for Granted: They Are Core Design Decisions in Large Language Models},
+  booktitle = {Proceedings of the 2026 Conference of the European Chapter of the Association for Computational Linguistics},
+  pages     = {8410--8432},
+  year      = {2026},
+  publisher = {Association for Computational Linguistics},
+  doi       = {10.18653/v1/2026.eacl-long.394},
+  url       = {https://aclanthology.org/2026.eacl-long.394/},
+  annotation      = {Position paper. 8-stage tokenizer-development workflow + 5 evaluation dimensions (Coverage, Generalizability, Linguistic Alignment, Robustness, Representation Utilization).},
+}
+
+@inproceedings{wegmann2025tokenization,
+  author    = {Wegmann, Anna and Nguyen, Dong and Jurgens, David},
+  title     = {Tokenization is Sensitive to Language Variation},
+  booktitle = {Findings of the Association for Computational Linguistics: ACL 2025},
+  pages     = {10958--10983},
+  year      = {2025},
+  publisher = {Association for Computational Linguistics},
+  doi       = {10.18653/v1/2025.findings-acl.572},
+  url       = {https://aclanthology.org/2025.findings-acl.572/},
+  annotation      = {Pre-trains BERT models varying tokenizer training corpus, pre-tokenizer, and vocabulary size. The pre-tokenizer has the greatest influence on downstream performance --- performance range largest for pre-tokenizer, then vocabulary size, then fitting corpus; using a pre-tokenizer beats using none. Introduces a logistic-regression estimator of downstream tokenizer impact, better-correlated than Renyi efficiency / corpus token count and, unlike them, comparable across vocabulary sizes.},
+}
+
+
+% -----------------------------------------------------------------------------
+% Compression-as-quality (Galle 2019, Schmidt 2024)
+% -----------------------------------------------------------------------------
+
+@inproceedings{schmidt2024tokenization-more-than-compression,
+  author    = {Schmidt, Craig W. and Reddy, Varshini and Zhang, Haoran and Alameddine, Alec and Uzan, Omri and Pinter, Yuval and Tanner, Chris C.},
+  title     = {Tokenization Is More Than Compression},
+  booktitle = {Proceedings of the 2024 Conference on Empirical Methods in Natural Language Processing},
+  pages     = {678--702},
+  year      = {2024},
+  publisher = {Association for Computational Linguistics},
+  doi       = {10.18653/v1/2024.emnlp-main.40},
+  url       = {https://aclanthology.org/2024.emnlp-main.40/},
+  annotation      = {PathPiece tokenizer + 64 LMs (350M/1.3B/2.4B) on 18 tokenizer configs. Pearson(CTC, accuracy) = 0.241; Pearson(Renyi @ alpha=2.5, accuracy) = $-$0.151. Compression-as-quality is within-family, not cross-family.},
+}
+
+@inproceedings{galle2019investigating,
+  author    = {Gall\'e, Matthias},
+  title     = {Investigating the Effectiveness of {BPE}: The Power of Shorter Sequences},
+  booktitle = {Proceedings of the 2019 Conference on Empirical Methods in Natural Language Processing and the 9th International Joint Conference on Natural Language Processing (EMNLP-IJCNLP)},
+  pages     = {1375--1381},
+  year      = {2019},
+  publisher = {Association for Computational Linguistics},
+  doi       = {10.18653/v1/D19-1141},
+  url       = {https://aclanthology.org/D19-1141/},
+  annotation      = {At a fixed vocabulary budget, the fewer tokens a tokenizer needs to cover the test set, the higher the BLEU, across datasets, language pairs, NMT models, and vocabulary sizes; recasts BPE as a dictionary-compression algorithm. Correlational, NMT-only. Lifting the intra-word restriction shortens sequences further but lowers BLEU.},
+}
+
+
+% -----------------------------------------------------------------------------
+% Renyi efficiency (Zouhar 2023a) and counterexamples (Cognetta 2024)
+% -----------------------------------------------------------------------------
+
+@inproceedings{zouhar2023noiseless-channel,
+  author    = {Zouhar, Vil\'em and Meister, Clara and Gastaldi, Juan Luis and Du, Li and Sachan, Mrinmaya and Cotterell, Ryan},
+  title     = {Tokenization and the Noiseless Channel},
+  booktitle = {Proceedings of the 61st Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)},
+  pages     = {5184--5207},
+  year      = {2023},
+  publisher = {Association for Computational Linguistics},
+  doi       = {10.18653/v1/2023.acl-long.284},
+  url       = {https://aclanthology.org/2023.acl-long.284/},
+  annotation      = {Renyi efficiency at alpha=2.5 as an intrinsic tokenizer-quality metric; Pearson 0.78 with BLEU on DE--EN MT. Reports Pearson 0.96 between Renyi efficiency and Gowda \& May's percentile-frequency measure (F$_{0.03,0.83}$): two distinct intrinsic metrics that correlate strongly, which motivates our F$_{95\%,100}$ learnability bar as a frequency-side companion to the Renyi view rather than an equivalent of it.},
+}
+
+@inproceedings{cognetta2024two-counterexamples,
+  author    = {Cognetta, Marco and Zouhar, Vil\'em and Moon, Sangwhan and Okazaki, Naoaki},
+  title     = {Two Counterexamples to Tokenization and the Noiseless Channel},
+  booktitle = {Proceedings of the 2024 Joint International Conference on Computational Linguistics, Language Resources and Evaluation},
+  pages     = {13674--13683},
+  year      = {2024},
+  url       = {https://aclanthology.org/2024.lrec-main.1469},
+  annotation      = {RANDOM-DROP BPE and DUPLICATION BPE inflate Renyi efficiency at alpha=3 while degrading BLEU on iwslt14 DE-EN. Theorems 4.1--4.3 cover alpha > 1 in generality; empirical evidence is at alpha=3, not 2.5.},
+}
+
+
+% -----------------------------------------------------------------------------
+% Vocabulary size and learnability (Gowda & May 2020)
+% -----------------------------------------------------------------------------
+
+@inproceedings{gowda2020optimal-vocab-nmt,
+  author    = {Gowda, Thamme and May, Jonathan},
+  title     = {Finding the Optimal Vocabulary Size for Neural Machine Translation},
+  booktitle = {Findings of the Association for Computational Linguistics: EMNLP 2020},
+  pages     = {3955--3964},
+  year      = {2020},
+  publisher = {Association for Computational Linguistics},
+  doi       = {10.18653/v1/2020.findings-emnlp.352},
+  url       = {https://aclanthology.org/2020.findings-emnlp.352/},
+  annotation      = {NMT as classifier + autoregressor; D = $\frac{1}{2}\sum |p_i - 1/K|$ token-imbalance metric; F$_{95\%}\ge 100$ NMT BLEU-empirical heuristic. Largest V such that 95\% of merges have $\ge 100$ training occurrences.},
+}
+
+
+% -----------------------------------------------------------------------------
+% Subword tokenizer foundations
+% -----------------------------------------------------------------------------
+
+@inproceedings{sennrich2016bpe-nmt,
+  author    = {Sennrich, Rico and Haddow, Barry and Birch, Alexandra},
+  title     = {Neural Machine Translation of Rare Words with Subword Units},
+  booktitle = {Proceedings of the 54th Annual Meeting of the Association for Computational Linguistics},
+  pages     = {1715--1725},
+  year      = {2016},
+  doi       = {10.18653/v1/P16-1162},
+  url       = {https://aclanthology.org/P16-1162},
+  annotation      = {Origin of BPE in NLP. Open-vocabulary NMT (zero unknown tokens) via subword decomposition. Independent and joint BPE variants tested on WMT'15 EN-DE and EN-RU.},
+}
+
+@inproceedings{schuster2012jp-kr-voice-search,
+  author      = {Schuster, Mike and Nakajima, Kaisuke},
+  title       = {Japanese and {Korean} Voice Search},
+  booktitle   = {2012 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)},
+  pages       = {5149--5152},
+  year        = {2012},
+  publisher   = {IEEE},
+  doi         = {10.1109/ICASSP.2012.6289079},
+  annotation        = {Origin of WordPiece. Vocabulary construction merges pairs by LM-likelihood gain rather than raw frequency (greedy, character-initialized, like BPE but with a likelihood merge criterion). Linear-time deterministic segmentation. Later adopted as the BERT tokenizer.},
+}
+
+@inproceedings{kudo2018subword-reg,
+  author    = {Kudo, Taku},
+  title     = {Subword Regularization: Improving Neural Network Translation Models with Multiple Subword Candidates},
+  booktitle = {Proceedings of the 56th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)},
+  pages     = {66--75},
+  year      = {2018},
+  address   = {Melbourne, Australia},
+  publisher = {Association for Computational Linguistics},
+  doi       = {10.18653/v1/P18-1007},
+  url       = {https://aclanthology.org/P18-1007},
+  eprint    = {1804.10959},
+  archiveprefix = {arXiv},
+  annotation      = {Origin of Unigram-LM segmentation algorithm. EM-trained probabilistic segmentation with iterative pruning. Subword regularization: sample from multiple segmentations at training time. +1--2 BLEU over deterministic BPE on low-/medium-resource NMT.},
+}
+
+@inproceedings{provilkov2020bpe-dropout,
+  author    = {Provilkov, Ivan and Emelianenko, Dmitrii and Voita, Elena},
+  title     = {{BPE}-Dropout: Simple and Effective Subword Regularization},
+  booktitle = {Proceedings of the 58th Annual Meeting of the Association for Computational Linguistics (ACL)},
+  pages     = {1882--1892},
+  year      = {2020},
+  doi       = {10.18653/v1/2020.acl-main.170},
+  eprint        = {1910.13267},
+  archiveprefix = {arXiv},
+  primaryclass  = {cs.CL},
+  annotation      = {Stochastic subword regularization for BPE via random merge dropout at segmentation time --- the BPE analog of Kudo's Unigram-LM subword regularization, but a merge-dropout heuristic rather than sampling from a fitted per-segmentation distribution.},
+}
+
+@inproceedings{kudo2018sentencepiece,
+  author    = {Kudo, Taku and Richardson, John},
+  title     = {SentencePiece: A simple and language independent subword tokenizer and detokenizer for Neural Text Processing},
+  booktitle = {Proceedings of the 2018 Conference on Empirical Methods in Natural Language Processing: System Demonstrations},
+  pages     = {66--71},
+  year      = {2018},
+  doi       = {10.18653/v1/D18-2012},
+  url       = {https://aclanthology.org/D18-2012},
+  annotation      = {SentencePiece library. Lossless tokenization invariant (Decode(Encode(x)) = x). Implements BPE and Unigram-LM. Trains directly on raw text (no language-specific pre-tokenization required).},
+}
+
+@inproceedings{bostrom2020bpe-suboptimal,
+  author    = {Bostrom, Kaj and Durrett, Greg},
+  title     = {Byte Pair Encoding is Suboptimal for Language Model Pretraining},
+  booktitle = {Findings of the Association for Computational Linguistics: EMNLP 2020},
+  pages     = {4617--4624},
+  year      = {2020},
+  doi       = {10.18653/v1/2020.findings-emnlp.414},
+  url       = {https://aclanthology.org/2020.findings-emnlp.414},
+  eprint    = {2004.03720},
+  archiveprefix = {arXiv},
+  annotation      = {Unigram-LM matches or beats BPE on every downstream LM task tested across English (SQuAD, MNLI, NER; +0.2 to +1.4 EM/F1) and Japanese (TyDi QA; +12.3 EM). $\sim$1500 more dead-zone tokens at V=20K for BPE.},
+}
+
+
+% -----------------------------------------------------------------------------
+% Tokenizer-effect empirical evidence (Rust 2021, Ali 2024, Land 2024)
+% -----------------------------------------------------------------------------
+
+@inproceedings{rust2021how,
+  author    = {Rust, Phillip and Pfeiffer, Jonas and Vuli\'c, Ivan and Ruder, Sebastian and Gurevych, Iryna},
+  title     = {How Good is Your Tokenizer? On the Monolingual Performance of Multilingual Language Models},
+  booktitle = {Proceedings of the 59th Annual Meeting of the Association for Computational Linguistics and the 11th International Joint Conference on Natural Language Processing (Volume 1: Long Papers)},
+  pages     = {3118--3135},
+  year      = {2021},
+  publisher = {Association for Computational Linguistics},
+  doi       = {10.18653/v1/2021.acl-long.243},
+  url       = {https://aclanthology.org/2021.acl-long.243/},
+  annotation      = {Establishes subword fertility (mean subwords per tokenized word, after \'Acs 2019) as the standard intrinsic tokenizer-language-fit metric. High mBERT fertility (over-segmentation) on AR/FI/KO/RU/TR marks the languages where a monolingual tokenizer helps most; retraining mBERT embeddings under a monolingual tokenizer improves 20/24 cases.},
+}
+
+@inproceedings{ali2024tokenizer-choice,
+  author    = {Ali, Mehdi and Fromm, Michael and Thellmann, Klaudia and Rutmann, Richard and L\"ubbering, Max and Leveling, Johannes and Klug, Katrin and Ebert, Jan and Doll, Niclas and Schulze Buschhoff, Jasper and Jain, Charvi and Weber, Alexander E. and Jurkschat, Lena and Abdelwahab, Hammam and John, Chelsea and Ortiz Su\'arez, Pedro and Ostendorff, Malte and Weinbach, Samuel and Sifa, Rafet and Kesselheim, Stefan and Flores-Herr, Nicolas},
+  title     = {Tokenizer Choice For LLM Training: Negligible or Crucial?},
+  booktitle = {Findings of the Association for Computational Linguistics: NAACL 2024},
+  pages     = {3907--3924},
+  year      = {2024},
+  doi       = {10.18653/v1/2024.findings-naacl.247},
+  url       = {https://aclanthology.org/2024.findings-naacl.247},
+  annotation      = {24 tokenizers $\times$ 2.6B decoder-only LMs each $\times$ 52.6B training tokens. Up to 9\% downstream variance across tokenizers. \textbf{Fertility and parity do not predict downstream performance.} English tokenizers degrade multilingual performance with up to 68\% training-cost penalty.},
+}
+
+@inproceedings{land2024fishing,
+  author    = {Land, Sander and Bartolo, Max},
+  title     = {Fishing for {Magikarp}: Automatically Detecting Under-trained Tokens in Large Language Models},
+  booktitle = {Proceedings of the 2024 Conference on Empirical Methods in Natural Language Processing},
+  pages     = {11631--11646},
+  year      = {2024},
+  publisher = {Association for Computational Linguistics},
+  doi       = {10.18653/v1/2024.emnlp-main.649},
+  url       = {https://aclanthology.org/2024.emnlp-main.649/},
+  annotation      = {Weight-based detection of under-trained ``glitch'' tokens in deployed LLMs. Sec.~3.1.2: BPE retains the original tokens after a merge, leaving intermediate ``junk'' fragments under-trained (cites Bostrom \& Durrett 2020), the deployed-model confirmation of the BPE dead-zone surplus we measure corpus-side.},
+}
+
+@misc{smirk-vtc-fork,
+  author       = {Heidenreich, Hunter},
+  title        = {Smirk fork for the vocabulary--tokenizer comparison study: shared glyph-id front-end with \texttt{GpeTrainer} (BPE) and a Unigram-LM sibling trainer},
+  year         = {2026},
+  howpublished = {GitHub release \texttt{vtc-2026-05-24}},
+  url          = {https://github.com/hunter-heidenreich/smirk/releases/tag/vtc-2026-05-24},
+  note         = {Public, pinned fork of Smirk. The BPE and Unigram-LM arms share the \texttt{compute\_alphabet} / \texttt{tokenize\_words} glyph-id front-end; the Unigram arm bridges to HuggingFace's \texttt{UnigramTrainer} via a bijective Private-Use-Area glyph$\leftrightarrow$char map.},
+}
+
+% -----------------------------------------------------------------------------
+% Cheminformatics toolkit (RDKit) and SMILES specification (OpenSMILES)
+% -----------------------------------------------------------------------------
+
+@misc{rdkit2026,
+  author       = {Landrum, Greg and Tosco, Paolo and Kelley, Brian and Cosgrove, David and Vianello, Riccardo and others},
+  title        = {{RDKit}: Open-source cheminformatics, version 2026.03.1},
+  year         = {2026},
+  doi          = {10.5281/zenodo.19250388},
+  url          = {https://doi.org/10.5281/zenodo.19250388},
+  note         = {Zenodo, release \texttt{2026\_03\_1}},
+  annotation   = {Cheminformatics toolkit. Used for isomeric, non-Kekul\'e canonicalization (\texttt{MolFromSmiles} $\to$ \texttt{MolToSmiles}), parse/round-trip validity, and aromatic perception throughout preprocessing; pinned exactly because canonical-SMILES output is version-dependent.},
+}
+
+@misc{james2016opensmiles,
+  author       = {James, Craig A.},
+  title        = {{OpenSMILES} specification, version 1.0},
+  year         = {2016},
+  url          = {http://opensmiles.org/opensmiles.html},
+  note         = {Blue Obelisk project; dated 2016-05-15},
+  annotation   = {Open specification of the SMILES line notation (Craig A.\ James et al., v1.0). Defines the bracketed-atom grammar, aromaticity model, and conformance rules underlying the Smirk 165-glyph base; cited for spec-level claims (e.g.\ aromatic Si/Te undefined).},
+}
+
+@misc{moi2023tokenizers,
+  author       = {Moi, Anthony and Patry, Nicolas},
+  title        = {{HuggingFace}'s Tokenizers: Fast State-of-the-Art Tokenizers optimized for Research and Production},
+  year         = {2023},
+  howpublished = {\url{https://github.com/huggingface/tokenizers}},
+  url          = {https://github.com/huggingface/tokenizers},
+  annotation   = {Rust tokenizer library (official \texttt{CITATION.cff}, v0.13.4). Provides the \texttt{UnigramTrainer} (EM/pruning implementation of Kudo's Unigram-LM) that this study's Unigram arm delegates to via the Smirk fork; exact build pin in the deposited lockfile.},
+}
+
+
+% -----------------------------------------------------------------------------
+% Algorithmic variants (Liu 2025 SuperBPE; Lian 2024 Scaffold-BPE.
+% Schmidt 2025 BoundlessBPE listed above with the pre-tokenization thread.)
+% -----------------------------------------------------------------------------
+
+@inproceedings{liu2025superbpe,
+  author        = {Liu, Alisa and Hayase, Jonathan and Hofmann, Valentin and Oh, Sewoong and Smith, Noah A. and Choi, Yejin},
+  title         = {SuperBPE: Space Travel for Language Models},
+  booktitle     = {Proceedings of the Second Conference on Language Modeling (COLM)},
+  year          = {2025},
+  eprint        = {2503.13423},
+  archiveprefix = {arXiv},
+  primaryclass  = {cs.CL},
+  url           = {https://arxiv.org/abs/2503.13423},
+  annotation          = {Two-stage BPE curriculum: standard BPE first, then lift whitespace pretokenization. 33\% fewer tokens than BPE at V=200K. +4.0\% average across 30 downstream tasks at 8B parameters.},
+}
+
+@misc{lian2024scaffold-bpe,
+  author        = {Lian, Haoran and Xiong, Yizhe and Niu, Jianwei and Mo, Shasha and Su, Zhenpeng and Lin, Zijia and Chen, Hui and Liu, Peng and Han, Jungong and Ding, Guiguang},
+  title         = {Scaffold-BPE: Enhancing Byte Pair Encoding for Large Language Models with Simple and Effective Scaffold Token Removal},
+  year          = {2024},
+  eprint        = {2404.17808},
+  archiveprefix = {arXiv},
+  primaryclass  = {cs.CL},
+  url           = {https://arxiv.org/abs/2404.17808},
+  annotation          = {Identifies ``scaffold tokens'' (intermediate merge tokens rarely standalone) as $\sim$6.07\% of LLaMA's 32K vocab. Dynamic scaffold removal during BPE training. Statistically significant downstream gains at 6.7B on common-sense reasoning.},
+}
+
+@misc{touvron2023llama,
+  author        = {Touvron, Hugo and Lavril, Thibaut and Izacard, Gautier and Martinet, Xavier and Lachaux, Marie-Anne and Lacroix, Timoth\'ee and Rozi\`ere, Baptiste and Goyal, Naman and Hambro, Eric and Azhar, Faisal and Rodriguez, Aurelien and Joulin, Armand and Grave, Edouard and Lample, Guillaume},
+  title         = {{LLaMA}: Open and Efficient Foundation Language Models},
+  year          = {2023},
+  eprint        = {2302.13971},
+  archiveprefix = {arXiv},
+  primaryclass  = {cs.CL},
+  url           = {https://arxiv.org/abs/2302.13971},
+  annotation    = {LLaMA foundation models; source of the 32K-vocabulary SentencePiece BPE tokenizer referenced (via \citet{lian2024scaffold-bpe}) for the scaffold-token measurement. Otherwise out of scope.},
+}
+
+
+% -----------------------------------------------------------------------------
+% Tokenizer-paradigm alternatives (BLT, HAT, H-Net) -- out of scope here,
+% included for completeness.
+% -----------------------------------------------------------------------------
+
+@misc{pagnoni2024byte-latent-transformer,
+  author        = {Pagnoni, Artidoro and Pasunuru, Ram and Rodriguez, Pedro and Nguyen, John and Muller, Benjamin and Li, Margaret and Zhou, Chunting and Yu, Lili and Weston, Jason and Zettlemoyer, Luke and Ghosh, Gargi and Lewis, Mike and Holtzman, Ari and Iyer, Srinivasan},
+  title         = {Byte Latent Transformer: Patches Scale Better Than Tokens},
+  year          = {2024},
+  eprint        = {2412.09871},
+  archiveprefix = {arXiv},
+  primaryclass  = {cs.CL},
+  url           = {https://arxiv.org/abs/2412.09871},
+  annotation          = {Tokenizer-free byte-level architecture. Out of scope for the current paper; named for completeness.},
+}
+
+@misc{neitemeier2025hierarchical-autoregressive,
+  author        = {Neitemeier, Pit and others},
+  title         = {Hierarchical Autoregressive Transformers: Combining Byte- and Word-Level Processing for Robust, Adaptable Language Models},
+  year          = {2025},
+  eprint        = {2501.10322},
+  archiveprefix = {arXiv},
+  primaryclass  = {cs.CL},
+  url           = {https://arxiv.org/abs/2501.10322},
+  annotation          = {HAT: byte+word hybrid hierarchical architecture. Out of scope for the current paper; named for completeness.},
+}
+
+@misc{hwang2025dynamic-chunking-hnet,
+  author        = {Hwang, Sukjun and others},
+  title         = {Dynamic Chunking for End-to-End Hierarchical Sequence Modeling},
+  year          = {2025},
+  eprint        = {2507.07955},
+  archiveprefix = {arXiv},
+  primaryclass  = {cs.CL},
+  url           = {https://arxiv.org/abs/2507.07955},
+  annotation          = {H-Net: end-to-end learned chunking. Out of scope for the current paper; named for completeness.},
+}
+
+
+% -----------------------------------------------------------------------------
+% Chemistry-side notation foundations
+% -----------------------------------------------------------------------------
+
+@article{weininger1988smiles,
+  author    = {Weininger, David},
+  title     = {{SMILES}, a chemical language and information system. 1. Introduction to methodology and encoding rules},
+  journal   = {Journal of Chemical Information and Computer Sciences},
+  volume    = {28},
+  number    = {1},
+  pages     = {31--36},
+  year      = {1988},
+  publisher = {American Chemical Society},
+  doi       = {10.1021/ci00057a005},
+  annotation      = {Origin paper for SMILES notation. Six encoding rules: atoms, bonds, branches, rings, disconnected parts, aromaticity (extended H\"uckel auto-detection).},
+}
+
+@article{oboyle2012universal,
+  author    = {O'Boyle, Noel M.},
+  title     = {Towards a Universal {SMILES} representation - A standard method to generate canonical {SMILES} based on the {InChI}},
+  journal   = {Journal of Cheminformatics},
+  volume    = {4},
+  number    = {1},
+  pages     = {22},
+  year      = {2012},
+  publisher = {BioMed Central},
+  doi       = {10.1186/1758-2946-4-22},
+  annotation      = {Canonical SMILES is implementation-dependent: CANGEN was published without stereochemistry, Daylight's product was proprietary, and ``other commercial and open-source software developed their own algorithms for generating canonical SMILES all of which differed from each other and none of which are published.'' Motivates fixing and pinning the canonicalizer. Proposes InChI-derived Universal/Inchified SMILES (not used here).},
+}
+
+@article{oboyle2018deepsmiles,
+  author    = {O'Boyle, Noel M. and Dalke, Andrew},
+  title     = {{DeepSMILES}: An Adaptation of {SMILES} for Use in Machine-Learning of Chemical Structures},
+  journal   = {ChemRxiv},
+  year      = {2018},
+  doi       = {10.26434/chemrxiv.7097960.v1},
+  annotation      = {Postfix branch + single-symbol ring-closure SMILES variant. Reduces invalid generations from ML models without changing the SMILES grammar substantively.},
+}
+
+@article{krenn2020selfies,
+  author    = {Krenn, Mario and H\"ase, Florian and Nigam, AkshatKumar and Friederich, Pascal and Aspuru-Guzik, Al\'an},
+  title     = {Self-Referencing Embedded Strings ({SELFIES}): A 100\% robust molecular string representation},
+  journal   = {Machine Learning: Science and Technology},
+  volume    = {1},
+  number    = {4},
+  pages     = {045024},
+  year      = {2020},
+  publisher = {IOP Publishing},
+  doi       = {10.1088/2632-2153/aba947},
+  eprint    = {1905.13741},
+  archiveprefix = {arXiv},
+  annotation      = {SELFIES formal-grammar molecular notation with 100\% validity by construction. Validated on 72M PubChem molecules.},
+}
+
+@article{skinnider2024invalid-smiles,
+  author    = {Skinnider, Michael A.},
+  title     = {Invalid {SMILES} are beneficial rather than detrimental to chemical language models},
+  journal   = {Nature Machine Intelligence},
+  volume    = {6},
+  number    = {4},
+  pages     = {437--448},
+  year      = {2024},
+  publisher = {Springer Nature},
+  doi       = {10.1038/s42256-024-00821-x},
+  annotation      = {SMILES-based models outperform SELFIES on distribution learning (FCD). Invalid SMILES are low-likelihood samples; filtering them acts as implicit quality control. Causal evidence via ``Unconstrained SELFIES''.},
+}
+
+
+% -----------------------------------------------------------------------------
+% Chemistry-side tokenizers (SPE, AIS, APE, Smirk)
+% -----------------------------------------------------------------------------
+
+@article{li2021smiles-pe,
+  author    = {Li, Xinhao and Fourches, Denis},
+  title     = {{SMILES} Pair Encoding: A Data-Driven Substructure Tokenization Algorithm for Deep Learning},
+  journal   = {Journal of Chemical Information and Modeling},
+  volume    = {61},
+  number    = {4},
+  pages     = {1560--1569},
+  year      = {2021},
+  publisher = {American Chemical Society},
+  doi       = {10.1021/acs.jcim.0c01127},
+  annotation      = {SPE: BPE adapted to SMILES with atom-level initialization. Vocab $\sim$3{,}000 on ChEMBL25 3.4M SMILES. 6--7$\times$ compression vs atom-level.},
+}
+
+@article{ucak2023atom-in-smiles,
+  author    = {Ucak, Umit V. and Ashyrmamatov, Islambek and Lee, Juyong},
+  title     = {Improving the quality of chemical language model outcomes with atom-in-{SMILES} tokenization},
+  journal   = {Journal of Cheminformatics},
+  volume    = {15},
+  number    = {1},
+  pages     = {55},
+  year      = {2023},
+  publisher = {Springer},
+  doi       = {10.1186/s13321-023-00725-9},
+  annotation      = {AIS: replaces atomic tokens with environment-aware tokens [Sym;Ring;Neighbors]. Bijective. Outperforms SPE/SELFIES/DeepSMILES on canonicalization, retrosynthesis, MoleculeNet property prediction.},
+}
+
+@article{leon2024smiles-selfies-tokenization-chemical-lm,
+  author    = {Leon, Miguelangel and Perezhohin, Yuriy and Peres, Fernando and Popovi\v{c}, Ale\v{s} and Castelli, Mauro},
+  title     = {Comparing {SMILES} and {SELFIES} tokenization for enhanced chemical language modeling},
+  journal   = {Scientific Reports},
+  volume    = {14},
+  number    = {1},
+  pages     = {25016},
+  year      = {2024},
+  publisher = {Nature Publishing Group},
+  doi       = {10.1038/s41598-024-76440-8},
+  annotation      = {APE: BPE with atom-level initialization for both SMILES and SELFIES. Vocab $\sim$5{,}300 on PubChem 2M. Beats BPE on BBBP and HIV (MoleculeNet classification).},
+}
+
+@article{chilingaryan2024bartsmiles,
+  author    = {Chilingaryan, Gayane and Tamoyan, Hovhannes and Tevosyan, Ani and Babayan, Nelly and Khondkaryan, Lusine and Hambardzumyan, Karen and Navoyan, Zaven and Khachatrian, Hrant and Aghajanyan, Armen},
+  title     = {{BARTSmiles}: Generative Masked Language Models for Molecular Representations},
+  journal   = {Journal of Chemical Information and Modeling},
+  volume    = {64},
+  number    = {15},
+  pages     = {5832--5843},
+  year      = {2024},
+  doi       = {10.1021/acs.jcim.4c00512},
+  annotation      = {BART-Large pre-trained on 1.7B ZINC20 SMILES with SentencePiece Unigram tokenizer at V=1021. Ablation vs hand-crafted atom-level tokenization (matched compute): learned Unigram +2.2 pp AUC-ROC mean on HIV/BBBP/ClinTox. No head-to-head against BPE.},
+}
+
+@article{sagawa2023reactiont5,
+  author    = {Sagawa, Tatsuya and Kojima, Ryosuke},
+  title     = {{ReactionT5}: a large-scale pre-trained model towards application of limited reaction data},
+  journal   = {arXiv preprint},
+  year      = {2023},
+  eprint    = {2311.06708},
+  archiveprefix = {arXiv},
+  doi       = {10.48550/arxiv.2311.06708},
+  annotation      = {Two-stage: T5 pre-trained on 23M ZINC SMILES (CompoundT5) with SentencePiece Unigram tokenizer, then fine-tuned on reaction data. No BPE comparison reported.},
+}
+
+@article{wadell2026smirk,
+  author    = {Wadell, Alexius and Bhutani, Anoushka and Viswanathan, Venkatasubramanian},
+  title     = {Tokenization for Molecular Foundation Models},
+  journal   = {Journal of Chemical Information and Modeling},
+  volume    = {66},
+  number    = {3},
+  pages     = {1384--1393},
+  year      = {2026},
+  publisher = {American Chemical Society},
+  doi       = {10.1021/acs.jcim.5c01856},
+  eprint    = {2409.15370},
+  archiveprefix = {arXiv},
+  primaryclass  = {cs.LG},
+  annotation      = {Smirk: full-OpenSMILES regex tokenizer, 165 glyph tokens, no training, no-UNK by construction. Smirk-GPE: BPE over Smirk's glyph base. Validates token-level bidirectional add-one n-gram CE as Spearman-correlated with downstream encoder-MLM finetuning on MoleculeNet+tmQM (18 tokenizer families).},
+}
+
+% Temizer 2024: the one prior chemistry-side BPE/WordPiece/Unigram comparison on SMILES.
+@article{temizer2024chemical-tokenization,
+  author    = {Temizer, Asu B\"u\c{s}ra and Uludo\u{g}an, G\"ok\c{c}e and \"Oz\c{c}elik, R{\i}za and Koulani, Taha and \"Ozk{\i}r{\i}ml{\i}, Elif and \"Ulgen, Kutlu \"O. and Karal{\i}, Nilg\"un and \"Ozg\"ur, Arzucan},
+  title     = {Exploring Data-Driven Chemical {SMILES} Tokenization Approaches to Identify Key Protein-Ligand Binding Moieties},
+  journal   = {Molecular Informatics},
+  volume    = {43},
+  number    = {3},
+  pages     = {e202300249},
+  year      = {2024},
+  publisher = {Wiley},
+  doi       = {10.1002/minf.202300249},
+  annotation      = {The one prior chemistry-side head-to-head of BPE, WordPiece, and Unigram on SMILES: vocabularies learned on $\sim$2.3M ChEMBLv27 SMILES at V $\in\{$8K, 16K, 32K$\}$. BPE and WordPiece vocabularies overlap $\sim$80\%; Unigram overlaps the other two by $\le\sim$47\%. Three-way common-word fraction falls 38\% (8K) to 29\% (32K). The vocabulary comparison is a preliminary to a tf-idf protein-ligand binding-moiety analysis; off-the-shelf algorithms on raw SMILES, no chemistry-grammatical base, single corpus, large V.},
+}
+
+
+% -----------------------------------------------------------------------------
+% Chemistry-side corpora
+% -----------------------------------------------------------------------------
+
+@article{pubchem2023,
+  author    = {Kim, Sunghwan and Chen, Jie and Cheng, Tiejun and Gindulyte, Asta and He, Jia and He, Siqian and Li, Qingliang and Shoemaker, Benjamin A. and Thiessen, Paul A. and Yu, Bo and Zaslavsky, Leonid and Zhang, Jian and Bolton, Evan E.},
+  title     = {{PubChem} 2023 update},
+  journal   = {Nucleic Acids Research},
+  volume    = {51},
+  number    = {D1},
+  pages     = {D1373--D1380},
+  year      = {2023},
+  publisher = {Oxford University Press},
+  doi       = {10.1093/nar/gkac956},
+  annotation      = {PubChem 2023 update. This study's diverse headline corpus ($\sim$50M post-preprocessing; wide alphabet, exotic-atom tail).},
+}
+
+@article{zinc22,
+  author    = {Tingle, Benjamin I. and Tang, Khanh G. and Castanon, Mar and Gutierrez, John J. and Khurelbaatar, Munkhzul and Dandarchuluun, Chinzorig and Moroz, Yurii S. and Irwin, John J.},
+  title     = {{ZINC}-22 -- A Free Multi-Billion-Scale Database of Tangible Compounds for Ligand Discovery},
+  journal   = {Journal of Chemical Information and Modeling},
+  volume    = {63},
+  number    = {4},
+  pages     = {1166--1176},
+  year      = {2023},
+  publisher = {American Chemical Society},
+  doi       = {10.1021/acs.jcim.2c01253},
+  annotation      = {ZINC-22 tangible-compound database. This study's drug-like headline corpus ($\sim$10M; $\sim$30 atomic types, homogeneous); its narrow alphabet saturates the Unigram arm below target at larger $V$.},
+}
+
+@article{moleculenet,
+  author    = {Wu, Zhenqin and Ramsundar, Bharath and Feinberg, Evan N. and Gomes, Joseph and Geniesse, Caleb and Pappu, Aneesh S. and Leswing, Karl and Pande, Vijay S.},
+  title     = {{MoleculeNet}: a benchmark for molecular machine learning},
+  journal   = {Chemical Science},
+  volume    = {9},
+  number    = {2},
+  pages     = {513--530},
+  year      = {2018},
+  publisher = {Royal Society of Chemistry},
+  doi       = {10.1039/c7sc02664a},
+  annotation      = {MoleculeNet benchmark (Wu et al.\ 2018). Cited as the dataset on which \citet{wadell2026smirk} measured SPE's $\sim$19\% UNK rate; this study trains no models and does not evaluate on it.},
+}
+
+@article{zdrazil2023chembl,
+  author    = {Zdrazil, Barbara and F\'elix, Eloy and Hunter, Fiona and Manners, Emma J. and Blackshaw, James and Corbett, Sybilla and De Veij, Marleen and Ioannidis, Harris and M\'endez, David and Mosquera, Juan F and Magari\~nos, Mar\'ia Paula and Bosc, Nicolas and Arcila, Ricardo and Kizil\"oren, Tevfik and Gaulton, Anna and Bento, A. Patr\'icia and Adasme, Melissa F. and Monecke, Peter and Landrum, Gregory A. and Leach, Andrew R.},
+  title     = {The {ChEMBL} Database in 2023: a drug discovery platform spanning multiple bioactivity data types and time periods},
+  journal   = {Nucleic Acids Research},
+  volume    = {52},
+  number    = {D1},
+  pages     = {D1180--D1192},
+  year      = {2023},
+  publisher = {Oxford University Press},
+  doi       = {10.1093/nar/gkad1004},
+  annotation      = {Bioactive corpus; out of scope for the current paper.},
+}
+
+@article{balcells2020tmqm,
+  author    = {Balcells, David and Skjelstad, Bastian Bjerkem},
+  title     = {tm{QM} Dataset---Quantum Geometries and Properties of 86k Transition Metal Complexes},
+  journal   = {Journal of Chemical Information and Modeling},
+  volume    = {60},
+  number    = {12},
+  pages     = {6135--6146},
+  year      = {2020},
+  publisher = {American Chemical Society},
+  doi       = {10.1021/acs.jcim.0c01041},
+  annotation      = {tmQM transition-metal-complex dataset (canonical origin cite; maintained release is uiocompcat/tmQM master, $\sim$100,849 raw). Used as an OOD coverage/fertility probe: we read the PubChem generalist on a dative-bond-derived OpenSMILES encoding (97,379 deduplicated).},
+}
+
+@article{li2023cycpeptmpdb,
+  author    = {Li, Jianan and Yanagisawa, Keisuke and Sugita, Masahito and Fujie, Takuya and Ohue, Masahito and Akiyama, Yutaka},
+  title     = {Cyc{P}ept{MPDB}: A Comprehensive Database of Membrane Permeability of Cyclic Peptides},
+  journal   = {Journal of Chemical Information and Modeling},
+  volume    = {63},
+  number    = {7},
+  pages     = {2240--2250},
+  year      = {2023},
+  publisher = {American Chemical Society},
+  doi       = {10.1021/acs.jcim.2c01573},
+  annotation      = {Cyclic-peptide membrane-permeability corpus; OOD-eval length lever (whole-molecule SMILES).},
+}
+
+@article{sorokina2021coconut,
+  author    = {Sorokina, Maria and Merseburger, Peter and Rajan, Kohulan and Yirik, Mehmet Aziz and Steinbeck, Christoph},
+  title     = {{COCONUT} online: Collection of Open Natural Products database},
+  journal   = {Journal of Cheminformatics},
+  volume    = {13},
+  number    = {1},
+  pages     = {2},
+  year      = {2021},
+  publisher = {BioMed Central},
+  doi       = {10.1186/s13321-020-00478-9},
+  annotation      = {COCONUT (Collection of Open Natural Products). This study's natural-products headline corpus ($\sim$740K, the smallest; scaffold-rich, elaborate ring systems); site of the distribution-magnitude attenuation.},
+}
+
+
+% -----------------------------------------------------------------------------
+% Chemistry-side models, corpora, and cross-domain references
+% -----------------------------------------------------------------------------
+
+@article{schwaller2018found,
+  title     = {``Found in Translation'': predicting outcomes of complex organic chemistry reactions using neural sequence-to-sequence models},
+  author    = {Schwaller, Philippe and Gaudin, Th{\'e}ophile and L{\'a}nyi, D{\'a}vid and Bekas, Costas and Laino, Teodoro},
+  journal   = {Chemical Science},
+  volume    = {9},
+  number    = {28},
+  pages     = {6091--6098},
+  year      = {2018},
+  publisher = {Royal Society of Chemistry},
+  doi       = {10.1039/c8sc02339e},
+  annotation      = {``Found in Translation'': seq2seq reaction-outcome prediction. Source of the canonical atom-wise SMILES tokenization regex (multi-character elements and bracketed atoms as single tokens), reused throughout chemical sequence modeling and as the atom-level initialization for SPE/APE.},
+}
+
+@misc{chithrananda2020chemberta,
+  title         = {ChemBERTa: Large-Scale Self-Supervised Pretraining for Molecular Property Prediction},
+  author        = {Chithrananda, Seyone and Grand, Gabriel and Ramsundar, Bharath},
+  year          = {2020},
+  eprint        = {2010.09885},
+  archivePrefix = {arXiv},
+  primaryClass  = {cs.LG},
+  annotation          = {ChemBERTa: RoBERTa-style masked-language-model pretraining on PubChem SMILES for molecular property prediction; popularized DeepChem's general-purpose SMILES tokenizer for the bio/chem domain.},
+}
+
+@book{ramsundar2019deepchem,
+  title     = {Deep Learning for the Life Sciences: Applying Deep Learning to Genomics, Microscopy, Drug Discovery, and More},
+  author    = {Ramsundar, Bharath and Eastman, Peter and Walters, Patrick and Pande, Vijay and Leswing, Karl and Wu, Zhenqin},
+  year      = {2019},
+  publisher = {O'Reilly Media},
+  isbn      = {978-1492039839},
+  annotation      = {DeepChem's officially recommended citation (the project never published a dedicated DeepChem paper; per the deepchem.io docs). DeepChem ships the widely-used implementation of the Schwaller atom-wise SMILES regex (BasicSmilesTokenizer, wrapped by SmilesTokenizer), the tokenizer ChemBERTa popularized.},
+}
+
+@article{grygorenko2020real,
+  title     = {Generating Multibillion Chemical Space of Readily Accessible Screening Compounds},
+  author    = {Grygorenko, Oleksandr O. and Radchenko, Dmytro S. and Dziuba, Igor and Chuprina, Alexander and Gubina, Kateryna E. and Moroz, Yurii S.},
+  journal   = {iScience},
+  volume    = {23},
+  number    = {11},
+  pages     = {101681},
+  year      = {2020},
+  publisher = {Elsevier},
+  doi       = {10.1016/j.isci.2020.101681},
+  annotation      = {Enamine REAL: multibillion-compound make-on-demand chemical space from reaction-based combinatorial enumeration; the 1\% Sample is this study's super-saturated drug-like REAL-Space anchor corpus.},
+}
+
+@article{radhakrishnan2026optimizing,
+  author    = {Radhakrishnan, Sridhar and Mody, Krish and Venkatesh, Arvind and Venkatesh, Ananth},
+  title     = {Optimizing {SMILES} token sequences via trie-based refinement and transition graph filtering},
+  journal   = {Journal of Cheminformatics},
+  volume    = {18},
+  number    = {1},
+  pages     = {13},
+  year      = {2026},
+  publisher = {BioMed Central},
+  doi       = {10.1186/s13321-025-01143-9},
+  annotation = {A new SMILES-compression method (trie refinement + transition-graph filtering), benchmarked against APE/SPE; reports PubChem compression/fertility. Does not compare BPE vs Unigram-LM (lumps frequency-driven baselines together). Venue-mate (J. Cheminformatics).},
+}
+
+@misc{suyunu2024linguistic,
+  author        = {Suyunu, Burak and Taylan, Enes and \"Ozg\"ur, Arzucan},
+  title         = {Linguistic Laws Meet Protein Sequences: A Comparative Analysis of Subword Tokenization Methods},
+  year          = {2024},
+  eprint        = {2411.17669},
+  archiveprefix = {arXiv},
+  primaryclass  = {cs.CL},
+  annotation    = {Applies the same overlap and fertility analyses to protein sequences. Independently reproduces the $\sim$0.80/0.47 cross-tokenizer reference scale as shared-token fractions, and reports the opposite fertility sign (Unigram-LM more compressive on proteins) vs.\ chemistry SMILES here. Confounded setting (large $V$, raw subword, no fixed base): evidence that fertility direction is not a portable constant, not a clean domain flip.},
+}
+
+@misc{kalamkar2025tokenization,
+  author        = {Kalamkar, Prathamesh and Letcher, Ned and Chami, Meissane and Lad, Sahger and Mohanty, Shayan and Pendse, Prasanna},
+  title         = {The Tokenization Bottleneck: How Vocabulary Extension Improves Chemistry Representation Learning in Pretrained Language Models},
+  year          = {2025},
+  eprint        = {2511.14365},
+  archiveprefix = {arXiv},
+  primaryclass  = {cs.CL},
+  annotation    = {Vocabulary extension of general-purpose LLMs for chemistry (a different problem: large-$V$ scaling). Cited as motivation that tokenization design is consequential in chemistry; its related work names no BPE-vs-Unigram chemistry comparison.},
+}
+
+@article{aruspous2019randomized-smiles,
+  author        = {Ar{\'u}s-Pous, Josep and Johansson, Simon V. and Prykhodko, Oleksii and Bjerrum, Esben Jannik and Tyrchan, Christian and Reymond, Jean-Louis and Chen, Hongming and Engkvist, Ola},
+  title         = {Randomized {SMILES} strings improve the quality of molecular generative models},
+  journal       = {Journal of Cheminformatics},
+  volume        = {11},
+  number        = {1},
+  pages         = {71},
+  year          = {2019},
+  publisher     = {BioMed Central},
+  doi           = {10.1186/s13321-019-0393-0},
+  annotation    = {Source for the restricted (augmentation-realistic) SMILES randomization used as the \texttt{rnd} rewrite axis in the non-canonicity battery.},
+}
+
+@article{ganeeva2025chemllm-robustness,
+  author        = {Ganeeva, Veronika and Khrabrov, Kuzma and Kadurin, Artur and Tutubalina, Elena},
+  title         = {Measuring Chemical {LLM} robustness to molecular representations: a {SMILES} variation-based framework},
+  journal       = {Journal of Cheminformatics},
+  volume        = {17},
+  number        = {1},
+  pages         = {164},
+  year          = {2025},
+  publisher     = {BioMed Central},
+  doi           = {10.1186/s13321-025-01079-0},
+  annotation    = {The AMORE framework; cited for its finding that all-explicit-hydrogen rewriting is the most disruptive (``catastrophic'') augmentation axis for chemical LLMs, the \texttt{H} rewrite axis here.},
+}

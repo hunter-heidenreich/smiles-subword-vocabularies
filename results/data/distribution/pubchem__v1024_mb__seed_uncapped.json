@@ -1,0 +1,51 @@
+{
+  "abs_delta_d": null,
+  "boundary": "mb",
+  "bpe": null,
+  "corpus": "pubchem",
+  "delta_d": null,
+  "delta_d_exceeds_threshold": null,
+  "delta_eta": null,
+  "delta_renyi": null,
+  "extras_kind": "seed_cap",
+  "extras_label": "uncapped",
+  "missing_arm": "bpe",
+  "near_reference_threshold": null,
+  "pair_key": "pubchem__v1024_mb__seed_uncapped",
+  "pair_status": "single_arm",
+  "schema_version": 1,
+  "tier": "extras_seed_cap",
+  "unigram": {
+    "arm": "unigram",
+    "bootstrap_seed": 4279120666,
+    "boundary": "mb",
+    "cell_id": "pubchem__smirk_unigram_v1024_mb_seed_uncapped",
+    "d": 0.9512150746474073,
+    "d_ci": [
+      0.951117703172952,
+      0.9513051365786473
+    ],
+    "eta": 0.394169391147149,
+    "eta_ci": [
+      0.39401481378751574,
+      0.39431627751518733
+    ],
+    "eval_split_sha": "7c52af1451b2e5c900acfc6d6f012489",
+    "live_token_count": 941,
+    "n_molecules": 999289,
+    "n_resamples": 1000,
+    "renyi": 0.3137781575825461,
+    "renyi_ci": [
+      0.31366585375925643,
+      0.31389308017385853
+    ],
+    "total_tokens": 47255160,
+    "training_corpus_sha": "d471aba7d34c2d2875e958d3df2abfcc",
+    "v_effective": 1024,
+    "vocab_size": 1024
+  },
+  "unpaired_reason": "extras_single_arm_knob",
+  "v_effective_consistent": null,
+  "v_effective_delta": null,
+  "vocab_size": 1024
+}

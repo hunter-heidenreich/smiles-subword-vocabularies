@@ -1,0 +1,20 @@
+# COCONUT (Sorokina et al. 2021) natural-products bulk CSV. Comma-delimited
+# with a header; SMILES under `canonical_smiles`, id under `identifier`; extra
+# metadata columns are dropped by name-projection (named read mode).
+name: coconut
+source: coconut
+manifest_id: coconut-bulk
+raw_path: data/raw/coconut/coconut.csv
+output_dir: data/processed/coconut/raw_v1
+csv_read_mode: named
+delim: ","
+has_header: true
+file_compression: none
+normalize_names: true
+drop_null_smiles: true
+id_column: identifier
+smiles_column: canonical_smiles
+shard_target_bytes: 268435456
+rows_per_batch: 131072
+parquet_compression: zstd
+parquet_compression_level: 3

@@ -1,0 +1,19 @@
+# REAL-Space ingest — Enamine REAL 1% Sample (~136M molecules), used in full.
+# Source release: 2026.01_Enamine_REAL_DB_136M.cxsmiles.bz2 — bzip2-compressed,
+# 19 tab-delimited columns (smiles, id, + 17 precomputed descriptors). Stage 0
+# of scripts/run_real_space.sh extracts columns 1-2 (smiles, id) and recompresses
+# to gzip; this config ingests that 2-column `.cxsmiles.gz`.
+name: real_space
+source: real_space
+raw_dir: data/raw/real_space
+glob: "*.cxsmiles.gz"
+smiles_column: smiles
+id_column: id
+has_header: true
+delim: "\t"
+file_compression: gzip
+output_dir: data/processed/real_space/raw_v1
+shard_target_bytes: 268435456
+rows_per_batch: 131072
+parquet_compression: zstd
+parquet_compression_level: 3

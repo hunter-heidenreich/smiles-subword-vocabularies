@@ -1,0 +1,36 @@
+{
+  "boundary": "nmb",
+  "bpe": {
+    "absorbed_ci": [
+      0.9463473743988209,
+      0.9465558348613082
+    ],
+    "absorbed_fraction": 0.9464535493868218,
+    "arm": "bpe",
+    "bootstrap_seed": 3970627475,
+    "boundary": "nmb",
+    "cell_id": "zinc22__smirk_gpe_v2048_nmb",
+    "cross_chunk_ci": null,
+    "cross_chunk_fraction": null,
+    "eval_split_sha": "730dc2ddc8c4edd981244fa27433a1ea",
+    "n_absorbed": 13731627,
+    "n_chunks": 14508506,
+    "n_cross_chunk_total": null,
+    "n_molecules": 499545,
+    "n_resamples": 1000,
+    "training_corpus_sha": "2604e603ded8e77654016cd7b3f38cec"
+  },
+  "corpus": "zinc22",
+  "delta_absorbed": null,
+  "delta_cross_chunk": null,
+  "extras_kind": null,
+  "extras_label": null,
+  "missing_arm": "unigram",
+  "pair_key": "zinc22__v2048_nmb",
+  "pair_status": "single_arm",
+  "schema_version": 1,
+  "tier": "conditional",
+  "unigram": null,
+  "unpaired_reason": "conditional_negative_branch",
+  "vocab_size": 2048
+}

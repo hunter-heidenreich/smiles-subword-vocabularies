@@ -1,0 +1,6 @@
+# canon_dedup_v1 on COCONUT (raw_v1 -> RDKit isomeric canon + dedup).
+# single_pass mode is fine for the ~739K-row corpus.
+name: coconut
+input_dir: data/processed/coconut/raw_v1
+output_dir: data/processed/coconut/canon_dedup_v1_full
+mode: single_pass

@@ -1,0 +1,118 @@
+{
+  "any_arm_unsafe": true,
+  "both_arms_unsafe": false,
+  "boundary": "mb",
+  "bpe": {
+    "arm": "bpe",
+    "cell_id": "real_space__smirk_gpe_v1024_mb",
+    "clearance_by_n": {
+      "100": 0.9930635838150289,
+      "200": 0.9895953757225433,
+      "50": 0.9930635838150289
+    },
+    "embedding_tail_unsafe": false,
+    "headline_clearance": 0.9930635838150289,
+    "n_non_atomic": 865,
+    "training_corpus_sha": "140534c1544cd9f2ce760709417f23dd",
+    "v_observed": 1032
+  },
+  "corpus": "real_space",
+  "delta_fp": [
+    {
+      "delta_f": 0.2729270650436978,
+      "f_bpe": 0.9930635838150289,
+      "f_unigram": 0.7201365187713311,
+      "is_headline": false,
+      "n": 50,
+      "p": 0.9
+    },
+    {
+      "delta_f": 0.2797530036102508,
+      "f_bpe": 0.9930635838150289,
+      "f_unigram": 0.7133105802047781,
+      "is_headline": false,
+      "n": 100,
+      "p": 0.9
+    },
+    {
+      "delta_f": 0.3377182426167412,
+      "f_bpe": 0.9895953757225433,
+      "f_unigram": 0.6518771331058021,
+      "is_headline": false,
+      "n": 200,
+      "p": 0.9
+    },
+    {
+      "delta_f": 0.2729270650436978,
+      "f_bpe": 0.9930635838150289,
+      "f_unigram": 0.7201365187713311,
+      "is_headline": false,
+      "n": 50,
+      "p": 0.95
+    },
+    {
+      "delta_f": 0.2797530036102508,
+      "f_bpe": 0.9930635838150289,
+      "f_unigram": 0.7133105802047781,
+      "is_headline": true,
+      "n": 100,
+      "p": 0.95
+    },
+    {
+      "delta_f": 0.3377182426167412,
+      "f_bpe": 0.9895953757225433,
+      "f_unigram": 0.6518771331058021,
+      "is_headline": false,
+      "n": 200,
+      "p": 0.95
+    },
+    {
+      "delta_f": 0.2729270650436978,
+      "f_bpe": 0.9930635838150289,
+      "f_unigram": 0.7201365187713311,
+      "is_headline": false,
+      "n": 50,
+      "p": 0.99
+    },
+    {
+      "delta_f": 0.2797530036102508,
+      "f_bpe": 0.9930635838150289,
+      "f_unigram": 0.7133105802047781,
+      "is_headline": false,
+      "n": 100,
+      "p": 0.99
+    },
+    {
+      "delta_f": 0.3377182426167412,
+      "f_bpe": 0.9895953757225433,
+      "f_unigram": 0.6518771331058021,
+      "is_headline": false,
+      "n": 200,
+      "p": 0.99
+    }
+  ],
+  "extras_kind": null,
+  "extras_label": null,
+  "headline_delta_f": 0.2797530036102508,
+  "missing_arm": null,
+  "pair_key": "real_space__v1024_mb",
+  "pair_status": "matched",
+  "schema_version": 1,
+  "tier": "anchor",
+  "unigram": {
+    "arm": "unigram",
+    "cell_id": "real_space__smirk_unigram_v1024_mb",
+    "clearance_by_n": {
+      "100": 0.7133105802047781,
+      "200": 0.6518771331058021,
+      "50": 0.7201365187713311
+    },
+    "embedding_tail_unsafe": true,
+    "headline_clearance": 0.7133105802047781,
+    "n_non_atomic": 293,
+    "training_corpus_sha": "140534c1544cd9f2ce760709417f23dd",
+    "v_observed": 458
+  },
+  "unpaired_reason": null,
+  "vocab_size": 1024
+}

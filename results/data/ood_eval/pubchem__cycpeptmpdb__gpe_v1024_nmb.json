@@ -1,0 +1,22 @@
+{
+  "arm": "bpe",
+  "bootstrap_seed": 3011901736,
+  "boundary": "nmb",
+  "eval_corpus": "cycpeptmpdb",
+  "eval_split_sha": "eade9794766a503aaed237f54aaa954e",
+  "fertility_ci": [
+    110.47145718577866,
+    112.06359539308963
+  ],
+  "fertility_mean": 111.27541311967951,
+  "glyphs_per_token_mean": 1.3786478982256083,
+  "is_diagonal": false,
+  "n_molecules": 7988,
+  "n_resamples": 1000,
+  "oov_molecule_rate": 0.0,
+  "oov_token_rate": 0.0,
+  "total_tokens": 888868,
+  "train_corpus": "pubchem",
+  "train_corpus_sha": "",
+  "vocab_size": 1024
+}

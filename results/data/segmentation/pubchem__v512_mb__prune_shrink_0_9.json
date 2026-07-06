@@ -1,0 +1,39 @@
+{
+  "boundary": "mb",
+  "bpe": null,
+  "corpus": "pubchem",
+  "delta_entropy_per_glyph": null,
+  "delta_entropy_per_molecule": null,
+  "extras_kind": "prune_schedule",
+  "extras_label": "shrink_0_9",
+  "missing_arm": "bpe",
+  "pair_key": "pubchem__v512_mb__prune_shrink_0_9",
+  "pair_status": "single_arm",
+  "schema_version": 1,
+  "tier": "extras_prune_schedule",
+  "unigram": {
+    "arm": "unigram",
+    "bootstrap_seed": 3963443824,
+    "boundary": "mb",
+    "cell_id": "pubchem__smirk_unigram_v512_mb_prune_shrink_0_9",
+    "entropy_per_glyph": 0.009829251989885964,
+    "entropy_per_glyph_ci": [
+      0.009792855531367108,
+      0.009865496135486117
+    ],
+    "entropy_per_molecule_ci": [
+      0.5231756951835802,
+      0.5271705998498945
+    ],
+    "entropy_per_molecule_mean": 0.5251960233164537,
+    "eval_split_sha": "7c52af1451b2e5c900acfc6d6f012489",
+    "n_molecules": 999289,
+    "n_resamples": 1000,
+    "total_entropy_nats": 524822.6089438756,
+    "total_glyphs": 53393952,
+    "training_corpus_sha": "d471aba7d34c2d2875e958d3df2abfcc",
+    "verified_by_construction": false
+  },
+  "unpaired_reason": "extras_single_arm_knob",
+  "vocab_size": 512
+}

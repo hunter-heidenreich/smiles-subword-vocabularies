@@ -1,0 +1,27 @@
+\begin{table}[htbp]
+  \centering
+  \caption{The complete Smirk base: the 165-token OpenSMILES glyph alphabet (158 chemistry-grammatical glyphs and 7 special tokens), grouped by OpenSMILES role. Any OpenSMILES-conformant string decomposes into these glyphs with no \texttt{[UNK]}. Inside a bracket atom \texttt{+} and \texttt{-} also denote charge, and \texttt{-} doubles as the single bond.}
+  \label{tab:base-glyphs}
+  \small
+  \begin{tabular}{@{}p{0.27\linewidth} p{0.66\linewidth}@{}}
+    \toprule
+    Group & Glyphs \\
+    \midrule
+    Aliphatic organic-subset atoms (10) & \texttt{B}, \texttt{C}, \texttt{N}, \texttt{O}, \texttt{P}, \texttt{S}, \texttt{F}, \texttt{Cl}, \texttt{Br}, \texttt{I} \\
+    \addlinespace[3pt]
+    Aromatic atoms (8) & \texttt{b}, \texttt{c}, \texttt{n}, \texttt{o}, \texttt{p}, \texttt{s}, \texttt{se}, \texttt{as} \\
+    \addlinespace[3pt]
+    Other element symbols (bracket atoms) (108) & \texttt{Ac}, \texttt{Ag}, \texttt{Al}, \texttt{Am}, \texttt{Ar}, \texttt{As}, \texttt{At}, \texttt{Au}, \texttt{Ba}, \texttt{Be}, \texttt{Bh}, \texttt{Bi}, \texttt{Bk}, \texttt{Ca}, \texttt{Cd}, \texttt{Ce}, \texttt{Cf}, \texttt{Cm}, \texttt{Cn}, \texttt{Co}, \texttt{Cr}, \texttt{Cs}, \texttt{Cu}, \texttt{Db}, \texttt{Ds}, \texttt{Dy}, \texttt{Er}, \texttt{Es}, \texttt{Eu}, \texttt{Fe}, \texttt{Fl}, \texttt{Fm}, \texttt{Fr}, \texttt{Ga}, \texttt{Gd}, \texttt{Ge}, \texttt{H}, \texttt{He}, \texttt{Hf}, \texttt{Hg}, \texttt{Ho}, \texttt{Hs}, \texttt{In}, \texttt{Ir}, \texttt{K}, \texttt{Kr}, \texttt{La}, \texttt{Li}, \texttt{Lr}, \texttt{Lu}, \texttt{Lv}, \texttt{Mc}, \texttt{Md}, \texttt{Mg}, \texttt{Mn}, \texttt{Mo}, \texttt{Mt}, \texttt{Na}, \texttt{Nb}, \texttt{Nd}, \texttt{Ne}, \texttt{Nh}, \texttt{Ni}, \texttt{No}, \texttt{Np}, \texttt{Og}, \texttt{Os}, \texttt{Pa}, \texttt{Pb}, \texttt{Pd}, \texttt{Pm}, \texttt{Po}, \texttt{Pr}, \texttt{Pt}, \texttt{Pu}, \texttt{Ra}, \texttt{Rb}, \texttt{Re}, \texttt{Rf}, \texttt{Rg}, \texttt{Rh}, \texttt{Rn}, \texttt{Ru}, \texttt{Sb}, \texttt{Sc}, \texttt{Se}, \texttt{Sg}, \texttt{Si}, \texttt{Sm}, \texttt{Sn}, \texttt{Sr}, \texttt{Ta}, \texttt{Tb}, \texttt{Tc}, \texttt{Te}, \texttt{Th}, \texttt{Ti}, \texttt{Tl}, \texttt{Tm}, \texttt{Ts}, \texttt{U}, \texttt{V}, \texttt{W}, \texttt{Xe}, \texttt{Y}, \texttt{Yb}, \texttt{Zn}, \texttt{Zr} \\
+    \addlinespace[3pt]
+    Bonds (7) & \texttt{-}, \texttt{=}, \texttt{\#}, \texttt{\$}, \texttt{:}, \texttt{/}, \texttt{\textbackslash{}} \\
+    \addlinespace[3pt]
+    Branches, rings, ring-closures (16) & \texttt{(}, \texttt{)}, \texttt{[}, \texttt{]}, \texttt{.}, \texttt{\%}, \texttt{0}, \texttt{1}, \texttt{2}, \texttt{3}, \texttt{4}, \texttt{5}, \texttt{6}, \texttt{7}, \texttt{8}, \texttt{9} \\
+    \addlinespace[3pt]
+    Charge and wildcard (2) & \texttt{+}, \texttt{*} \\
+    \addlinespace[3pt]
+    Chirality (7) & \texttt{@}, \texttt{@@}, \texttt{@TH}, \texttt{@AL}, \texttt{@OH}, \texttt{@SP}, \texttt{@TB} \\
+    \addlinespace[3pt]
+    Special tokens (7) & \texttt{[UNK]}, \texttt{[BOS]}, \texttt{[EOS]}, \texttt{[SEP]}, \texttt{[PAD]}, \texttt{[CLS]}, \texttt{[MASK]} \\
+    \bottomrule
+  \end{tabular}
+\end{table}

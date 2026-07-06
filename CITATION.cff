@@ -1,0 +1,28 @@
+cff-version: 1.2.0
+message: "If you use this work, please cite the paper (and software) below."
+title: "Where to cut, how deep: BPE and Unigram-LM on chemistry SMILES"
+authors:
+  - family-names: Heidenreich
+    given-names: Hunter
+    orcid: "https://orcid.org/0009-0001-0335-4803"
+type: software
+repository-code: "https://github.com/hunter-heidenreich/smiles-subword-vocabularies"
+doi: "10.5281/zenodo.21228245"
+license: MIT
+keywords:
+  - subword tokenization
+  - byte-pair encoding
+  - Unigram-LM
+  - SMILES
+  - chemical language models
+  - vocabulary
+  - cheminformatics
+preferred-citation:
+  type: article
+  title: "Where to cut, how deep: BPE and Unigram-LM on chemistry SMILES"
+  authors:
+    - family-names: Heidenreich
+      given-names: Hunter
+      orcid: "https://orcid.org/0009-0001-0335-4803"
+  year: 2026
+  notes: "Preprint; arXiv identifier to be added on posting."

@@ -1,0 +1,12 @@
+# Within-PubChem size sweep. Mid-band nested subsample of the headline PubChem
+# training corpus, at ~15M molecules — the (V=512, PubChem, NMB) size-sweep
+# mid point.
+#
+# Source: the headline `canon_dedup_v1/train` Parquet tree (test-set-disjoint
+# by construction). Same `hash_domain` as pubchem_extras_size_5m → nesting
+# (5M ⊂ 15M ⊂ headline ~50M) is guaranteed by the shared acceptance band.
+name: pubchem
+input_dir: data/processed/pubchem/canon_dedup_v1/train
+output_dir: data/processed/pubchem/canon_dedup_v1_extras/size_15m
+target_n: 15000000
+hash_domain: canon_dedup_v1.size_sweep

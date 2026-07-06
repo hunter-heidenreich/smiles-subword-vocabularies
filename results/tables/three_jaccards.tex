@@ -1,0 +1,39 @@
+\begin{table}[htbp]
+  \centering
+  \caption{Cross-algorithm vocabulary overlap (Jaccard). $J$ unweighted, $J_{\mathrm{struct}}$ structural-subword, $J_{\mathrm{w}}$ frequency-weighted, $J_{\mathrm{w,struct}}$ frequency-weighted over structural subwords only; all four are vocabulary Jaccards on matched arm pairs. $J$ and $J_{\mathrm{struct}}$ are exact set quantities; the molecule-resampled bootstrap CIs on $J_{\mathrm{w}}$ and $J_{\mathrm{w,struct}}$ span $\le 0.002$ in every condition and are deposited in full. The smallest and largest $J$ are in \textbf{bold}.}
+  \label{tab:results-jaccards}
+  \footnotesize
+  \begin{tabular}{@{}l r l r r r r@{}}
+    \toprule
+    & & & \multicolumn{2}{c}{Unweighted} & \multicolumn{2}{c}{Freq-weighted} \\
+    \cmidrule(lr){4-5}\cmidrule(lr){6-7}
+    Corpus & $V$ & Bnd & $J$ & $J_{\mathrm{struct}}$ & $J_{\mathrm{w}}$ & $J_{\mathrm{w,struct}}$ \\
+    \midrule
+    PubChem & 256 & NMB & 0.054 & 0.062 & 0.021 & 0.023 \\
+     & 256 & MB & 0.071 & 0.077 & 0.048 & 0.053 \\
+     & 512 & NMB & 0.076 & 0.088 & 0.023 & 0.025 \\
+     & 512 & MB & 0.091 & 0.106 & 0.050 & 0.055 \\
+     & 1024 & NMB & 0.080 & 0.086 & 0.022 & 0.024 \\
+     & 1024 & MB & 0.100 & 0.095 & 0.049 & 0.055 \\
+     & 2048 & NMB & 0.090 & 0.089 & 0.022 & 0.024 \\
+     & 2048 & MB & 0.100 & 0.095 & 0.049 & 0.055 \\
+    \addlinespace
+    ZINC-22 & 256 & NMB & \textbf{0.010} & 0.011 & 0.006 & 0.008 \\
+     & 256 & MB & 0.021 & 0.011 & 0.006 & 0.008 \\
+     & 512 & NMB & 0.028 & 0.025 & 0.008 & 0.009 \\
+     & 512 & MB & 0.037 & 0.034 & 0.008 & 0.010 \\
+     & 1024 & NMB & 0.092 & 0.089 & 0.008 & 0.010 \\
+     & 1024 & MB & 0.115 & 0.111 & 0.009 & 0.011 \\
+    \addlinespace
+    COCONUT & 256 & NMB & 0.140 & 0.148 & 0.043 & 0.066 \\
+     & 256 & MB & \textbf{0.161} & 0.177 & 0.045 & 0.070 \\
+     & 512 & NMB & 0.101 & 0.110 & 0.043 & 0.068 \\
+     & 512 & MB & 0.133 & 0.145 & 0.046 & 0.071 \\
+     & 1024 & NMB & 0.102 & 0.104 & 0.043 & 0.067 \\
+     & 1024 & MB & 0.119 & 0.119 & 0.045 & 0.070 \\
+    \addlinespace
+    REAL-Space & 1024 & NMB & 0.105 & 0.091 & 0.002 & 0.002 \\
+     & 1024 & MB & 0.110 & 0.100 & 0.002 & 0.002 \\
+    \bottomrule
+  \end{tabular}
+\end{table}

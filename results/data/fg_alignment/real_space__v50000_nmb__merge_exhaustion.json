@@ -1,0 +1,61 @@
+{
+  "boundary": "nmb",
+  "bpe": {
+    "arm": "bpe",
+    "bootstrap_seed": 3945190207,
+    "boundary": "nmb",
+    "cell_id": "real_space__smirk_gpe_v50000_nmb_merge_exhaustion",
+    "class_bonds": {
+      "C#N": 51557,
+      "C=N": 7250,
+      "C=O": 1647992,
+      "C=S": 1233,
+      "N=O": 15541,
+      "P=O": 2412,
+      "S=O": 122790,
+      "other": 19005
+    },
+    "class_local": {
+      "C#N": 51557,
+      "C=N": 7250,
+      "C=O": 1647992,
+      "C=S": 1233,
+      "N=O": 15541,
+      "P=O": 2412,
+      "S=O": 122790,
+      "other": 9306
+    },
+    "class_locality": {
+      "C#N": 1.0,
+      "C=N": 1.0,
+      "C=O": 1.0,
+      "C=S": 1.0,
+      "N=O": 1.0,
+      "P=O": 1.0,
+      "S=O": 1.0,
+      "other": 0.48966061562746643
+    },
+    "eval_split_sha": "6cbe68f87c92fb2a253f536715b5ec69",
+    "locality": 0.9948072042745933,
+    "locality_ci": [
+      0.9947011300257875,
+      0.9949200144576378
+    ],
+    "n_bonds": 1867780,
+    "n_local": 1858081,
+    "n_molecules": 1000352,
+    "n_resamples": 1000,
+    "training_corpus_sha": "140534c1544cd9f2ce760709417f23dd"
+  },
+  "corpus": "real_space",
+  "extras_kind": "merge_exhaustion",
+  "extras_label": "merge_exhaustion",
+  "missing_arm": "unigram",
+  "pair_key": "real_space__v50000_nmb__merge_exhaustion",
+  "pair_status": "single_arm",
+  "present_arm": "bpe",
+  "schema_version": 1,
+  "tier": "extras_merge_exhaustion",
+  "unpaired_reason": "extras_single_arm_knob",
+  "vocab_size": 50000
+}

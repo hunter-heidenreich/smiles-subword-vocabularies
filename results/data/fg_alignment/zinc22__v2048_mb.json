@@ -1,0 +1,61 @@
+{
+  "boundary": "mb",
+  "bpe": {
+    "arm": "bpe",
+    "bootstrap_seed": 3926729218,
+    "boundary": "mb",
+    "cell_id": "zinc22__smirk_gpe_v2048_mb",
+    "class_bonds": {
+      "C#N": 20489,
+      "C=N": 88115,
+      "C=O": 768642,
+      "C=S": 2794,
+      "N=O": 13791,
+      "P=O": 963,
+      "S=O": 172119,
+      "other": 4675
+    },
+    "class_local": {
+      "C#N": 20489,
+      "C=N": 88111,
+      "C=O": 768642,
+      "C=S": 2794,
+      "N=O": 13791,
+      "P=O": 963,
+      "S=O": 172119,
+      "other": 2798
+    },
+    "class_locality": {
+      "C#N": 1.0,
+      "C=N": 0.9999546047778471,
+      "C=O": 1.0,
+      "C=S": 1.0,
+      "N=O": 1.0,
+      "P=O": 1.0,
+      "S=O": 1.0,
+      "other": 0.5985026737967915
+    },
+    "eval_split_sha": "730dc2ddc8c4edd981244fa27433a1ea",
+    "locality": 0.9982446611944142,
+    "locality_ci": [
+      0.998147757423441,
+      0.99834015134683
+    ],
+    "n_bonds": 1071588,
+    "n_local": 1069707,
+    "n_molecules": 499545,
+    "n_resamples": 1000,
+    "training_corpus_sha": "2604e603ded8e77654016cd7b3f38cec"
+  },
+  "corpus": "zinc22",
+  "extras_kind": null,
+  "extras_label": null,
+  "missing_arm": "unigram",
+  "pair_key": "zinc22__v2048_mb",
+  "pair_status": "single_arm",
+  "present_arm": "bpe",
+  "schema_version": 1,
+  "tier": "conditional",
+  "unpaired_reason": "conditional_negative_branch",
+  "vocab_size": 2048
+}

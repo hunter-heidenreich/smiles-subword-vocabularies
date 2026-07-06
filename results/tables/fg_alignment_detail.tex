@@ -1,0 +1,39 @@
+\begin{table}[htbp]
+  \centering
+  \caption{Per-condition within-arm chemical functional-bond locality. Per matched pair (\S\ref{ssec:measurements}), read on the held-out split. A \emph{functional bond} is a multiply-bonded heteroatom, a non-carbon atom joined by a double or triple bond (the $=$O of a carbonyl, the $\#$N of a nitrile, the $=$N of an imine, the $=$O on sulfur, phosphorus, or nitrogen, the $=$S of a thiocarbonyl), the cores of the canonical functional groups, read straight off the molecular graph. Locality $\ell$ is the fraction of those bonds the arm keeps inside a single token (the heteroatom sharing a token with its bond glyph); $\Delta\ell{=}\ell^{\mathrm{BPE}}{-}\ell^{\mathrm{UL}}$. $\ell_{\mathrm{C{=}O}}$ isolates the carbonyl class. BPE keeps nearly every functional bond local (the carbonyl essentially always); Unigram-LM (UL) keeps almost none (the carbonyl column $\ell^{\mathrm{UL}}_{\mathrm{C{=}O}}$ is $0.000$ to three places in every condition), spending its unsaturation budget on long homo-atomic carbon runs, not on binding the heteroatom to its bond. 95\% molecule-resampled bootstrap CIs are in the deposited per-condition records.}
+  \label{tab:results-fg-alignment}
+  \footnotesize
+  \begin{tabular}{@{}l r l r r r r r@{}}
+    \toprule
+    & & & \multicolumn{2}{c}{$\ell$} & & \multicolumn{2}{c}{$\ell_{\mathrm{C{=}O}}$} \\
+    \cmidrule(lr){4-5}\cmidrule(lr){7-8}
+    Corpus & $V$ & Bnd & BPE & UL & $\Delta\ell$ & BPE & UL \\
+    \midrule
+    PubChem & 256 & NMB & 0.961 & 0.023 & 0.938 & 0.999 & 0.000 \\
+     & 256 & MB & 0.948 & 0.022 & 0.927 & 0.995 & 0.000 \\
+     & 512 & NMB & 0.988 & 0.026 & 0.962 & 1.000 & 0.000 \\
+     & 512 & MB & 0.987 & 0.026 & 0.961 & 0.999 & 0.000 \\
+     & 1024 & NMB & 0.991 & 0.027 & 0.964 & 1.000 & 0.000 \\
+     & 1024 & MB & 0.990 & 0.027 & 0.963 & 1.000 & 0.000 \\
+     & 2048 & NMB & 0.991 & 0.027 & 0.965 & 1.000 & 0.000 \\
+     & 2048 & MB & 0.991 & 0.027 & 0.964 & 1.000 & 0.000 \\
+    \addlinespace
+    ZINC-22 & 256 & NMB & 0.992 & 0.007 & 0.985 & 1.000 & 0.000 \\
+     & 256 & MB & 0.985 & 0.007 & 0.977 & 1.000 & 0.000 \\
+     & 512 & NMB & 0.998 & 0.007 & 0.991 & 1.000 & 0.000 \\
+     & 512 & MB & 0.998 & 0.007 & 0.990 & 1.000 & 0.000 \\
+     & 1024 & NMB & 0.998 & 0.007 & 0.991 & 1.000 & 0.000 \\
+     & 1024 & MB & 0.998 & 0.007 & 0.991 & 1.000 & 0.000 \\
+    \addlinespace
+    COCONUT & 256 & NMB & 0.987 & 0.004 & 0.983 & 0.999 & 0.000 \\
+     & 256 & MB & 0.982 & 0.004 & 0.978 & 0.999 & 0.000 \\
+     & 512 & NMB & 0.997 & 0.005 & 0.992 & 1.000 & 0.000 \\
+     & 512 & MB & 0.996 & 0.006 & 0.990 & 1.000 & 0.000 \\
+     & 1024 & NMB & 0.998 & 0.005 & 0.993 & 1.000 & 0.000 \\
+     & 1024 & MB & 0.998 & 0.006 & 0.991 & 1.000 & 0.000 \\
+    \addlinespace
+    REAL-Space & 1024 & NMB & 0.995 & 0.001 & 0.994 & 1.000 & 0.000 \\
+     & 1024 & MB & 0.995 & 0.001 & 0.994 & 1.000 & 0.000 \\
+    \bottomrule
+  \end{tabular}
+\end{table}

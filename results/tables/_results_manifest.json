@@ -1,0 +1,36 @@
+{
+  "artifacts": [
+    "absorption_detail.tex",
+    "closure_detail.tex",
+    "deadzone_nsweep.tex",
+    "delta_f.tex",
+    "distribution_detail.tex",
+    "fertility_detail.tex",
+    "fg_alignment_detail.tex",
+    "nestedness_detail.tex",
+    "noncanon_detail.tex",
+    "realized_vocab.tex",
+    "robustness_extras.tex",
+    "seven_measurements.tex",
+    "three_jaccards.tex"
+  ],
+  "audit_sha": {
+    "merge_exhaustion": "f0bc04cb94a75fddb43cfeee93eea20d",
+    "prune_schedule": "2ea57ec8ce1fb345ebe9d29720315640",
+    "seed_cap": "77f92e42be552e16e301c6201a0a4f42"
+  },
+  "include_extras": false,
+  "upstream_sha": {
+    "absorption_table": "6591ecbc7916ca7bcaae82d769ba03f9",
+    "closure_table": "010296b519a0007b4b09d7f3593146ae",
+    "deadzone_table": "2c3b7379cf6430b35f65a6c2437deb81",
+    "distribution_table": "7f4407681405fc35b04808c32e4964a2",
+    "fertility_table": "f978ebbec3636de6e1756a517be6998a",
+    "fg_alignment_table": "ab5adc446c38580af39c402d266b56de",
+    "jaccard_table": "657f2914a3ba28a3fc4334d70d0027b5",
+    "nestedness_table": "bb478220ad439f3383e6b7e67784f02b",
+    "noncanon_table": "df4de83fa033d8fe39803460087415be",
+    "scaffold_table": "df448c407cd99196df671758756cfbbb",
+    "segmentation_table": "f282dc98c977c6736e1347719de8134c"
+  }
+}

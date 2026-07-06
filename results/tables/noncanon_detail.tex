@@ -1,0 +1,41 @@
+\begin{table}[htbp]
+  \centering
+  \caption{Per-condition within-arm robustness to non-canonical SMILES. Per matched pair (\S\ref{ssec:measurements}), on a seeded held-out subsample; the paired columns $b^{\mathrm{BPE}}$ and $b^{\mathrm{UL}}$ are the BPE and Unigram-LM (UL) arms. $b$ is the \emph{bag-instability}: the fraction of an arm's token multiset that changes when the molecule is rewritten (mean $1$ minus the multiset Jaccard versus the canonical string), under four identity-preserving rewrite axes: Randomized (RDKit restricted randomization, the augmentation-realistic distribution of \citet{aruspous2019randomized-smiles}), Kekul\'e, Explicit-H (all-explicit-hydrogen, AMORE's catastrophic axis \citep{ganeeva2025chemllm-robustness}), and OpenBabel (the cross-toolkit swap to OpenBabel's canonical SMILES, gated to identity-preservation by a round-trip through RDKit). $g_{\mathrm{c}}$ and $g_{\mathrm{r}}$ are the relative fertility gap $\mathrm{rel}|\Delta f|$ (Eq.~\ref{eq:fertility}) on the canonical strings and on the randomized orbit; their closeness shows the granularity gap survives the orbit. A ring-digit-relabel floor (omitted) leaves the token count exactly invariant. Figure~\ref{fig:noncanon} plots the per-axis arm-stability pattern at $V{=}1024$; 95\% molecule-resampled bootstrap CIs are in the deposited per-condition records.}
+  \label{tab:results-noncanon}
+  \footnotesize
+  \resizebox{\ifdim\width>\linewidth\linewidth\else\width\fi}{!}{%
+  \begin{tabular}{@{}l r l r r r r r r r r r r@{}}
+    \toprule
+    & & & \multicolumn{2}{c}{Randomized} & \multicolumn{2}{c}{Kekul\'e} & \multicolumn{2}{c}{Explicit-H} & \multicolumn{2}{c}{OpenBabel} & \multicolumn{2}{c}{Fertility gap} \\
+    \cmidrule(lr){4-5}\cmidrule(lr){6-7}\cmidrule(lr){8-9}\cmidrule(lr){10-11}\cmidrule(lr){12-13}
+    Corpus & $V$ & Bnd & $b^{\mathrm{BPE}}$ & $b^{\mathrm{UL}}$ & $b^{\mathrm{BPE}}$ & $b^{\mathrm{UL}}$ & $b^{\mathrm{BPE}}$ & $b^{\mathrm{UL}}$ & $b^{\mathrm{BPE}}$ & $b^{\mathrm{UL}}$ & $g_{\mathrm{c}}$ & $g_{\mathrm{r}}$ \\
+    \midrule
+    PubChem & 256 & NMB & 0.351 & 0.193 & 0.413 & 0.477 & 0.813 & 0.665 & 0.219 & 0.126 & 28.4\% & 24.8\% \\
+     & 256 & MB & 0.358 & 0.219 & 0.420 & 0.475 & 0.824 & 0.669 & 0.224 & 0.145 & 25.6\% & 23.4\% \\
+     & 512 & NMB & 0.375 & 0.189 & 0.408 & 0.475 & 0.811 & 0.666 & 0.230 & 0.125 & 32.3\% & 27.4\% \\
+     & 512 & MB & 0.384 & 0.218 & 0.413 & 0.455 & 0.770 & 0.670 & 0.237 & 0.146 & 30.3\% & 26.9\% \\
+     & 1024 & NMB & 0.369 & 0.189 & 0.405 & 0.475 & 0.812 & 0.666 & 0.229 & 0.125 & 33.4\% & 28.6\% \\
+     & 1024 & MB & 0.379 & 0.217 & 0.410 & 0.455 & 0.768 & 0.670 & 0.236 & 0.146 & 31.5\% & 28.2\% \\
+     & 2048 & NMB & 0.367 & 0.189 & 0.397 & 0.475 & 0.812 & 0.666 & 0.229 & 0.125 & 33.7\% & 29.0\% \\
+     & 2048 & MB & 0.377 & 0.217 & 0.402 & 0.455 & 0.761 & 0.670 & 0.236 & 0.146 & 32.0\% & 28.5\% \\
+    \addlinespace
+    ZINC-22 & 256 & NMB & 0.311 & 0.156 & 0.298 & 0.348 & 0.781 & 0.604 & 0.189 & 0.092 & 28.5\% & 27.3\% \\
+     & 256 & MB & 0.333 & 0.167 & 0.303 & 0.359 & 0.814 & 0.618 & 0.204 & 0.099 & 31.9\% & 30.6\% \\
+     & 512 & NMB & 0.315 & 0.156 & 0.293 & 0.349 & 0.783 & 0.605 & 0.192 & 0.092 & 31.9\% & 29.7\% \\
+     & 512 & MB & 0.338 & 0.164 & 0.298 & 0.360 & 0.813 & 0.619 & 0.208 & 0.097 & 35.7\% & 33.0\% \\
+     & 1024 & NMB & 0.311 & 0.156 & 0.290 & 0.349 & 0.784 & 0.605 & 0.191 & 0.092 & 32.5\% & 30.5\% \\
+     & 1024 & MB & 0.335 & 0.164 & 0.294 & 0.354 & 0.813 & 0.619 & 0.207 & 0.097 & 36.3\% & 33.9\% \\
+    \addlinespace
+    COCONUT & 256 & NMB & 0.239 & 0.113 & 0.252 & 0.249 & 0.704 & 0.541 & 0.190 & 0.090 & 29.2\% & 26.9\% \\
+     & 256 & MB & 0.274 & 0.128 & 0.272 & 0.272 & 0.775 & 0.574 & 0.222 & 0.103 & 34.4\% & 31.4\% \\
+     & 512 & NMB & 0.240 & 0.114 & 0.240 & 0.249 & 0.703 & 0.542 & 0.191 & 0.091 & 29.6\% & 27.3\% \\
+     & 512 & MB & 0.277 & 0.129 & 0.258 & 0.261 & 0.760 & 0.574 & 0.224 & 0.104 & 35.0\% & 32.0\% \\
+     & 1024 & NMB & 0.240 & 0.114 & 0.232 & 0.249 & 0.682 & 0.542 & 0.191 & 0.091 & 29.7\% & 27.4\% \\
+     & 1024 & MB & 0.277 & 0.129 & 0.249 & 0.261 & 0.676 & 0.574 & 0.224 & 0.104 & 35.1\% & 32.1\% \\
+    \addlinespace
+    REAL-Space & 1024 & NMB & 0.315 & 0.192 & 0.256 & 0.333 & 0.810 & 0.641 & 0.215 & 0.132 & 31.9\% & 32.0\% \\
+     & 1024 & MB & 0.325 & 0.197 & 0.256 & 0.334 & 0.828 & 0.644 & 0.223 & 0.139 & 35.2\% & 34.9\% \\
+    \bottomrule
+  \end{tabular}%
+  }
+\end{table}

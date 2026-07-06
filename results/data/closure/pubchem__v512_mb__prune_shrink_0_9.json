@@ -1,0 +1,30 @@
+{
+  "boundary": "mb",
+  "corpus": "pubchem",
+  "extras_kind": "prune_schedule",
+  "extras_label": "shrink_0_9",
+  "missing_arm": "bpe",
+  "pair_key": "pubchem__v512_mb__prune_shrink_0_9",
+  "pair_status": "single_arm",
+  "present_arm": "unigram",
+  "schema_version": 1,
+  "tier": "extras_prune_schedule",
+  "unigram": {
+    "arm": "unigram",
+    "boundary": "mb",
+    "c_bin": 0.5184135977337111,
+    "c_full": 0.003472222222222222,
+    "c_orph": 0.34375,
+    "cell_id": "pubchem__smirk_unigram_v512_mb_prune_shrink_0_9",
+    "n_bin_closed": 183,
+    "n_bracket_nonclosed": 30,
+    "n_full_closed": 1,
+    "n_ge3": 288,
+    "n_multi": 353,
+    "n_orphan": 99,
+    "training_corpus_sha": "d471aba7d34c2d2875e958d3df2abfcc",
+    "vocab_size": 512
+  },
+  "unpaired_reason": "extras_single_arm_knob",
+  "vocab_size": 512
+}

@@ -1,0 +1,37 @@
+\begin{table}[htbp]
+  \centering
+  \caption{Tokenizer training hyperparameters, by arm. Each numeric knob is
+  held at its reference-implementation default for the headline grid and swept
+  across a ladder bracketing that default for the sensitivity analysis
+  (\S\ref{ssec:grid}); \textbf{bold} marks the reference default within each
+  ladder. Design-forced settings depart from the SentencePiece reference by
+  construction, not tuning (\S\ref{ssec:training}). Reference defaults are the
+  published library defaults: SentencePiece's \texttt{TrainerSpec}
+  (\texttt{sentencepiece\_model.proto}) and Sennrich's subword-nmt
+  (\texttt{learn\_bpe.py}, \texttt{-{}-min-frequency}).}
+  \label{tab:hyperparams}
+  \small
+  \begin{tabular}{@{}l l l l l@{}}
+    \toprule
+    Parameter & Role & Ref.\ default & Headline & Sensitivity ladder \\
+    \midrule
+    \multicolumn{5}{@{}l}{\emph{Unigram-LM} (SentencePiece reference \citep{kudo2018sentencepiece})} \\
+    \texttt{max\_piece\_length} & max glyphs per piece & $16$ & $16$ & $4,8,\mathbf{16},32,64,128$ \\
+    \texttt{seed\_size} & seed-pool cap & $10^6$ & $10^6$ & $(2.5,5,\mathbf{10},20,40,80)\!\times\!10^5$ \\
+    \texttt{n\_sub\_iterations} & EM iters per prune & $2$ & $2$ & $1,\mathbf{2},3,4$ \\
+    \texttt{shrinking\_factor} & kept fraction per prune & $0.75$ & $0.75$ & $0.5,0.6,\mathbf{0.75},0.9,0.95$ \\
+    \midrule
+    \multicolumn{5}{@{}l}{\emph{BPE} (subword-nmt reference \citep{sennrich2016bpe-nmt})} \\
+    \texttt{min\_frequency} & min pair count to merge & $2$ & $2$ & $0,1,\mathbf{2},4,8$ \\
+    \midrule
+    \multicolumn{5}{@{}l}{\emph{Shared design axes}} \\
+    \texttt{vocab\_size} $V$ & target size & --- & $256/512/1024$ & $+2048$; anchor $1024$ \\
+    boundary & bracket permeability & --- & NMB\,/\,MB & --- \\
+    \midrule
+    \multicolumn{5}{@{}l}{\emph{Design-forced} (deviate from SentencePiece by construction)} \\
+    \texttt{character\_coverage} & OOV coverage & $0.9995$ & $1.0$ & --- \\
+    \texttt{num\_threads} & parallelism & $16$ & $1$ & --- \\
+    pre-tokenization & string splitting & whitespace\,/\,script & Smirk Layer-A/B & --- \\
+    \bottomrule
+  \end{tabular}
+\end{table}

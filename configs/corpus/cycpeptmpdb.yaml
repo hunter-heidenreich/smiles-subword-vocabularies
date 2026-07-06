@@ -1,0 +1,19 @@
+# CycPeptMPDB (Li et al. 2023) cyclic-peptide `Peptide_All` CSV. Comma-delimited
+# with a header; whole-molecule SMILES under `SMILES`, id under `ID`; the HELM
+# monomer column and other extras are dropped by name-projection.
+name: cycpeptmpdb
+source: cycpeptmpdb
+manifest_id: cycpeptmpdb-peptide-all
+raw_path: data/raw/cycpeptmpdb/CycPeptMPDB_Peptide_All.csv
+output_dir: data/processed/cycpeptmpdb/raw_v1
+csv_read_mode: named
+delim: ","
+has_header: true
+file_compression: none
+drop_null_smiles: true
+id_column: ID
+smiles_column: SMILES
+shard_target_bytes: 67108864
+rows_per_batch: 16384
+parquet_compression: zstd
+parquet_compression_level: 3

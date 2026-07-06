@@ -1,0 +1,39 @@
+\begin{table}[htbp]
+  \centering
+  \caption{Rare-token clearance $c_n$ across the firing-count sweep ($n \in \{50,100,200\}$, $p{=}0.95$). Following \citet{gowda2020optimal-vocab-nmt}, $c_n$ is the fraction of an arm's vocabulary firing at least $n$ times in the training corpus. The learnability bar $F_{p,n}$ is $c_n \ge p$, so reading each $c_n$ against $p \in \{0.90, 0.95, 0.99\}$ gives every $(p,n)$ bar outcome; $c_{100}$ at $p{=}0.95$ is the headline $F_{95\%,100}$ (Table~\ref{tab:results-delta-f}). $\dagger$ corpus too small to certify the tail at this $V$ (as in Table~\ref{tab:results-delta-f}).}
+  \label{tab:results-nsweep}
+  \footnotesize
+  \begin{tabular}{@{}l r l r r r r r r@{}}
+    \toprule
+    & & & \multicolumn{2}{c}{$c_{50}$} & \multicolumn{2}{c}{$c_{100}$} & \multicolumn{2}{c}{$c_{200}$} \\
+    \cmidrule(lr){4-5}\cmidrule(lr){6-7}\cmidrule(lr){8-9}
+    Corpus & $V$ & Bnd & BPE & UL & BPE & UL & BPE & UL \\
+    \midrule
+    PubChem & 256 & NMB & 1.000 & 1.000 & 1.000 & 1.000 & 1.000 & 1.000 \\
+     & 256 & MB & 0.979 & 1.000 & 0.979 & 1.000 & 0.979 & 1.000 \\
+     & 512 & NMB & 1.000 & 1.000 & 1.000 & 0.997 & 1.000 & 0.992 \\
+     & 512 & MB & 0.994 & 1.000 & 0.994 & 1.000 & 0.994 & 0.997 \\
+     & 1024 & NMB & 1.000 & 0.988 & 1.000 & 0.957 & 1.000 & 0.881 \\
+     & 1024 & MB & 0.991 & 0.993 & 0.991 & 0.979 & 0.990 & 0.939 \\
+     & 2048$^{\dagger}$ & NMB & 0.997 & 0.746 & 0.997 & 0.567 & 0.996 & 0.430 \\
+     & 2048$^{\dagger}$ & MB & 0.983 & 0.803 & 0.980 & 0.641 & 0.975 & 0.501 \\
+    \addlinespace
+    ZINC-22 & 256 & NMB & 1.000 & 1.000 & 1.000 & 1.000 & 1.000 & 1.000 \\
+     & 256 & MB & 0.959 & 1.000 & 0.959 & 1.000 & 0.948 & 1.000 \\
+     & 512$^{\dagger}$ & NMB & 1.000 & 0.668 & 1.000 & 0.568 & 0.994 & 0.439 \\
+     & 512$^{\dagger}$ & MB & 0.977 & 0.686 & 0.977 & 0.592 & 0.972 & 0.479 \\
+     & 1024$^{\dagger}$ & NMB & 1.000 & 0.668 & 0.999 & 0.568 & 0.935 & 0.439 \\
+     & 1024$^{\dagger}$ & MB & 0.985 & 0.678 & 0.984 & 0.585 & 0.938 & 0.473 \\
+    \addlinespace
+    COCONUT & 256$^{\dagger}$ & NMB & 1.000 & 1.000 & 1.000 & 0.897 & 1.000 & 0.804 \\
+     & 256 & MB & 0.979 & 1.000 & 0.979 & 1.000 & 0.979 & 0.938 \\
+     & 512$^{\dagger}$ & NMB & 0.994 & 0.382 & 0.994 & 0.272 & 0.983 & 0.212 \\
+     & 512$^{\dagger}$ & MB & 0.972 & 0.484 & 0.969 & 0.365 & 0.958 & 0.280 \\
+     & 1024$^{\dagger}$ & NMB & 0.765 & 0.206 & 0.566 & 0.152 & 0.395 & 0.119 \\
+     & 1024$^{\dagger}$ & MB & 0.790 & 0.221 & 0.576 & 0.168 & 0.401 & 0.131 \\
+    \addlinespace
+    REAL-Space & 1024$^{\dagger}$ & NMB & 1.000 & 0.712 & 1.000 & 0.704 & 0.998 & 0.637 \\
+     & 1024$^{\dagger}$ & MB & 0.993 & 0.720 & 0.993 & 0.713 & 0.990 & 0.652 \\
+    \bottomrule
+  \end{tabular}
+\end{table}

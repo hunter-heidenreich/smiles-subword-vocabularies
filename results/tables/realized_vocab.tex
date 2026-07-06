@@ -1,0 +1,39 @@
+\begin{table}[htbp]
+  \centering
+  \caption{Realized per-arm multi-glyph vocabulary per condition. Per arm, the sets the Jaccards compare, excluding the shared $165$-token base. BPE keeps the full atomic base and fills the rest with merges to target; Unigram-LM (UL) prunes to at or below target and may shed rarely-used base glyphs, reallocating to multi-glyph pieces, so on diverse corpora it packs comparably many (UL/BPE near $1$). On narrow alphabets at larger $V$ its pruning runs short of high-likelihood pieces and bottoms out well below target (UL/BPE $\ll 1$). The Jaccard is a set ratio robust to this gap; its effect on the overlap ceiling is discussed in \S\ref{ssec:r-jaccard}.}
+  \label{tab:results-realized-vocab}
+  \footnotesize
+  \begin{tabular}{@{}l r l r r r@{}}
+    \toprule
+    & & & \multicolumn{2}{c}{$|\mathcal{V}^{\mathrm{multi}}|$} & \\
+    \cmidrule(lr){4-5}
+    Corpus & $V$ & Bnd & BPE & UL & UL/BPE \\
+    \midrule
+    PubChem & 256 & NMB & 99 & 97 & 0.98 \\
+     & 256 & MB & 99 & 97 & 0.98 \\
+     & 512 & NMB & 355 & 353 & 0.99 \\
+     & 512 & MB & 355 & 353 & 0.99 \\
+     & 1024 & NMB & 867 & 865 & 1.00 \\
+     & 1024 & MB & 867 & 865 & 1.00 \\
+     & 2048 & NMB & 1,892 & 1,889 & 1.00 \\
+     & 2048 & MB & 1,891 & 1,889 & 1.00 \\
+    \addlinespace
+    ZINC-22 & 256 & NMB & 98 & 97 & 0.99 \\
+     & 256 & MB & 98 & 97 & 0.99 \\
+     & 512 & NMB & 355 & 310 & 0.87 \\
+     & 512 & MB & 355 & 353 & 0.99 \\
+     & 1024 & NMB & 867 & 310 & 0.36 \\
+     & 1024 & MB & 867 & 357 & 0.41 \\
+    \addlinespace
+    COCONUT & 256 & NMB & 98 & 97 & 0.99 \\
+     & 256 & MB & 98 & 97 & 0.99 \\
+     & 512 & NMB & 355 & 353 & 0.99 \\
+     & 512 & MB & 355 & 353 & 0.99 \\
+     & 1024 & NMB & 867 & 640 & 0.74 \\
+     & 1024 & MB & 867 & 769 & 0.89 \\
+    \addlinespace
+    REAL-Space & 1024 & NMB & 867 & 267 & 0.31 \\
+     & 1024 & MB & 867 & 293 & 0.34 \\
+    \bottomrule
+  \end{tabular}
+\end{table}

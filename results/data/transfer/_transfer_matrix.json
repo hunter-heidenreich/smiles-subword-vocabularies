@@ -1,0 +1,145 @@
+{
+  "arms": {
+    "bpe": {
+      "coconut": {
+        "pubchem": {
+          "fertility": 36.00853,
+          "oov_token_rate": 0.0,
+          "penalty_vs_native": 0.9968162632374213
+        },
+        "real_space": {
+          "fertility": 32.8248,
+          "oov_token_rate": 0.0,
+          "penalty_vs_native": 1.0035409101586303
+        },
+        "zinc22": {
+          "fertility": 32.34546,
+          "oov_token_rate": 0.0,
+          "penalty_vs_native": 1.0058154497375906
+        }
+      },
+      "pubchem": {
+        "coconut": {
+          "fertility": 54.93181508992463,
+          "oov_token_rate": 0.0,
+          "penalty_vs_native": 1.0009727573406737
+        },
+        "real_space": {
+          "fertility": 32.75139,
+          "oov_token_rate": 0.0,
+          "penalty_vs_native": 1.00129657239527
+        },
+        "zinc22": {
+          "fertility": 32.30666,
+          "oov_token_rate": 0.0,
+          "penalty_vs_native": 1.0046089237073588
+        }
+      },
+      "real_space": {
+        "coconut": {
+          "fertility": 55.28073898729355,
+          "oov_token_rate": 0.0,
+          "penalty_vs_native": 1.007330881773294
+        },
+        "pubchem": {
+          "fertility": 36.1817,
+          "oov_token_rate": 0.0,
+          "penalty_vs_native": 1.0016100904862655
+        },
+        "zinc22": {
+          "fertility": 32.27617,
+          "oov_token_rate": 0.0,
+          "penalty_vs_native": 1.0036608057006122
+        }
+      },
+      "zinc22": {
+        "coconut": {
+          "fertility": 55.20947949827225,
+          "oov_token_rate": 0.0,
+          "penalty_vs_native": 1.0060323845891836
+        },
+        "pubchem": {
+          "fertility": 36.18468,
+          "oov_token_rate": 0.0,
+          "penalty_vs_native": 1.001692585174731
+        },
+        "real_space": {
+          "fertility": 32.71881,
+          "oov_token_rate": 0.0,
+          "penalty_vs_native": 1.0003005156682536
+        }
+      }
+    },
+    "unigram": {
+      "coconut": {
+        "pubchem": {
+          "fertility": 47.77704,
+          "oov_token_rate": 0.0,
+          "penalty_vs_native": 0.9378041226934257
+        },
+        "real_space": {
+          "fertility": 44.69076,
+          "oov_token_rate": 0.0,
+          "penalty_vs_native": 0.9423463696248843
+        },
+        "zinc22": {
+          "fertility": 43.17178,
+          "oov_token_rate": 0.0,
+          "penalty_vs_native": 0.9601052836082308
+        }
+      },
+      "pubchem": {
+        "coconut": {
+          "fertility": 75.48809620983322,
+          "oov_token_rate": 0.0,
+          "penalty_vs_native": 1.0177108078405595
+        },
+        "real_space": {
+          "fertility": 45.74886,
+          "oov_token_rate": 0.0,
+          "penalty_vs_native": 0.9646573952977547
+        },
+        "zinc22": {
+          "fertility": 44.4092,
+          "oov_token_rate": 0.0,
+          "penalty_vs_native": 0.987624498244331
+        }
+      },
+      "real_space": {
+        "coconut": {
+          "fertility": 79.74870078633037,
+          "oov_token_rate": 0.0,
+          "penalty_vs_native": 1.0751511665612672
+        },
+        "pubchem": {
+          "fertility": 53.54367,
+          "oov_token_rate": 0.0,
+          "penalty_vs_native": 1.0509959275446177
+        },
+        "zinc22": {
+          "fertility": 45.51614,
+          "oov_token_rate": 0.0,
+          "penalty_vs_native": 1.0122419437755852
+        }
+      },
+      "zinc22": {
+        "coconut": {
+          "fertility": 76.25078224906811,
+          "oov_token_rate": 0.0,
+          "penalty_vs_native": 1.0279931419314987
+        },
+        "pubchem": {
+          "fertility": 51.01929,
+          "oov_token_rate": 0.0,
+          "penalty_vs_native": 1.001445474623197
+        },
+        "real_space": {
+          "fertility": 46.94599,
+          "oov_token_rate": 0.0,
+          "penalty_vs_native": 0.9898999982310913
+        }
+      }
+    }
+  },
+  "headline_v": 1024
+}

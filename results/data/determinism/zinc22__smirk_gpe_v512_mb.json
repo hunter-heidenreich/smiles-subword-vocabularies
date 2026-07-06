@@ -1,0 +1,31 @@
+{
+  "algo": "bpe",
+  "arm": "bpe",
+  "boundary": "mb",
+  "canonical_digest": {
+    "algo": "bpe",
+    "log_probs_sha": null,
+    "merges_txt_sha": "15cdceb1b663ec9236365de9c79a417bfe427459fb61029966f524431e8e563a",
+    "piece_set_sha": null,
+    "tokenizer_json_sha": "6f2a89e4788b7e4d3b9ce3682c4b16f390546c5034b84b0ec2d18fcbe6a8969f",
+    "vocab_order_sha": null
+  },
+  "cell_id": "zinc22__smirk_gpe_v512_mb",
+  "corpus": "zinc22",
+  "deterministic": true,
+  "expected_failure": false,
+  "mismatch_kind": null,
+  "rerun_digest": {
+    "algo": "bpe",
+    "log_probs_sha": null,
+    "merges_txt_sha": "15cdceb1b663ec9236365de9c79a417bfe427459fb61029966f524431e8e563a",
+    "piece_set_sha": null,
+    "tokenizer_json_sha": "6f2a89e4788b7e4d3b9ce3682c4b16f390546c5034b84b0ec2d18fcbe6a8969f",
+    "vocab_order_sha": null
+  },
+  "rerun_spread": 0,
+  "schema_version": 1,
+  "tier": "headline",
+  "training_corpus_sha": "2604e603ded8e77654016cd7b3f38cec",
+  "vocab_size": 512
+}

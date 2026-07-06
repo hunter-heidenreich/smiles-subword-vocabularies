@@ -1,0 +1,8 @@
+# canon_dedup_v1 on REAL-Space (raw_v1 -> RDKit isomeric canon + exact dedup).
+# The input is the ingested Enamine REAL 1% Sample (~136M molecules, used in
+# full). bucket mode bounds the intermediate working set at this scale, as
+# PubChem (~123M) used it.
+name: real_space
+input_dir: data/processed/real_space/raw_v1
+output_dir: data/processed/real_space/canon_dedup_v1_full
+mode: bucket

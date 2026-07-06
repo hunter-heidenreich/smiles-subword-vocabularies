@@ -1,0 +1,6 @@
+# canon_dedup_v1 on PubChem (raw_v1 -> RDKit isomeric canon + dedup).
+# bucket mode bounds the intermediate working set for the ~123M-row corpus.
+name: pubchem
+input_dir: data/processed/pubchem/raw_v1
+output_dir: data/processed/pubchem/canon_dedup_v1_full
+mode: bucket

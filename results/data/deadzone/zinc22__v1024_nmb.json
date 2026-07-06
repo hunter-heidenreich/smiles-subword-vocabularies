@@ -1,0 +1,118 @@
+{
+  "any_arm_unsafe": true,
+  "both_arms_unsafe": false,
+  "boundary": "nmb",
+  "bpe": {
+    "arm": "bpe",
+    "cell_id": "zinc22__smirk_gpe_v1024_nmb",
+    "clearance_by_n": {
+      "100": 0.9988439306358381,
+      "200": 0.9352601156069364,
+      "50": 1.0
+    },
+    "embedding_tail_unsafe": false,
+    "headline_clearance": 0.9988439306358381,
+    "n_non_atomic": 865,
+    "training_corpus_sha": "2604e603ded8e77654016cd7b3f38cec",
+    "v_observed": 1032
+  },
+  "corpus": "zinc22",
+  "delta_fp": [
+    {
+      "delta_f": 0.33225806451612905,
+      "f_bpe": 1.0,
+      "f_unigram": 0.667741935483871,
+      "is_headline": false,
+      "n": 50,
+      "p": 0.9
+    },
+    {
+      "delta_f": 0.4311019951519671,
+      "f_bpe": 0.9988439306358381,
+      "f_unigram": 0.567741935483871,
+      "is_headline": false,
+      "n": 100,
+      "p": 0.9
+    },
+    {
+      "delta_f": 0.4965504381875816,
+      "f_bpe": 0.9352601156069364,
+      "f_unigram": 0.43870967741935485,
+      "is_headline": false,
+      "n": 200,
+      "p": 0.9
+    },
+    {
+      "delta_f": 0.33225806451612905,
+      "f_bpe": 1.0,
+      "f_unigram": 0.667741935483871,
+      "is_headline": false,
+      "n": 50,
+      "p": 0.95
+    },
+    {
+      "delta_f": 0.4311019951519671,
+      "f_bpe": 0.9988439306358381,
+      "f_unigram": 0.567741935483871,
+      "is_headline": true,
+      "n": 100,
+      "p": 0.95
+    },
+    {
+      "delta_f": 0.4965504381875816,
+      "f_bpe": 0.9352601156069364,
+      "f_unigram": 0.43870967741935485,
+      "is_headline": false,
+      "n": 200,
+      "p": 0.95
+    },
+    {
+      "delta_f": 0.33225806451612905,
+      "f_bpe": 1.0,
+      "f_unigram": 0.667741935483871,
+      "is_headline": false,
+      "n": 50,
+      "p": 0.99
+    },
+    {
+      "delta_f": 0.4311019951519671,
+      "f_bpe": 0.9988439306358381,
+      "f_unigram": 0.567741935483871,
+      "is_headline": false,
+      "n": 100,
+      "p": 0.99
+    },
+    {
+      "delta_f": 0.4965504381875816,
+      "f_bpe": 0.9352601156069364,
+      "f_unigram": 0.43870967741935485,
+      "is_headline": false,
+      "n": 200,
+      "p": 0.99
+    }
+  ],
+  "extras_kind": null,
+  "extras_label": null,
+  "headline_delta_f": 0.4311019951519671,
+  "missing_arm": null,
+  "pair_key": "zinc22__v1024_nmb",
+  "pair_status": "matched",
+  "schema_version": 1,
+  "tier": "headline",
+  "unigram": {
+    "arm": "unigram",
+    "cell_id": "zinc22__smirk_unigram_v1024_nmb",
+    "clearance_by_n": {
+      "100": 0.567741935483871,
+      "200": 0.43870967741935485,
+      "50": 0.667741935483871
+    },
+    "embedding_tail_unsafe": true,
+    "headline_clearance": 0.567741935483871,
+    "n_non_atomic": 310,
+    "training_corpus_sha": "2604e603ded8e77654016cd7b3f38cec",
+    "v_observed": 475
+  },
+  "unpaired_reason": null,
+  "vocab_size": 1024
+}

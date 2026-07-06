@@ -1,0 +1,16 @@
+\begin{table}[htbp]
+  \centering
+  \caption{Cross-corpus transfer: off-domain fertility ($V{=}1024$, NMB), each cell BPE\,/\,Unigram-LM. Each value is the fertility of the \emph{train}-corpus tokenizer on the \emph{eval} corpus's held-out split, divided by the eval corpus's native tokenizer of the same arm; self-transfer on the diagonal is omitted (trivially $1.00$). BPE transfers at near-native fertility everywhere; Unigram-LM is modestly domain-sensitive, largest where the combinatorial REAL-Space specialist meets natural products (REAL-Space$\to$COCONUT, in bold). Atom-level OOV is below $0.01\%$ in every cell (shared $165$-token base).}
+  \label{tab:transfer}
+  \small
+  \begin{tabular}{@{}l cccc@{}}
+    \toprule
+    train $\downarrow$ / eval $\rightarrow$ & PubChem & ZINC-22 & COCONUT & REAL-Space \\
+    \midrule
+    PubChem & --- & 1.00\,/\,0.99 & 1.00\,/\,1.02 & 1.00\,/\,0.96 \\
+    ZINC-22 & 1.00\,/\,1.00 & --- & 1.01\,/\,1.03 & 1.00\,/\,0.99 \\
+    COCONUT & 1.00\,/\,0.94 & 1.01\,/\,0.96 & --- & 1.00\,/\,0.94 \\
+    REAL-Space & 1.00\,/\,1.05 & 1.00\,/\,1.01 & 1.01\,/\,\textbf{1.08} & --- \\
+    \bottomrule
+  \end{tabular}
+\end{table}

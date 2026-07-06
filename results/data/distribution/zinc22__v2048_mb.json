@@ -1,0 +1,51 @@
+{
+  "abs_delta_d": null,
+  "boundary": "mb",
+  "bpe": {
+    "arm": "bpe",
+    "bootstrap_seed": 3926729218,
+    "boundary": "mb",
+    "cell_id": "zinc22__smirk_gpe_v2048_mb",
+    "d": 0.9345540742754862,
+    "d_ci": [
+      0.9344697809019978,
+      0.9346417686077837
+    ],
+    "eta": 0.4183687506831818,
+    "eta_ci": [
+      0.4182576885645075,
+      0.4184606519966229
+    ],
+    "eval_split_sha": "730dc2ddc8c4edd981244fa27433a1ea",
+    "live_token_count": 1678,
+    "n_molecules": 499545,
+    "n_resamples": 1000,
+    "renyi": 0.3056295684418541,
+    "renyi_ci": [
+      0.30555640813225005,
+      0.3057097529544008
+    ],
+    "total_tokens": 14508801,
+    "training_corpus_sha": "2604e603ded8e77654016cd7b3f38cec",
+    "v_effective": 2048,
+    "vocab_size": 2050
+  },
+  "corpus": "zinc22",
+  "delta_d": null,
+  "delta_d_exceeds_threshold": null,
+  "delta_eta": null,
+  "delta_renyi": null,
+  "extras_kind": null,
+  "extras_label": null,
+  "missing_arm": "unigram",
+  "near_reference_threshold": null,
+  "pair_key": "zinc22__v2048_mb",
+  "pair_status": "single_arm",
+  "schema_version": 1,
+  "tier": "conditional",
+  "unigram": null,
+  "unpaired_reason": "conditional_negative_branch",
+  "v_effective_consistent": null,
+  "v_effective_delta": null,
+  "vocab_size": 2048
+}

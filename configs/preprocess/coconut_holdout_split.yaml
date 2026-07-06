@@ -1,0 +1,5 @@
+# 5% held-out test split of COCONUT. COCONUT is used in full (no subsample);
+# the 1e6 test_cap does not bind.
+name: coconut
+input_dir: data/processed/coconut/conformant_v1_full
+output_dir: data/processed/coconut/canon_dedup_v1

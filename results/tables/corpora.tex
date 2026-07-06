@@ -1,0 +1,19 @@
+\begin{table}[htbp]
+  \centering
+  \caption{The four corpora: three headline typologies plus the REAL-Space
+  anchor. Counts are post-preprocessing totals, after any subsampling and
+  before the 5\% held-out split.}
+  \label{tab:corpora}
+  \small
+  \begin{tabular}{@{}l l l r l@{}}
+    \toprule
+    Corpus & Role & Typology & Molecules & Distinguishing feature \\
+    \midrule
+    PubChem \citep{pubchem2023} & headline & diverse & $\sim$50M & wide alphabet, exotic-atom tail \\
+    ZINC-22 \citep{zinc22} & headline & drug-like & $\sim$10M & $\sim$30 atomic types, homogeneous \\
+    COCONUT \citep{sorokina2021coconut} & headline & natural-products & $\sim$740K & scaffold-rich, elaborate ring systems \\
+    \midrule
+    REAL-Space \citep{grygorenko2020real, wadell2026smirk} & anchor & drug-like-narrow & $\sim$136M & combinatorial; super-saturated \\
+    \bottomrule
+  \end{tabular}
+\end{table}

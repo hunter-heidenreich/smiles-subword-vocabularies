@@ -1,0 +1,118 @@
+{
+  "boundary": "nmb",
+  "bpe": {
+    "arm": "bpe",
+    "bootstrap_seed": 1741434008,
+    "boundary": "nmb",
+    "cell_id": "pubchem__smirk_gpe_v512_nmb_size_5m",
+    "class_bonds": {
+      "C#N": 62155,
+      "C=N": 104772,
+      "C=O": 1224571,
+      "C=S": 19793,
+      "N=O": 40505,
+      "P=O": 19539,
+      "S=O": 244043,
+      "other": 19619
+    },
+    "class_local": {
+      "C#N": 57929,
+      "C=N": 99490,
+      "C=O": 1224367,
+      "C=S": 18996,
+      "N=O": 40323,
+      "P=O": 19534,
+      "S=O": 244032,
+      "other": 10048
+    },
+    "class_locality": {
+      "C#N": 0.9320086879575256,
+      "C=N": 0.9495857671897072,
+      "C=O": 0.999833411047624,
+      "C=S": 0.9597332390238973,
+      "N=O": 0.9955067275644982,
+      "P=O": 0.9997441015405087,
+      "S=O": 0.99995492597616,
+      "other": 0.5121565829043274
+    },
+    "eval_split_sha": "7c52af1451b2e5c900acfc6d6f012489",
+    "locality": 0.9883123717216802,
+    "locality_ci": [
+      0.9880669850952408,
+      0.9885644802492048
+    ],
+    "n_bonds": 1734997,
+    "n_local": 1714719,
+    "n_molecules": 999286,
+    "n_resamples": 1000,
+    "training_corpus_sha": "dfc48d25d7eceae4626f8a7f9aef539d"
+  },
+  "corpus": "pubchem",
+  "delta_locality": 0.9612898466106857,
+  "delta_locality_by_class": {
+    "C#N": 0.7126377604376156,
+    "C=N": 0.7394532890466919,
+    "C=O": 0.999627624694689,
+    "C=S": 0.9434648613146062,
+    "N=O": 0.9955067275644982,
+    "P=O": 0.9254311889042428,
+    "S=O": 0.9703617805058945,
+    "other": 0.41097915286202147
+  },
+  "extras_kind": "size_sweep",
+  "extras_label": "5m",
+  "missing_arm": null,
+  "pair_key": "pubchem__v512_nmb__size_5m",
+  "pair_status": "matched",
+  "schema_version": 1,
+  "tier": "extras_size_sweep",
+  "unigram": {
+    "arm": "unigram",
+    "bootstrap_seed": 627371166,
+    "boundary": "nmb",
+    "cell_id": "pubchem__smirk_unigram_v512_nmb_size_5m",
+    "class_bonds": {
+      "C#N": 62155,
+      "C=N": 104772,
+      "C=O": 1224571,
+      "C=S": 19793,
+      "N=O": 40505,
+      "P=O": 19539,
+      "S=O": 244043,
+      "other": 19619
+    },
+    "class_local": {
+      "C#N": 13635,
+      "C=N": 22016,
+      "C=O": 252,
+      "C=S": 322,
+      "N=O": 0,
+      "P=O": 1452,
+      "S=O": 7222,
+      "other": 1985
+    },
+    "class_locality": {
+      "C#N": 0.21937092751990991,
+      "C=N": 0.2101324781430153,
+      "C=O": 0.00020578635293502787,
+      "C=S": 0.016268377709291165,
+      "N=O": 0.0,
+      "P=O": 0.07431291263626592,
+      "S=O": 0.029593145470265488,
+      "other": 0.10117743004230592
+    },
+    "eval_split_sha": "7c52af1451b2e5c900acfc6d6f012489",
+    "locality": 0.027022525110994428,
+    "locality_ci": [
+      0.026663296206447213,
+      0.027377961188171797
+    ],
+    "n_bonds": 1734997,
+    "n_local": 46884,
+    "n_molecules": 999286,
+    "n_resamples": 1000,
+    "training_corpus_sha": "dfc48d25d7eceae4626f8a7f9aef539d"
+  },
+  "unpaired_reason": null,
+  "vocab_size": 512
+}

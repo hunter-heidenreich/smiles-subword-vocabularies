@@ -1,0 +1,63 @@
+{
+  "boundary": "nmb",
+  "bpe": {
+    "arm": "bpe",
+    "bootstrap_seed": 2205032155,
+    "boundary": "nmb",
+    "cell_id": "pubchem__smirk_gpe_v512_nmb_subsample_r1",
+    "eval_split_sha": "7c52af1451b2e5c900acfc6d6f012489",
+    "n_bracket_internal": 43,
+    "n_distinct_bracket_chunks": 855,
+    "n_distinct_nonbracket_chunks": 29216,
+    "n_held_out_molecules": 999289,
+    "n_multi_subwords": 355,
+    "n_resamples": 1000,
+    "n_structural": 312,
+    "n_unseen": 0,
+    "nonbracket_cap_bound": false,
+    "total_emitted_multi": 9866673,
+    "training_corpus_sha": "e2512f775076ddaf216bd625bf82c261"
+  },
+  "corpus": "pubchem",
+  "extras_kind": "subsample_redraw",
+  "extras_label": "r1",
+  "jaccard": 0.08923076923076922,
+  "jaccard_minus_struct": -0.01421750663129974,
+  "jaccard_struct": 0.10344827586206896,
+  "missing_arm": null,
+  "near_reference_threshold": false,
+  "pair_key": "pubchem__v512_nmb__subsample_r1",
+  "pair_status": "matched",
+  "schema_version": 2,
+  "tier": "extras_subsample_redraw",
+  "unigram": {
+    "arm": "unigram",
+    "bootstrap_seed": 869995759,
+    "boundary": "nmb",
+    "cell_id": "pubchem__smirk_unigram_v512_nmb_subsample_r1",
+    "eval_split_sha": "7c52af1451b2e5c900acfc6d6f012489",
+    "n_bracket_internal": 57,
+    "n_distinct_bracket_chunks": 855,
+    "n_distinct_nonbracket_chunks": 29216,
+    "n_held_out_molecules": 999289,
+    "n_multi_subwords": 353,
+    "n_resamples": 1000,
+    "n_structural": 296,
+    "n_unseen": 0,
+    "nonbracket_cap_bound": false,
+    "total_emitted_multi": 1467170,
+    "training_corpus_sha": "e2512f775076ddaf216bd625bf82c261"
+  },
+  "unpaired_reason": null,
+  "vocab_size": 512,
+  "weighted_jaccard": 0.051634211870121696,
+  "weighted_jaccard_ci": [
+    0.05149141992417151,
+    0.051779162222897836
+  ],
+  "weighted_jaccard_struct": 0.057062749391034825,
+  "weighted_jaccard_struct_ci": [
+    0.056905987250804584,
+    0.05720717931844944
+  ]
+}

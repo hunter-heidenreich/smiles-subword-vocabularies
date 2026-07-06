@@ -1,0 +1,79 @@
+{
+  "abs_delta_d": 0.08902327312442482,
+  "boundary": "nmb",
+  "bpe": {
+    "arm": "bpe",
+    "bootstrap_seed": 3164420877,
+    "boundary": "nmb",
+    "cell_id": "zinc22__smirk_gpe_v512_nmb_subsample_r2",
+    "d": 0.858854849890919,
+    "d_ci": [
+      0.8587243788972378,
+      0.8589712594178219
+    ],
+    "eta": 0.5232123124028897,
+    "eta_ci": [
+      0.5231033012452188,
+      0.5233258922008228
+    ],
+    "eval_split_sha": "730dc2ddc8c4edd981244fa27433a1ea",
+    "live_token_count": 389,
+    "n_molecules": 499545,
+    "n_resamples": 1000,
+    "renyi": 0.39655897939938556,
+    "renyi_ci": [
+      0.396451127284635,
+      0.39666442605633256
+    ],
+    "total_tokens": 16087934,
+    "training_corpus_sha": "8ce656d7f84e3d09c2f9dd3284b5d439",
+    "v_effective": 512,
+    "vocab_size": 514
+  },
+  "corpus": "zinc22",
+  "delta_d": -0.08902327312442482,
+  "delta_d_exceeds_threshold": true,
+  "delta_eta": 0.09998650013528965,
+  "delta_renyi": 0.041804316756988924,
+  "extras_kind": "subsample_redraw",
+  "extras_label": "r2",
+  "missing_arm": null,
+  "near_reference_threshold": false,
+  "pair_key": "zinc22__v512_nmb__subsample_r2",
+  "pair_status": "matched",
+  "schema_version": 1,
+  "tier": "extras_subsample_redraw",
+  "unigram": {
+    "arm": "unigram",
+    "bootstrap_seed": 3332292022,
+    "boundary": "nmb",
+    "cell_id": "zinc22__smirk_unigram_v512_nmb_subsample_r2",
+    "d": 0.9478781230153438,
+    "d_ci": [
+      0.9478459854053629,
+      0.9479148593391736
+    ],
+    "eta": 0.42322581226760003,
+    "eta_ci": [
+      0.4231556853711634,
+      0.42329379008815626
+    ],
+    "eval_split_sha": "730dc2ddc8c4edd981244fa27433a1ea",
+    "live_token_count": 273,
+    "n_molecules": 499545,
+    "n_resamples": 1000,
+    "renyi": 0.35475466264239663,
+    "renyi_ci": [
+      0.35465564458481547,
+      0.3548503131148662
+    ],
+    "total_tokens": 22442493,
+    "training_corpus_sha": "8ce656d7f84e3d09c2f9dd3284b5d439",
+    "v_effective": 512,
+    "vocab_size": 453
+  },
+  "unpaired_reason": null,
+  "v_effective_consistent": true,
+  "v_effective_delta": 0,
+  "vocab_size": 512
+}

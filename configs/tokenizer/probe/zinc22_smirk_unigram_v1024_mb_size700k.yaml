@@ -1,0 +1,15 @@
+name: zinc22_smirk_unigram_v1024_mb_size700k
+kind: smirk_unigram
+vocab_size: 1024
+min_frequency: 2
+corpus: zinc22
+training_input: data/processed/zinc22/canon_dedup_v1_extras/size_700k
+output_dir: artifacts/tokenizer/zinc22/zinc22_smirk_unigram_v1024_mb_size700k
+ref_artifact_dir: null
+merge_brackets: true
+split_structure: true
+seed_size: null
+max_piece_length: null
+n_sub_iterations: null
+shrinking_factor: null
+scaffold_log: false

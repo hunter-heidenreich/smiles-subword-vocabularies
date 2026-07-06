@@ -1,0 +1,6 @@
+# 5% held-out test split of subsampled PubChem. The 1e6 test_cap binds here
+# (5% of ~50M exceeds it). seed=20260426 is frozen and shared across all
+# study corpora.
+name: pubchem
+input_dir: data/processed/pubchem/conformant_v1_sub
+output_dir: data/processed/pubchem/canon_dedup_v1

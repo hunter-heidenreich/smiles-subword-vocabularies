@@ -1,0 +1,118 @@
+{
+  "boundary": "nmb",
+  "bpe": {
+    "arm": "bpe",
+    "bootstrap_seed": 1801973352,
+    "boundary": "nmb",
+    "cell_id": "coconut__smirk_gpe_v512_nmb",
+    "class_bonds": {
+      "C#N": 334,
+      "C=N": 3321,
+      "C=O": 67469,
+      "C=S": 218,
+      "N=O": 428,
+      "P=O": 975,
+      "S=O": 2100,
+      "other": 94
+    },
+    "class_local": {
+      "C#N": 306,
+      "C=N": 3183,
+      "C=O": 67437,
+      "C=S": 193,
+      "N=O": 424,
+      "P=O": 975,
+      "S=O": 2100,
+      "other": 73
+    },
+    "class_locality": {
+      "C#N": 0.9161676646706587,
+      "C=N": 0.9584462511291779,
+      "C=O": 0.9995257081029806,
+      "C=S": 0.8853211009174312,
+      "N=O": 0.9906542056074766,
+      "P=O": 1.0,
+      "S=O": 1.0,
+      "other": 0.776595744680851
+    },
+    "eval_split_sha": "146cff0ba752459c61ed0bb687b06d73",
+    "locality": 0.9966906417219339,
+    "locality_ci": [
+      0.9962162805773479,
+      0.9971472372192228
+    ],
+    "n_bonds": 74939,
+    "n_local": 74691,
+    "n_molecules": 36753,
+    "n_resamples": 1000,
+    "training_corpus_sha": "178da507a91243087b03cbd8e9c67409"
+  },
+  "corpus": "coconut",
+  "delta_locality": 0.9921402740895929,
+  "delta_locality_by_class": {
+    "C#N": 0.655688622754491,
+    "C=N": 0.8897922312556459,
+    "C=O": 0.9995257081029806,
+    "C=S": 0.8715596330275229,
+    "N=O": 0.9906542056074766,
+    "P=O": 0.9764102564102564,
+    "S=O": 1.0,
+    "other": 0.776595744680851
+  },
+  "extras_kind": null,
+  "extras_label": null,
+  "missing_arm": null,
+  "pair_key": "coconut__v512_nmb",
+  "pair_status": "matched",
+  "schema_version": 1,
+  "tier": "headline",
+  "unigram": {
+    "arm": "unigram",
+    "bootstrap_seed": 2047870358,
+    "boundary": "nmb",
+    "cell_id": "coconut__smirk_unigram_v512_nmb",
+    "class_bonds": {
+      "C#N": 334,
+      "C=N": 3321,
+      "C=O": 67469,
+      "C=S": 218,
+      "N=O": 428,
+      "P=O": 975,
+      "S=O": 2100,
+      "other": 94
+    },
+    "class_local": {
+      "C#N": 87,
+      "C=N": 228,
+      "C=O": 0,
+      "C=S": 3,
+      "N=O": 0,
+      "P=O": 23,
+      "S=O": 0,
+      "other": 0
+    },
+    "class_locality": {
+      "C#N": 0.26047904191616766,
+      "C=N": 0.06865401987353206,
+      "C=O": 0.0,
+      "C=S": 0.013761467889908258,
+      "N=O": 0.0,
+      "P=O": 0.02358974358974359,
+      "S=O": 0.0,
+      "other": 0.0
+    },
+    "eval_split_sha": "146cff0ba752459c61ed0bb687b06d73",
+    "locality": 0.004550367632340971,
+    "locality_ci": [
+      0.00399492284053711,
+      0.005157441166721909
+    ],
+    "n_bonds": 74939,
+    "n_local": 341,
+    "n_molecules": 36753,
+    "n_resamples": 1000,
+    "training_corpus_sha": "178da507a91243087b03cbd8e9c67409"
+  },
+  "unpaired_reason": null,
+  "vocab_size": 512
+}

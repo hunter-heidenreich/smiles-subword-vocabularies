@@ -1,0 +1,18 @@
+\begin{table}[htbp]
+  \centering
+  \caption{Robustness extras: subsample, size sweep, seed-cap, prune-schedule, merge-exhaustion. Outside the headline grid. Subsample redraw: Unigram $c_{100}$ across three independent draws of the same corpus. Size sweep: the same cell trained at 5M / 15M / 50M molecules. Seed cap and prune schedule: multi-glyph vocabulary Jaccard of a one-armed hyperparameter probe against its baseline (1 = identical piece set). Merge exhaustion: the realized vocabulary where \texttt{GpeTrainer} terminated naturally below a $50{,}000$ cap.}
+  \label{tab:results-extras}
+  \footnotesize
+  \begin{tabular}{@{}l l l l l@{}}
+    \toprule
+    Probe & Setting & Metric & Value & Reading \\
+    \midrule
+    Subsample redraw & PubChem $V$=512 NMB ($\times$3) & Unigram $c_{100}$ & 0.912--0.921 & spread 0.008 \\
+     & ZINC-22 $V$=512 NMB ($\times$3) & Unigram $c_{100}$ & 0.497--0.505 & spread 0.009 \\
+    Size sweep & PubChem 5/15/50M & Unigram $c_{100}$ & 0.921 / 0.994 / 0.997 & $\uparrow$ with size \\
+    Seed cap & PubChem U $V$=1024 MB & multi-glyph $J$ (1e6/8e6) & 1.000 & inert \\
+    Prune schedule & PubChem U $V$=256/$V$=512 MB & multi-glyph $J$ (0.75/0.9) & 0.865 / 0.924 & schedule-sensitive \\
+    Merge exhaustion & REAL-Space GPE, cap 50,000 & realized $|\mathcal{V}|$ & 4,331 & natural ($<$ cap) \\
+    \bottomrule
+  \end{tabular}
+\end{table}

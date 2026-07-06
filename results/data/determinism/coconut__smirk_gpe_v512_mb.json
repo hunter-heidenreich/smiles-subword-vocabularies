@@ -1,0 +1,31 @@
+{
+  "algo": "bpe",
+  "arm": "bpe",
+  "boundary": "mb",
+  "canonical_digest": {
+    "algo": "bpe",
+    "log_probs_sha": null,
+    "merges_txt_sha": "257dcbac2a76a74770903498839a84c629a7c7be42c03fa76c031e49e742c77e",
+    "piece_set_sha": null,
+    "tokenizer_json_sha": "fd4615b904b282fc7ba8a41f36ef46f888a39b3c298a22542fa26f5ab1dd1c4c",
+    "vocab_order_sha": null
+  },
+  "cell_id": "coconut__smirk_gpe_v512_mb",
+  "corpus": "coconut",
+  "deterministic": true,
+  "expected_failure": false,
+  "mismatch_kind": null,
+  "rerun_digest": {
+    "algo": "bpe",
+    "log_probs_sha": null,
+    "merges_txt_sha": "257dcbac2a76a74770903498839a84c629a7c7be42c03fa76c031e49e742c77e",
+    "piece_set_sha": null,
+    "tokenizer_json_sha": "fd4615b904b282fc7ba8a41f36ef46f888a39b3c298a22542fa26f5ab1dd1c4c",
+    "vocab_order_sha": null
+  },
+  "rerun_spread": 0,
+  "schema_version": 1,
+  "tier": "headline",
+  "training_corpus_sha": "178da507a91243087b03cbd8e9c67409",
+  "vocab_size": 512
+}

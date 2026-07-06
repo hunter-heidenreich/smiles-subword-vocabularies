@@ -1,0 +1,93 @@
+{
+  "boundary": "nmb",
+  "bpe": {
+    "arm": "bpe",
+    "axes": {
+      "explicitH": {
+        "bag_instab": 0.809912377370116,
+        "bag_instab_ci": [
+          0.8089929964882433,
+          0.8107558636677303
+        ],
+        "n": 10000,
+        "rel_dfert": 2.780819405748577,
+        "rel_dfert_ci": [
+          2.7695967467574927,
+          2.793033157124184
+        ]
+      },
+      "kekule": {
+        "bag_instab": 0.24543174720179395,
+        "bag_instab_ci": [
+          0.24257748966273845,
+          0.2482472385827177
+        ],
+        "n": 5688,
+        "rel_dfert": 0.04463275529364428,
+        "rel_dfert_ci": [
+          0.043372436860790786,
+          0.045924464320290154
+        ]
+      },
+      "obcanon": {
+        "bag_instab": 0.21430155068529605,
+        "bag_instab_ci": [
+          0.21182306052941852,
+          0.216800632555813
+        ],
+        "n": 9998,
+        "rel_dfert": 0.010311889574268552,
+        "rel_dfert_ci": [
+          0.0097506598811043,
+          0.010865274779206721
+        ]
+      },
+      "random": {
+        "bag_instab": 0.3134378651967977,
+        "bag_instab_ci": [
+          0.3116698140550775,
+          0.31520976813205864
+        ],
+        "n": 10000,
+        "rel_dfert": 0.11118840089408388,
+        "rel_dfert_ci": [
+          0.10992725243767008,
+          0.1124026346524837
+        ]
+      },
+      "ringperm": {
+        "bag_instab": 0.16959514677904167,
+        "bag_instab_ci": [
+          0.16821528051502682,
+          0.1710411759474988
+        ],
+        "n": 9856,
+        "rel_dfert": 0.0,
+        "rel_dfert_ci": [
+          0.0,
+          0.0
+        ]
+      }
+    },
+    "bootstrap_seed": 3945190207,
+    "boundary": "nmb",
+    "cell_id": "real_space__smirk_gpe_v50000_nmb_merge_exhaustion",
+    "eval_split_sha": "6cbe68f87c92fb2a253f536715b5ec69",
+    "mean_canon_fert": 31.541,
+    "mean_rand_fert": 34.80975,
+    "n_molecules": 10000,
+    "n_resamples": 1000,
+    "training_corpus_sha": "140534c1544cd9f2ce760709417f23dd"
+  },
+  "corpus": "real_space",
+  "extras_kind": "merge_exhaustion",
+  "extras_label": "merge_exhaustion",
+  "missing_arm": "unigram",
+  "pair_key": "real_space__v50000_nmb__merge_exhaustion",
+  "pair_status": "single_arm",
+  "present_arm": "bpe",
+  "schema_version": 1,
+  "tier": "extras_merge_exhaustion",
+  "unpaired_reason": "extras_single_arm_knob",
+  "vocab_size": 50000
+}

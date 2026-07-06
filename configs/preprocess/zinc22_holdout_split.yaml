@@ -1,0 +1,6 @@
+# 5% held-out test split of subsampled ZINC-22. The 1e6 test_cap does not bind
+# (5% of ~10M < 1e6) — ZINC-22 takes the full 5%. seed=20260426 is frozen and
+# shared across all study corpora.
+name: zinc22
+input_dir: data/processed/zinc22/conformant_v1_sub
+output_dir: data/processed/zinc22/canon_dedup_v1

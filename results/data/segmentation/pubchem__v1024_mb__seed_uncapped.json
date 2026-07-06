@@ -1,0 +1,39 @@
+{
+  "boundary": "mb",
+  "bpe": null,
+  "corpus": "pubchem",
+  "delta_entropy_per_glyph": null,
+  "delta_entropy_per_molecule": null,
+  "extras_kind": "seed_cap",
+  "extras_label": "uncapped",
+  "missing_arm": "bpe",
+  "pair_key": "pubchem__v1024_mb__seed_uncapped",
+  "pair_status": "single_arm",
+  "schema_version": 1,
+  "tier": "extras_seed_cap",
+  "unigram": {
+    "arm": "unigram",
+    "bootstrap_seed": 4279120666,
+    "boundary": "mb",
+    "cell_id": "pubchem__smirk_unigram_v1024_mb_seed_uncapped",
+    "entropy_per_glyph": 0.009865539409671597,
+    "entropy_per_glyph_ci": [
+      0.00983017535743191,
+      0.009904738912772602
+    ],
+    "entropy_per_molecule_ci": [
+      0.5251539180755771,
+      0.52935776220022
+    ],
+    "entropy_per_molecule_mean": 0.5271349306297913,
+    "eval_split_sha": "7c52af1451b2e5c900acfc6d6f012489",
+    "n_molecules": 999289,
+    "n_resamples": 1000,
+    "total_entropy_nats": 526760.1376941135,
+    "total_glyphs": 53393952,
+    "training_corpus_sha": "d471aba7d34c2d2875e958d3df2abfcc",
+    "verified_by_construction": false
+  },
+  "unpaired_reason": "extras_single_arm_knob",
+  "vocab_size": 1024
+}

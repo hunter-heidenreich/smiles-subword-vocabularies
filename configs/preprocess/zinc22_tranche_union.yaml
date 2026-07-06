@@ -1,0 +1,13 @@
+# Flatten the enumerated nested ZINC-22 raw_v1 tranche set into one flat raw_v1
+# directory canon_dedup can consume. The tranche set is the full public union
+# of zinc-22{f,x}/-M, H10-H29 (the ZINC-22 draw is tranche-restricted; the
+# enumerated set is locked at this preprocessing step). zinc-22x-H29P280 is the
+# one discovered tranche absent from the ingest.
+name: zinc22
+input_dir: data/processed/zinc22/raw_v1
+output_dir: data/processed/zinc22/canon_dedup_v1_input
+expected_exclusions:
+  zinc-22x-H29P280: >-
+    upstream .smi.gz truncated mid-record (record 4814, no tab / ZINC-ID);
+    valid gzip container, 50195 B == advertised Content-Length, so the defect
+    is in the published file, not the download. Rejected by strict-CSV ingest.

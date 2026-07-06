@@ -1,0 +1,25 @@
+\begin{table}[htbp]
+  \centering
+  \caption{The arm-exclusive multi-glyph sets for the PubChem matched pair across $V$: counts and glyph-length statistics of the pieces each arm selects but the other does not. The two arms select near-equal \emph{numbers} of exclusive pieces at every $V$, and these dwarf the shared core (Table~\ref{tab:shared-core-growth}), so the near-disjointness persists at every scale. The Unigram-LM (UL) exclusive pieces never exceed $16$ glyphs (its \texttt{max\_piece\_length}, Table~\ref{tab:hyperparams}), whereas BPE imposes no length cap, so its exclusive pieces run far longer (degenerate periodic chains such as a $96$-glyph \texttt{OCCOCC}$\dots$ at $V{=}2048$).}
+  \label{tab:arm-exclusive}
+  \small
+  \begin{tabular}{@{}r r r r r r r@{}}
+    \toprule
+    & \multicolumn{2}{c}{Exclusive pieces} & \multicolumn{2}{c}{Mean glyph len.} & \multicolumn{2}{c}{Max glyph len.} \\
+    \cmidrule(lr){2-3}\cmidrule(lr){4-5}\cmidrule(lr){6-7}
+    $V$ & BPE & UL & BPE & UL & BPE & UL \\
+    \midrule
+    \multicolumn{7}{@{}l}{\emph{No-merge-brackets (NMB)}} \\
+    256 & 89 & 87 & 2.9 & 6.3 & 6 & 16 \\
+    512 & 305 & 303 & 3.8 & 7.6 & 19 & 16 \\
+    1024 & 739 & 737 & 5.0 & 9.0 & 48 & 16 \\
+    2048 & 1,581 & 1,578 & 6.3 & 10.5 & 96 & 16 \\
+    \addlinespace[2pt]
+    \multicolumn{7}{@{}l}{\emph{Merge-brackets (MB)}} \\
+    256 & 86 & 84 & 3.0 & 5.1 & 6 & 16 \\
+    512 & 296 & 294 & 3.7 & 6.2 & 18 & 16 \\
+    1024 & 709 & 707 & 4.7 & 8.1 & 48 & 16 \\
+    2048 & 1,546 & 1,544 & 5.9 & 10.0 & 96 & 16 \\
+    \bottomrule
+  \end{tabular}
+\end{table}

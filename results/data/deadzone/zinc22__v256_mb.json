@@ -1,0 +1,118 @@
+{
+  "any_arm_unsafe": false,
+  "both_arms_unsafe": false,
+  "boundary": "mb",
+  "bpe": {
+    "arm": "bpe",
+    "cell_id": "zinc22__smirk_gpe_v256_mb",
+    "clearance_by_n": {
+      "100": 0.9587628865979382,
+      "200": 0.9484536082474226,
+      "50": 0.9587628865979382
+    },
+    "embedding_tail_unsafe": false,
+    "headline_clearance": 0.9587628865979382,
+    "n_non_atomic": 97,
+    "training_corpus_sha": "2604e603ded8e77654016cd7b3f38cec",
+    "v_observed": 263
+  },
+  "corpus": "zinc22",
+  "delta_fp": [
+    {
+      "delta_f": -0.04123711340206182,
+      "f_bpe": 0.9587628865979382,
+      "f_unigram": 1.0,
+      "is_headline": false,
+      "n": 50,
+      "p": 0.9
+    },
+    {
+      "delta_f": -0.04123711340206182,
+      "f_bpe": 0.9587628865979382,
+      "f_unigram": 1.0,
+      "is_headline": false,
+      "n": 100,
+      "p": 0.9
+    },
+    {
+      "delta_f": -0.05154639175257736,
+      "f_bpe": 0.9484536082474226,
+      "f_unigram": 1.0,
+      "is_headline": false,
+      "n": 200,
+      "p": 0.9
+    },
+    {
+      "delta_f": -0.04123711340206182,
+      "f_bpe": 0.9587628865979382,
+      "f_unigram": 1.0,
+      "is_headline": false,
+      "n": 50,
+      "p": 0.95
+    },
+    {
+      "delta_f": -0.04123711340206182,
+      "f_bpe": 0.9587628865979382,
+      "f_unigram": 1.0,
+      "is_headline": true,
+      "n": 100,
+      "p": 0.95
+    },
+    {
+      "delta_f": -0.05154639175257736,
+      "f_bpe": 0.9484536082474226,
+      "f_unigram": 1.0,
+      "is_headline": false,
+      "n": 200,
+      "p": 0.95
+    },
+    {
+      "delta_f": -0.04123711340206182,
+      "f_bpe": 0.9587628865979382,
+      "f_unigram": 1.0,
+      "is_headline": false,
+      "n": 50,
+      "p": 0.99
+    },
+    {
+      "delta_f": -0.04123711340206182,
+      "f_bpe": 0.9587628865979382,
+      "f_unigram": 1.0,
+      "is_headline": false,
+      "n": 100,
+      "p": 0.99
+    },
+    {
+      "delta_f": -0.05154639175257736,
+      "f_bpe": 0.9484536082474226,
+      "f_unigram": 1.0,
+      "is_headline": false,
+      "n": 200,
+      "p": 0.99
+    }
+  ],
+  "extras_kind": null,
+  "extras_label": null,
+  "headline_delta_f": -0.04123711340206182,
+  "missing_arm": null,
+  "pair_key": "zinc22__v256_mb",
+  "pair_status": "matched",
+  "schema_version": 1,
+  "tier": "headline",
+  "unigram": {
+    "arm": "unigram",
+    "cell_id": "zinc22__smirk_unigram_v256_mb",
+    "clearance_by_n": {
+      "100": 1.0,
+      "200": 1.0,
+      "50": 1.0
+    },
+    "embedding_tail_unsafe": false,
+    "headline_clearance": 1.0,
+    "n_non_atomic": 97,
+    "training_corpus_sha": "2604e603ded8e77654016cd7b3f38cec",
+    "v_observed": 262
+  },
+  "unpaired_reason": null,
+  "vocab_size": 256
+}

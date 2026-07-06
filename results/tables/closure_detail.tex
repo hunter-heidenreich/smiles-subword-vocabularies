@@ -1,0 +1,39 @@
+\begin{table}[htbp]
+  \centering
+  \caption{Per-condition within-arm compositional closure. Per matched pair (\S\ref{ssec:measurements}), read from the realized vocabulary alone. $c_{\mathrm{bin}}$ is the binary-split closure: the fraction of multi-glyph pieces with some in-vocab split $p{=}a{\cdot}b$ (both parts in the base-plus-multi vocabulary). It is BPE's merge-closure invariant read off the realized set, so $c_{\mathrm{bin}}^{\mathrm{BPE}}{=}1$ exactly (the correctness anchor) and the orphan rate $c_{\mathrm{orph}}^{\mathrm{BPE}}{=}0$, the latter omitted for BPE. $c_{\mathrm{orph}}^{\mathrm{UL}}$ is the Unigram-LM (UL) orphan rate: the fraction of its length-$\ge 3$ pieces with \emph{no} proper $\ge 2$-glyph sub-piece in vocabulary (pieces that share no building block with the rest of the vocabulary). $c_{\mathrm{full}}$ is the stronger full-substring closure (every $\ge 2$-glyph substring in vocabulary), non-trivial for both arms. Closure is an exact-set quantity and carries no CI. Unigram-LM is far less self-referential than BPE in every condition: roughly half its pieces (as few as $0.12$ on the narrowest alphabet) do not decompose into in-vocab parts.}
+  \label{tab:results-closure}
+  \footnotesize
+  \begin{tabular}{@{}l r l r r r r r@{}}
+    \toprule
+    & & & \multicolumn{2}{c}{$c_{\mathrm{bin}}$} & & \multicolumn{2}{c}{$c_{\mathrm{full}}$} \\
+    \cmidrule(lr){4-5}\cmidrule(lr){7-8}
+    Corpus & $V$ & Bnd & BPE & UL & $c_{\mathrm{orph}}^{\mathrm{UL}}$ & BPE & UL \\
+    \midrule
+    PubChem & 256 & NMB & 1.000 & 0.392 & 0.451 & 0.767 & 0.000 \\
+     & 256 & MB & 1.000 & 0.361 & 0.628 & 0.613 & 0.000 \\
+     & 512 & NMB & 1.000 & 0.448 & 0.285 & 0.763 & 0.003 \\
+     & 512 & MB & 1.000 & 0.510 & 0.341 & 0.657 & 0.003 \\
+     & 1024 & NMB & 1.000 & 0.482 & 0.181 & 0.713 & 0.002 \\
+     & 1024 & MB & 1.000 & 0.534 & 0.207 & 0.601 & 0.001 \\
+     & 2048 & NMB & 1.000 & 0.445 & 0.121 & 0.678 & 0.004 \\
+     & 2048 & MB & 1.000 & 0.470 & 0.139 & 0.610 & 0.004 \\
+    \addlinespace
+    ZINC-22 & 256 & NMB & 1.000 & 0.124 & 0.608 & 0.714 & 0.000 \\
+     & 256 & MB & 1.000 & 0.216 & 0.567 & 0.645 & 0.000 \\
+     & 512 & NMB & 1.000 & 0.426 & 0.329 & 0.706 & 0.000 \\
+     & 512 & MB & 1.000 & 0.482 & 0.269 & 0.690 & 0.000 \\
+     & 1024 & NMB & 1.000 & 0.426 & 0.329 & 0.627 & 0.000 \\
+     & 1024 & MB & 1.000 & 0.499 & 0.266 & 0.613 & 0.000 \\
+    \addlinespace
+    COCONUT & 256 & NMB & 1.000 & 0.536 & 0.360 & 0.701 & 0.047 \\
+     & 256 & MB & 1.000 & 0.536 & 0.464 & 0.621 & 0.024 \\
+     & 512 & NMB & 1.000 & 0.431 & 0.205 & 0.686 & 0.021 \\
+     & 512 & MB & 1.000 & 0.482 & 0.240 & 0.624 & 0.019 \\
+     & 1024 & NMB & 1.000 & 0.589 & 0.138 & 0.604 & 0.013 \\
+     & 1024 & MB & 1.000 & 0.636 & 0.119 & 0.552 & 0.011 \\
+    \addlinespace
+    REAL-Space & 1024 & NMB & 1.000 & 0.464 & 0.296 & 0.596 & 0.000 \\
+     & 1024 & MB & 1.000 & 0.444 & 0.314 & 0.594 & 0.000 \\
+    \bottomrule
+  \end{tabular}
+\end{table}

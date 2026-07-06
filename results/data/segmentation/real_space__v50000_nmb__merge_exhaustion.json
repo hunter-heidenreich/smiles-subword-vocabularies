@@ -1,0 +1,39 @@
+{
+  "boundary": "nmb",
+  "bpe": {
+    "arm": "bpe",
+    "bootstrap_seed": 0,
+    "boundary": "nmb",
+    "cell_id": "real_space__smirk_gpe_v50000_nmb_merge_exhaustion",
+    "entropy_per_glyph": 0.0,
+    "entropy_per_glyph_ci": [
+      0.0,
+      0.0
+    ],
+    "entropy_per_molecule_ci": [
+      0.0,
+      0.0
+    ],
+    "entropy_per_molecule_mean": 0.0,
+    "eval_split_sha": null,
+    "n_molecules": 0,
+    "n_resamples": 0,
+    "total_entropy_nats": 0.0,
+    "total_glyphs": 0,
+    "training_corpus_sha": "140534c1544cd9f2ce760709417f23dd",
+    "verified_by_construction": true
+  },
+  "corpus": "real_space",
+  "delta_entropy_per_glyph": null,
+  "delta_entropy_per_molecule": null,
+  "extras_kind": "merge_exhaustion",
+  "extras_label": "merge_exhaustion",
+  "missing_arm": "unigram",
+  "pair_key": "real_space__v50000_nmb__merge_exhaustion",
+  "pair_status": "single_arm",
+  "schema_version": 1,
+  "tier": "extras_merge_exhaustion",
+  "unigram": null,
+  "unpaired_reason": "extras_single_arm_knob",
+  "vocab_size": 50000
+}

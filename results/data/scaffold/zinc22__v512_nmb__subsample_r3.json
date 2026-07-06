@@ -1,0 +1,50 @@
+{
+  "boundary": "nmb",
+  "bpe": {
+    "arm": "bpe",
+    "boundary": "nmb",
+    "cell_id": "zinc22__smirk_gpe_v512_nmb_subsample_r3",
+    "n_merges": 355,
+    "scaffold_count": 0,
+    "scaffold_fraction_of_v": 0.0,
+    "scaffold_log_sha": "1be6353d321b79614b1c6b30f9ccffb4c56d44530a9a67eaf27b1134a6c4868c",
+    "surface_form_breakdown": {
+      "atomic": 0,
+      "bracket_internal": 0,
+      "structural": 0
+    },
+    "threshold": 1581,
+    "training_corpus_sha": "497d46bf41d72c1c3e9932e9bfcbedc9",
+    "verified_by_construction": false,
+    "vocab_size": 514
+  },
+  "corpus": "zinc22",
+  "delta_scaffold_fraction": 0.0,
+  "extras_kind": "subsample_redraw",
+  "extras_label": "r3",
+  "missing_arm": null,
+  "pair_key": "zinc22__v512_nmb__subsample_r3",
+  "pair_status": "matched",
+  "schema_version": 1,
+  "tier": "extras_subsample_redraw",
+  "unigram": {
+    "arm": "unigram",
+    "boundary": "nmb",
+    "cell_id": "zinc22__smirk_unigram_v512_nmb_subsample_r3",
+    "n_merges": null,
+    "scaffold_count": 0,
+    "scaffold_fraction_of_v": 0.0,
+    "scaffold_log_sha": null,
+    "surface_form_breakdown": {
+      "atomic": 0,
+      "bracket_internal": 0,
+      "structural": 0
+    },
+    "threshold": null,
+    "training_corpus_sha": "497d46bf41d72c1c3e9932e9bfcbedc9",
+    "verified_by_construction": true,
+    "vocab_size": 449
+  },
+  "unpaired_reason": null,
+  "vocab_size": 512
+}

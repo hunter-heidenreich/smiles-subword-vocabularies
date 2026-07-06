@@ -1,0 +1,39 @@
+\begin{table}[htbp]
+  \centering
+  \caption{Dead-zone surplus: per-arm $F_{95\%,100}$ clearance $c_{100}$ and its cross-arm difference $\Delta c_{100}$. $c_{100}^{\mathrm{BPE}}$, $c_{100}^{\mathrm{UL}}$ (columns BPE, UL; UL $=$ Unigram-LM) are the fraction of each arm's vocabulary clearing the $F_{95\%,100}$ rare-token-tail bar; $\Delta c_{100}$ is their difference (BPE $-$ UL). $\dagger$ corpus too small to certify the tail at this $V$.}
+  \label{tab:results-delta-f}
+  \footnotesize
+  \begin{tabular}{@{}l r l r r r@{}}
+    \toprule
+    & & & \multicolumn{2}{c}{$c_{100}$} & \\
+    \cmidrule(lr){4-5}
+    Corpus & $V$ & Bnd & BPE & UL & $\Delta c_{100}$ \\
+    \midrule
+    PubChem & 256 & NMB & 1.000 & 1.000 & $+0.000$ \\
+     & 256 & MB & 0.979 & 1.000 & $-0.021$ \\
+     & 512 & NMB & 1.000 & 0.997 & $+0.003$ \\
+     & 512 & MB & 0.994 & 1.000 & $-0.006$ \\
+     & 1024 & NMB & 1.000 & 0.957 & $+0.043$ \\
+     & 1024 & MB & 0.991 & 0.979 & $+0.012$ \\
+     & 2048$^{\dagger}$ & NMB & 0.997 & 0.567 & $+0.429$ \\
+     & 2048$^{\dagger}$ & MB & 0.980 & 0.641 & $+0.339$ \\
+    \addlinespace
+    ZINC-22 & 256 & NMB & 1.000 & 1.000 & $+0.000$ \\
+     & 256 & MB & 0.959 & 1.000 & $-0.041$ \\
+     & 512$^{\dagger}$ & NMB & 1.000 & 0.568 & $+0.432$ \\
+     & 512$^{\dagger}$ & MB & 0.977 & 0.592 & $+0.385$ \\
+     & 1024$^{\dagger}$ & NMB & 0.999 & 0.568 & $+0.431$ \\
+     & 1024$^{\dagger}$ & MB & 0.984 & 0.585 & $+0.398$ \\
+    \addlinespace
+    COCONUT & 256$^{\dagger}$ & NMB & 1.000 & 0.897 & $+0.103$ \\
+     & 256 & MB & 0.979 & 1.000 & $-0.021$ \\
+     & 512$^{\dagger}$ & NMB & 0.994 & 0.272 & $+0.722$ \\
+     & 512$^{\dagger}$ & MB & 0.969 & 0.365 & $+0.603$ \\
+     & 1024$^{\dagger}$ & NMB & 0.566 & 0.152 & $+0.415$ \\
+     & 1024$^{\dagger}$ & MB & 0.576 & 0.168 & $+0.408$ \\
+    \addlinespace
+    REAL-Space & 1024$^{\dagger}$ & NMB & 1.000 & 0.704 & $+0.296$ \\
+     & 1024$^{\dagger}$ & MB & 0.993 & 0.713 & $+0.280$ \\
+    \bottomrule
+  \end{tabular}
+\end{table}

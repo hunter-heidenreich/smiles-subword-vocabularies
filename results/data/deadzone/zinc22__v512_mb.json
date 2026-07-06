@@ -1,0 +1,118 @@
+{
+  "any_arm_unsafe": true,
+  "both_arms_unsafe": false,
+  "boundary": "mb",
+  "bpe": {
+    "arm": "bpe",
+    "cell_id": "zinc22__smirk_gpe_v512_mb",
+    "clearance_by_n": {
+      "100": 0.9773371104815864,
+      "200": 0.9716713881019831,
+      "50": 0.9773371104815864
+    },
+    "embedding_tail_unsafe": false,
+    "headline_clearance": 0.9773371104815864,
+    "n_non_atomic": 353,
+    "training_corpus_sha": "2604e603ded8e77654016cd7b3f38cec",
+    "v_observed": 520
+  },
+  "corpus": "zinc22",
+  "delta_fp": [
+    {
+      "delta_f": 0.2917847025495751,
+      "f_bpe": 0.9773371104815864,
+      "f_unigram": 0.6855524079320113,
+      "is_headline": false,
+      "n": 50,
+      "p": 0.9
+    },
+    {
+      "delta_f": 0.3852691218130312,
+      "f_bpe": 0.9773371104815864,
+      "f_unigram": 0.5920679886685553,
+      "is_headline": false,
+      "n": 100,
+      "p": 0.9
+    },
+    {
+      "delta_f": 0.4929178470254958,
+      "f_bpe": 0.9716713881019831,
+      "f_unigram": 0.47875354107648727,
+      "is_headline": false,
+      "n": 200,
+      "p": 0.9
+    },
+    {
+      "delta_f": 0.2917847025495751,
+      "f_bpe": 0.9773371104815864,
+      "f_unigram": 0.6855524079320113,
+      "is_headline": false,
+      "n": 50,
+      "p": 0.95
+    },
+    {
+      "delta_f": 0.3852691218130312,
+      "f_bpe": 0.9773371104815864,
+      "f_unigram": 0.5920679886685553,
+      "is_headline": true,
+      "n": 100,
+      "p": 0.95
+    },
+    {
+      "delta_f": 0.4929178470254958,
+      "f_bpe": 0.9716713881019831,
+      "f_unigram": 0.47875354107648727,
+      "is_headline": false,
+      "n": 200,
+      "p": 0.95
+    },
+    {
+      "delta_f": 0.2917847025495751,
+      "f_bpe": 0.9773371104815864,
+      "f_unigram": 0.6855524079320113,
+      "is_headline": false,
+      "n": 50,
+      "p": 0.99
+    },
+    {
+      "delta_f": 0.3852691218130312,
+      "f_bpe": 0.9773371104815864,
+      "f_unigram": 0.5920679886685553,
+      "is_headline": false,
+      "n": 100,
+      "p": 0.99
+    },
+    {
+      "delta_f": 0.4929178470254958,
+      "f_bpe": 0.9716713881019831,
+      "f_unigram": 0.47875354107648727,
+      "is_headline": false,
+      "n": 200,
+      "p": 0.99
+    }
+  ],
+  "extras_kind": null,
+  "extras_label": null,
+  "headline_delta_f": 0.3852691218130312,
+  "missing_arm": null,
+  "pair_key": "zinc22__v512_mb",
+  "pair_status": "matched",
+  "schema_version": 1,
+  "tier": "headline",
+  "unigram": {
+    "arm": "unigram",
+    "cell_id": "zinc22__smirk_unigram_v512_mb",
+    "clearance_by_n": {
+      "100": 0.5920679886685553,
+      "200": 0.47875354107648727,
+      "50": 0.6855524079320113
+    },
+    "embedding_tail_unsafe": true,
+    "headline_clearance": 0.5920679886685553,
+    "n_non_atomic": 353,
+    "training_corpus_sha": "2604e603ded8e77654016cd7b3f38cec",
+    "v_observed": 518
+  },
+  "unpaired_reason": null,
+  "vocab_size": 512
+}

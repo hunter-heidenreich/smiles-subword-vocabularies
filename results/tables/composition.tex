@@ -1,0 +1,26 @@
+\begin{table}[htbp]
+  \centering
+  \caption{Substructure composition of the shared, BPE-only, and Unigram-LM-only multi-glyph sets, by corpus (matched pairs at $V{=}1024$, NMB). Each piece is classed from its glyphs by priority aromatic atom $>$ aliphatic heteroatom $>$ unsaturated carbon $>$ saturated carbon, and each row gives the percentage of that set's pieces in each class. Aromatic-ring pieces are a BPE specialty the Unigram-LM arm almost never forms; bracket-internal pieces arise only under MB (\S\ref{app:multiglyph}) and do not occur here.}
+  \label{tab:composition}
+  \small
+  \begin{tabular}{@{}l r r r r r@{}}
+    \toprule
+    Set & $n$ & Sat.\,C & Unsat.\,C & Aromatic & Heteroatom \\
+    \midrule
+    \multicolumn{6}{@{}l}{\emph{PubChem}} \\
+    Shared & 128 & 9\% & 9\% & 11\% & 71\% \\
+    BPE-only & 739 & 6\% & 6\% & 34\% & 54\% \\
+    Unigram-LM-only & 737 & 0\% & 13\% & 1\% & 86\% \\
+    \addlinespace[2pt]
+    \multicolumn{6}{@{}l}{\emph{ZINC-22}} \\
+    Shared & 99 & 3\% & 9\% & 2\% & 86\% \\
+    BPE-only & 768 & 1\% & 6\% & 37\% & 56\% \\
+    Unigram-LM-only & 211 & 1\% & 7\% & 0\% & 92\% \\
+    \addlinespace[2pt]
+    \multicolumn{6}{@{}l}{\emph{COCONUT}} \\
+    Shared & 139 & 8\% & 22\% & 30\% & 40\% \\
+    BPE-only & 728 & 6\% & 18\% & 27\% & 49\% \\
+    Unigram-LM-only & 501 & 0\% & 49\% & 7\% & 44\% \\
+    \bottomrule
+  \end{tabular}
+\end{table}

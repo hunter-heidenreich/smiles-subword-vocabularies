@@ -1,0 +1,118 @@
+{
+  "any_arm_unsafe": false,
+  "both_arms_unsafe": false,
+  "boundary": "mb",
+  "bpe": {
+    "arm": "bpe",
+    "cell_id": "pubchem__smirk_gpe_v1024_mb",
+    "clearance_by_n": {
+      "100": 0.9907514450867052,
+      "200": 0.9895953757225433,
+      "50": 0.9907514450867052
+    },
+    "embedding_tail_unsafe": false,
+    "headline_clearance": 0.9907514450867052,
+    "n_non_atomic": 865,
+    "training_corpus_sha": "d471aba7d34c2d2875e958d3df2abfcc",
+    "v_observed": 1032
+  },
+  "corpus": "pubchem",
+  "delta_fp": [
+    {
+      "delta_f": -0.0023121387283236983,
+      "f_bpe": 0.9907514450867052,
+      "f_unigram": 0.9930635838150289,
+      "is_headline": false,
+      "n": 50,
+      "p": 0.9
+    },
+    {
+      "delta_f": 0.011560693641618491,
+      "f_bpe": 0.9907514450867052,
+      "f_unigram": 0.9791907514450867,
+      "is_headline": false,
+      "n": 100,
+      "p": 0.9
+    },
+    {
+      "delta_f": 0.05086705202312136,
+      "f_bpe": 0.9895953757225433,
+      "f_unigram": 0.9387283236994219,
+      "is_headline": false,
+      "n": 200,
+      "p": 0.9
+    },
+    {
+      "delta_f": -0.0023121387283236983,
+      "f_bpe": 0.9907514450867052,
+      "f_unigram": 0.9930635838150289,
+      "is_headline": false,
+      "n": 50,
+      "p": 0.95
+    },
+    {
+      "delta_f": 0.011560693641618491,
+      "f_bpe": 0.9907514450867052,
+      "f_unigram": 0.9791907514450867,
+      "is_headline": true,
+      "n": 100,
+      "p": 0.95
+    },
+    {
+      "delta_f": 0.05086705202312136,
+      "f_bpe": 0.9895953757225433,
+      "f_unigram": 0.9387283236994219,
+      "is_headline": false,
+      "n": 200,
+      "p": 0.95
+    },
+    {
+      "delta_f": -0.0023121387283236983,
+      "f_bpe": 0.9907514450867052,
+      "f_unigram": 0.9930635838150289,
+      "is_headline": false,
+      "n": 50,
+      "p": 0.99
+    },
+    {
+      "delta_f": 0.011560693641618491,
+      "f_bpe": 0.9907514450867052,
+      "f_unigram": 0.9791907514450867,
+      "is_headline": false,
+      "n": 100,
+      "p": 0.99
+    },
+    {
+      "delta_f": 0.05086705202312136,
+      "f_bpe": 0.9895953757225433,
+      "f_unigram": 0.9387283236994219,
+      "is_headline": false,
+      "n": 200,
+      "p": 0.99
+    }
+  ],
+  "extras_kind": null,
+  "extras_label": null,
+  "headline_delta_f": 0.011560693641618491,
+  "missing_arm": null,
+  "pair_key": "pubchem__v1024_mb",
+  "pair_status": "matched",
+  "schema_version": 1,
+  "tier": "headline",
+  "unigram": {
+    "arm": "unigram",
+    "cell_id": "pubchem__smirk_unigram_v1024_mb",
+    "clearance_by_n": {
+      "100": 0.9791907514450867,
+      "200": 0.9387283236994219,
+      "50": 0.9930635838150289
+    },
+    "embedding_tail_unsafe": false,
+    "headline_clearance": 0.9791907514450867,
+    "n_non_atomic": 865,
+    "training_corpus_sha": "d471aba7d34c2d2875e958d3df2abfcc",
+    "v_observed": 1030
+  },
+  "unpaired_reason": null,
+  "vocab_size": 1024
+}

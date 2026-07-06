@@ -1,0 +1,28 @@
+\providecommand{\bndtok}[1]{\textcolor{black!50}{#1}}
+\begin{table}[htbp]
+  \centering
+  \caption{Learned multi-glyph pieces for the PubChem $V{=}256$ matched pair, split three ways by cross-algorithm membership (shared by both arms, selected only by BPE, and selected only by Unigram-LM) under each boundary policy, with the per-policy overlap $J$ in the block header. Each piece is its concatenated glyph surface, ordered by glyph count then alphabetically; pieces also selected under the other boundary policy (\emph{boundary-robust}: selected under both) are \bndtok{grayed}, leaving the policy-specific pieces plain. Classes larger than 18 pieces are abridged to their first 14 and last 4 (the parenthetical gives the full class size); complete lists are in the data deposit.}
+  \label{tab:multiglyph-v256}
+  \footnotesize
+  \begin{tabular}{@{}l p{0.78\linewidth}@{}}
+    \toprule
+    Membership & Pieces \\
+    \midrule
+    \multicolumn{2}{@{}l}{\emph{no-merge-brackets (NMB)}, overlap $J{=}0.054$} \\
+    \addlinespace[2pt]
+    Shared (10) & \bndtok{\texttt{C\#}}, \bndtok{\texttt{CCCC}}, \bndtok{\texttt{CCCN}}, \bndtok{\texttt{CCNC}}, \bndtok{\texttt{CCOC}}, \bndtok{\texttt{CCCCC}}, \bndtok{\texttt{CCOCC}}, \bndtok{\texttt{CCCCCCC}}, \bndtok{\texttt{CCCCCCCC}}, \bndtok{\texttt{CCCCCCCCCCCCCCCC}} \\
+    \addlinespace[3pt]
+    BPE-only (89) & \bndtok{\texttt{-c}}, \bndtok{\texttt{-n}}, \texttt{2H}, \bndtok{\texttt{=C}}, \bndtok{\texttt{=N}}, \bndtok{\texttt{=O}}, \bndtok{\texttt{=S}}, \bndtok{\texttt{C=}}, \texttt{C@}, \texttt{C@@}, \bndtok{\texttt{CC}}, \texttt{CH}, \bndtok{\texttt{CN}}, \bndtok{\texttt{CO}}, \textellipsis~(71 more), \bndtok{\texttt{cccnc}}, \bndtok{\texttt{ccncc}}, \bndtok{\texttt{CCCCCC}}, \texttt{OCCOCC} \\
+    \addlinespace[3pt]
+    Unigram-LM-only (87) & \bndtok{\texttt{10}}, \texttt{Ca+}, \texttt{Cu+}, \texttt{Fe+}, \texttt{Ir+}, \texttt{Mg+}, \texttt{Ni+}, \bndtok{\texttt{OP}}, \texttt{Pd+}, \texttt{Pt+}, \texttt{Ru+}, \texttt{Ti+}, \texttt{Zn+}, \texttt{Zr+}, \textellipsis~(69 more), \bndtok{\texttt{=S=S=S=S=S=S=S=S}}, \texttt{CCC=CCC=CCC=CCC=}, \texttt{CCCCCCC=CCCCCCCC}, \bndtok{\texttt{OCCOCCOCCOCCOCCO}} \\
+    \midrule
+    \multicolumn{2}{@{}l}{\emph{merge-brackets (MB)}, overlap $J{=}0.071$} \\
+    \addlinespace[2pt]
+    Shared (13) & \bndtok{\texttt{C\#}}, \texttt{[Si}, \texttt{[C@}, \texttt{[C@@}, \bndtok{\texttt{CCCC}}, \bndtok{\texttt{CCCN}}, \bndtok{\texttt{CCNC}}, \bndtok{\texttt{CCOC}}, \bndtok{\texttt{CCCCC}}, \bndtok{\texttt{CCOCC}}, \bndtok{\texttt{ccccc}}, \bndtok{\texttt{CCCCCCCC}}, \bndtok{\texttt{CCCCCCCCCCCCCCCC}} \\
+    \addlinespace[3pt]
+    BPE-only (86) & \texttt{+]}, \texttt{-]}, \bndtok{\texttt{-c}}, \bndtok{\texttt{-n}}, \bndtok{\texttt{=C}}, \bndtok{\texttt{=N}}, \bndtok{\texttt{=O}}, \bndtok{\texttt{=S}}, \bndtok{\texttt{C=}}, \bndtok{\texttt{CC}}, \bndtok{\texttt{CN}}, \bndtok{\texttt{CO}}, \bndtok{\texttt{CS}}, \bndtok{\texttt{Cc}}, \textellipsis~(68 more), \bndtok{\texttt{ccccn}}, \bndtok{\texttt{cccnc}}, \bndtok{\texttt{ccncc}}, \bndtok{\texttt{CCCCCC}} \\
+    \addlinespace[3pt]
+    Unigram-LM-only (84) & \bndtok{\texttt{10}}, \bndtok{\texttt{OP}}, \texttt{[Al}, \texttt{[Fe}, \texttt{[Ge}, \texttt{[Ir}, \texttt{[K}, \texttt{[Li}, \texttt{[Na}, \texttt{[Pt}, \texttt{[Se}, \texttt{[Sn}, \texttt{[Ti}, \texttt{[V}, \textellipsis~(66 more), \bndtok{\texttt{=C=C=C=C=C=C=C=C}}, \bndtok{\texttt{=S=S=S=S=S=S=S=S}}, \texttt{CCOCCOCCOCCOCCOC}, \bndtok{\texttt{OCCOCCOCCOCCOCCO}} \\
+    \bottomrule
+  \end{tabular}
+\end{table}

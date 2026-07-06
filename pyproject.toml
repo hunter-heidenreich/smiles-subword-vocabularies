@@ -1,0 +1,138 @@
+[project]
+name = "smiles-subword-vocabularies"
+version = "0.0.0"
+description = "Controlled comparison of subword tokenizer vocabularies (BPE vs Unigram-LM) over OpenSMILES"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    # smirk: study fork (hunter-heidenreich/smirk @ vtc-2026-05-24), pinned in
+    # [tool.uv.sources] below. Adds the Unigram-LM arm + shared pre-tokenization
+    # + scaffold instrumentation to stock Smirk; built from source (needs Rust).
+    # Provenance: data/MANIFEST.yaml, paper/SMIRK-FORK.md.
+    "smirk>=0.2.0,<0.3",
+    # rdkit pinned exactly: canonical-SMILES output is version-dependent and the
+    # corpus must reproduce. Bump deliberately; record in data/MANIFEST.yaml.
+    "rdkit==2026.03.1",
+    "pydantic>=2.6,<3",
+    "pyyaml>=6.0,<7",
+    "duckdb>=0.10,<2",
+    "pyarrow>=15,<22",
+    "numpy>=1.26,<3",
+]
+
+[project.optional-dependencies]
+# matplotlib drives the results/build figure renderers. An extra, not a base
+# dep, so lint/type/test jobs stay lean; CI installs it via --all-extras.
+figures = ["matplotlib>=3.8,<4"]
+# openbabel-wheel: second toolkit for the non-canonicity cross-toolkit axis
+# (noncanon_runner's obcanon). An extra (only make measure/reproduce need it),
+# imported lazily and skipped when absent. Pinned exactly like rdkit
+# (version-dependent canonicalization). Provenance in data/MANIFEST.yaml.
+crosstoolkit = ["openbabel-wheel==3.1.1.23"]
+
+[dependency-groups]
+dev = [
+    "ruff>=0.15,<1",
+    "pytest>=8.0",
+    "pytest-cov>=5.0",
+    "hypothesis>=6",
+    "pre-commit>=3.6",
+    "pyright>=1.1.350",
+]
+
+[tool.uv.sources]
+# smirk resolves to the study fork at vtc-2026-05-24 (commit c2ee070): the
+# Unigram-LM arm delegates to HuggingFace tokenizers' UnigramTrainer. Fork
+# provenance in data/MANIFEST.yaml (software) and paper/SMIRK-FORK.md.
+smirk = { git = "https://github.com/hunter-heidenreich/smirk", tag = "vtc-2026-05-24" }
+
+[tool.ruff]
+target-version = "py311"
+# paper/ is LaTeX (not linted); results/build renderers ARE linted.
+extend-exclude = ["paper"]
+
+[tool.ruff.lint]
+select = [
+    "E", "W", "F", "I", "B", "C4", "SIM", "UP", "RUF",
+    "PIE", "PERF", "FURB", "NPY", "LOG", "G",
+    "PTH", "PT", "TID",
+    "PLE", "PLW",
+    "TC",
+    "BLE", "DTZ", "FBT", "SLF", "N",
+    "EXE", "ISC", "PGH", "RET", "RSE", "T10", "YTT", "A", "ICN", "Q", "ERA",
+    "T20",
+    "TRY",
+    "ARG",
+    "ANN",
+]
+ignore = [
+    # TRY003: a custom exception class per error site isn't worth it here.
+    "TRY003",
+    # ANN401: deliberate typing.Any (config **overrides, JSON coercion).
+    "ANN401",
+    # RUF001/2/3: intentional ambiguous unicode in math-heavy docstrings.
+    "RUF001",
+    "RUF002",
+    "RUF003",
+]
+
+[tool.ruff.lint.flake8-type-checking]
+# Pydantic/dataclass fields + pytest fixtures evaluate annotations at runtime,
+# so imports used there must stay outside TYPE_CHECKING.
+runtime-evaluated-base-classes = [
+    "pydantic.BaseModel",
+    "smiles_subword.config.YamlLoadable",
+]
+runtime-evaluated-decorators = [
+    "dataclasses.dataclass",
+    "pydantic.validate_call",
+    "pytest.fixture",
+]
+
+[tool.ruff.lint.per-file-ignores]
+# Tests: bool params (FBT), white-box private access (SLF), atom/ext names (N802).
+"tests/**" = ["FBT001", "FBT003", "SLF001", "N802", "ARG001", "ARG002", "ARG005"]
+# CLI entry points: print is the user output channel.
+"scripts/**" = ["T201"]
+# Renderers: print is their output channel; untyped matplotlib Axes params (ANN).
+"results/build/**" = ["T201", "ANN001", "ANN201", "ANN202"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "--strict-markers -ra"
+xfail_strict = true
+markers = [
+    "gpu: requires GPU hardware (skipped on CPU-only CI runners)",
+]
+
+[tool.coverage.run]
+source = ["smiles_subword"]
+branch = true
+
+[tool.coverage.report]
+show_missing = true
+exclude_also = [
+    "if TYPE_CHECKING:",
+    "raise NotImplementedError",
+]
+
+[tool.pyright]
+include = ["src/smiles_subword", "scripts", "results/build"]
+# The two molecule/heatmap drawing figures are pure matplotlib+rdkit rendering;
+# their only pyright findings are third-party stub gaps. Rest of build is checked.
+exclude = [
+    "results/build/figure_graphical_abstract.py",
+    "results/build/figure_glyph_cooccurrence.py",
+]
+typeCheckingMode = "basic"
+pythonVersion = "3.11"
+useLibraryCodeForTypes = true
+reportMissingTypeStubs = "none"
+reportPrivateImportUsage = "none"
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]

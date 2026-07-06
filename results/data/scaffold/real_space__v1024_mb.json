@@ -1,0 +1,50 @@
+{
+  "boundary": "mb",
+  "bpe": {
+    "arm": "bpe",
+    "boundary": "mb",
+    "cell_id": "real_space__smirk_gpe_v1024_mb",
+    "n_merges": 867,
+    "scaffold_count": 0,
+    "scaffold_fraction_of_v": 0.0,
+    "scaffold_log_sha": "b8ddd1ab9c0b3ab87648ea60b3f8d3b22c6a72cde302e3c6f3c21e64b3731a37",
+    "surface_form_breakdown": {
+      "atomic": 0,
+      "bracket_internal": 0,
+      "structural": 0
+    },
+    "threshold": 4500,
+    "training_corpus_sha": "140534c1544cd9f2ce760709417f23dd",
+    "verified_by_construction": false,
+    "vocab_size": 1026
+  },
+  "corpus": "real_space",
+  "delta_scaffold_fraction": 0.0,
+  "extras_kind": null,
+  "extras_label": null,
+  "missing_arm": null,
+  "pair_key": "real_space__v1024_mb",
+  "pair_status": "matched",
+  "schema_version": 1,
+  "tier": "anchor",
+  "unigram": {
+    "arm": "unigram",
+    "boundary": "mb",
+    "cell_id": "real_space__smirk_unigram_v1024_mb",
+    "n_merges": null,
+    "scaffold_count": 0,
+    "scaffold_fraction_of_v": 0.0,
+    "scaffold_log_sha": null,
+    "surface_form_breakdown": {
+      "atomic": 0,
+      "bracket_internal": 0,
+      "structural": 0
+    },
+    "threshold": null,
+    "training_corpus_sha": "140534c1544cd9f2ce760709417f23dd",
+    "verified_by_construction": true,
+    "vocab_size": 452
+  },
+  "unpaired_reason": null,
+  "vocab_size": 1024
+}

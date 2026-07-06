@@ -1,0 +1,16 @@
+name: zinc22
+source: zinc22
+tranches_path: configs/corpus/zinc22_tranches.tsv
+raw_root: data/raw/zinc22/tranches
+output_root: data/processed/zinc22/raw_v1
+concurrency: 4
+transport: auto
+smiles_column: smiles
+id_column: zinc_id
+has_header: false
+delim: "\t"
+file_compression: gzip
+shard_target_bytes: 268435456
+rows_per_batch: 131072
+parquet_compression: zstd
+parquet_compression_level: 3

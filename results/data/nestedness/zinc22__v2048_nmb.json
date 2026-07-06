@@ -1,0 +1,17 @@
+{
+  "boundary": "nmb",
+  "corpus": "zinc22",
+  "eval_split_sha": "730dc2ddc8c4edd981244fa27433a1ea",
+  "extras_kind": null,
+  "extras_label": null,
+  "missing_arm": "unigram",
+  "pair_key": "zinc22__v2048_nmb",
+  "pair_status": "single_arm",
+  "present_arm": "bpe",
+  "present_cell_id": "zinc22__smirk_gpe_v2048_nmb",
+  "present_training_corpus_sha": "2604e603ded8e77654016cd7b3f38cec",
+  "schema_version": 1,
+  "tier": "conditional",
+  "unpaired_reason": "conditional_negative_branch",
+  "vocab_size": 2048
+}

@@ -1,0 +1,51 @@
+{
+  "abs_delta_d": null,
+  "boundary": "nmb",
+  "bpe": {
+    "arm": "bpe",
+    "bootstrap_seed": 3945190207,
+    "boundary": "nmb",
+    "cell_id": "real_space__smirk_gpe_v50000_nmb_merge_exhaustion",
+    "d": 0.956199609802343,
+    "d_ci": [
+      0.9561598197726555,
+      0.95624370406043
+    ],
+    "eta": 0.3883803885709288,
+    "eta_ci": [
+      0.38831142162813836,
+      0.38844957503140803
+    ],
+    "eval_split_sha": "6cbe68f87c92fb2a253f536715b5ec69",
+    "live_token_count": 2161,
+    "n_molecules": 1000352,
+    "n_resamples": 1000,
+    "renyi": 0.28827807842586745,
+    "renyi_ci": [
+      0.28821274847183337,
+      0.2883407524070851
+    ],
+    "total_tokens": 32712676,
+    "training_corpus_sha": "140534c1544cd9f2ce760709417f23dd",
+    "v_effective": 4330,
+    "vocab_size": 4331
+  },
+  "corpus": "real_space",
+  "delta_d": null,
+  "delta_d_exceeds_threshold": null,
+  "delta_eta": null,
+  "delta_renyi": null,
+  "extras_kind": "merge_exhaustion",
+  "extras_label": "merge_exhaustion",
+  "missing_arm": "unigram",
+  "near_reference_threshold": null,
+  "pair_key": "real_space__v50000_nmb__merge_exhaustion",
+  "pair_status": "single_arm",
+  "schema_version": 1,
+  "tier": "extras_merge_exhaustion",
+  "unigram": null,
+  "unpaired_reason": "extras_single_arm_knob",
+  "v_effective_consistent": null,
+  "v_effective_delta": null,
+  "vocab_size": 50000
+}

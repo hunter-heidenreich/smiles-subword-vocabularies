@@ -1,0 +1,13 @@
+# Sensitivity-battery / size-matched probe.
+# Subsample the PubChem training split down to COCONUT's training size
+# (702,048 molecules) via the canonical-SMILES acceptance-band hash, so the
+# size-matched probe and the sensitivity battery train on a size-controlled
+# PubChem. Kept count fluctuates around target_n by binomial noise.
+name: pubchem
+input_dir: data/processed/pubchem/canon_dedup_v1/train
+output_dir: data/processed/pubchem/canon_dedup_v1_extras/size_700k
+target_n: 702048
+# Independent of the corpus-building subsample domain (canon_dedup_v1.subsample),
+# under which the corpus was already drawn; reusing it would nest the bands
+# (coords are restricted to the prior acceptance window, not uniform).
+hash_domain: canon_dedup_v1.size_700k

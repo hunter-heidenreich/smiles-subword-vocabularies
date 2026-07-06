@@ -1,0 +1,1065 @@
+{
+  "anchor": {
+    "boundary": "nmb",
+    "corpus": "pubchem",
+    "delta_fertility_relative": 0.25096596621036626,
+    "jaccard": 0.09937888198757763,
+    "subsample": "size_700k",
+    "vocab_size": 512
+  },
+  "interactions": {
+    "minfreq_mpl": {
+      "name": "minfreq_mpl",
+      "points": [
+        {
+          "bpe_cell_id": "pubchem__smirk_gpe_v512_nmb_sens_anchor",
+          "delta_fertility_relative": 0.25096596621036626,
+          "is_default": true,
+          "jaccard": 0.09937888198757763,
+          "unigram_cell_id": "pubchem__smirk_unigram_v512_nmb_sens_anchor",
+          "x": 2.0,
+          "y": 16.0
+        },
+        {
+          "bpe_cell_id": "pubchem__smirk_gpe_v512_nmb_sens_anchor",
+          "delta_fertility_relative": 0.31332788433472697,
+          "is_default": false,
+          "jaccard": 0.08333333333333333,
+          "unigram_cell_id": "pubchem__smirk_unigram_v512_nmb_mpl_4",
+          "x": 2.0,
+          "y": 4.0
+        },
+        {
+          "bpe_cell_id": "pubchem__smirk_gpe_v512_nmb_sens_anchor",
+          "delta_fertility_relative": 0.2665429872421985,
+          "is_default": false,
+          "jaccard": 0.08588957055214724,
+          "unigram_cell_id": "pubchem__smirk_unigram_v512_nmb_mpl_8",
+          "x": 2.0,
+          "y": 8.0
+        },
+        {
+          "bpe_cell_id": "pubchem__smirk_gpe_v512_nmb_sens_anchor",
+          "delta_fertility_relative": 0.2503814757840413,
+          "is_default": false,
+          "jaccard": 0.10452418096723869,
+          "unigram_cell_id": "pubchem__smirk_unigram_v512_nmb_mpl_32",
+          "x": 2.0,
+          "y": 32.0
+        },
+        {
+          "bpe_cell_id": "pubchem__smirk_gpe_v512_nmb_sens_anchor",
+          "delta_fertility_relative": 0.24684792544023376,
+          "is_default": false,
+          "jaccard": 0.11496062992125984,
+          "unigram_cell_id": "pubchem__smirk_unigram_v512_nmb_mpl_64",
+          "x": 2.0,
+          "y": 64.0
+        },
+        {
+          "bpe_cell_id": "pubchem__smirk_gpe_v512_nmb_sens_anchor",
+          "delta_fertility_relative": 0.2443408707992474,
+          "is_default": false,
+          "jaccard": 0.12202852614896989,
+          "unigram_cell_id": "pubchem__smirk_unigram_v512_nmb_mpl_128",
+          "x": 2.0,
+          "y": 128.0
+        },
+        {
+          "bpe_cell_id": "pubchem__smirk_gpe_v512_nmb_minfreq_0",
+          "delta_fertility_relative": 0.25096596621036626,
+          "is_default": false,
+          "jaccard": 0.09937888198757763,
+          "unigram_cell_id": "pubchem__smirk_unigram_v512_nmb_sens_anchor",
+          "x": 0.0,
+          "y": 16.0
+        },
+        {
+          "bpe_cell_id": "pubchem__smirk_gpe_v512_nmb_minfreq_0",
+          "delta_fertility_relative": 0.31332788433472697,
+          "is_default": false,
+          "jaccard": 0.08333333333333333,
+          "unigram_cell_id": "pubchem__smirk_unigram_v512_nmb_mpl_4",
+          "x": 0.0,
+          "y": 4.0
+        },
+        {
+          "bpe_cell_id": "pubchem__smirk_gpe_v512_nmb_minfreq_0",
+          "delta_fertility_relative": 0.2665429872421985,
+          "is_default": false,
+          "jaccard": 0.08588957055214724,
+          "unigram_cell_id": "pubchem__smirk_unigram_v512_nmb_mpl_8",
+          "x": 0.0,
+          "y": 8.0
+        },
+        {
+          "bpe_cell_id": "pubchem__smirk_gpe_v512_nmb_minfreq_0",
+          "delta_fertility_relative": 0.2503814757840413,
+          "is_default": false,
+          "jaccard": 0.10452418096723869,
+          "unigram_cell_id": "pubchem__smirk_unigram_v512_nmb_mpl_32",
+          "x": 0.0,
+          "y": 32.0
+        },
+        {
+          "bpe_cell_id": "pubchem__smirk_gpe_v512_nmb_minfreq_0",
+          "delta_fertility_relative": 0.24684792544023376,
+          "is_default": false,
+          "jaccard": 0.11496062992125984,
+          "unigram_cell_id": "pubchem__smirk_unigram_v512_nmb_mpl_64",
+          "x": 0.0,
+          "y": 64.0
+        },
+        {
+          "bpe_cell_id": "pubchem__smirk_gpe_v512_nmb_minfreq_0",
+          "delta_fertility_relative": 0.2443408707992474,
+          "is_default": false,
+          "jaccard": 0.12202852614896989,
+          "unigram_cell_id": "pubchem__smirk_unigram_v512_nmb_mpl_128",
+          "x": 0.0,
+          "y": 128.0
+        },
+        {
+          "bpe_cell_id": "pubchem__smirk_gpe_v512_nmb_minfreq_1",
+          "delta_fertility_relative": 0.25096596621036626,
+          "is_default": false,
+          "jaccard": 0.09937888198757763,
+          "unigram_cell_id": "pubchem__smirk_unigram_v512_nmb_sens_anchor",
+          "x": 1.0,
+          "y": 16.0
+        },
+        {
+          "bpe_cell_id": "pubchem__smirk_gpe_v512_nmb_minfreq_1",
+          "delta_fertility_relative": 0.31332788433472697,
+          "is_default": false,
+          "jaccard": 0.08333333333333333,
+          "unigram_cell_id": "pubchem__smirk_unigram_v512_nmb_mpl_4",
+          "x": 1.0,
+          "y": 4.0
+        },
+        {
+          "bpe_cell_id": "pubchem__smirk_gpe_v512_nmb_minfreq_1",
+          "delta_fertility_relative": 0.2665429872421985,
+          "is_default": false,
+          "jaccard": 0.08588957055214724,
+          "unigram_cell_id": "pubchem__smirk_unigram_v512_nmb_mpl_8",
+          "x": 1.0,
+          "y": 8.0
+        },
+        {
+          "bpe_cell_id": "pubchem__smirk_gpe_v512_nmb_minfreq_1",
+          "delta_fertility_relative": 0.2503814757840413,
+          "is_default": false,
+          "jaccard": 0.10452418096723869,
+          "unigram_cell_id": "pubchem__smirk_unigram_v512_nmb_mpl_32",
+          "x": 1.0,
+          "y": 32.0
+        },
+        {
+          "bpe_cell_id": "pubchem__smirk_gpe_v512_nmb_minfreq_1",
+          "delta_fertility_relative": 0.24684792544023376,
+          "is_default": false,
+          "jaccard": 0.11496062992125984,
+          "unigram_cell_id": "pubchem__smirk_unigram_v512_nmb_mpl_64",
+          "x": 1.0,
+          "y": 64.0
+        },
+        {
+          "bpe_cell_id": "pubchem__smirk_gpe_v512_nmb_minfreq_1",
+          "delta_fertility_relative": 0.2443408707992474,
+          "is_default": false,
+          "jaccard": 0.12202852614896989,
+          "unigram_cell_id": "pubchem__smirk_unigram_v512_nmb_mpl_128",
+          "x": 1.0,
+          "y": 128.0
+        },
+        {
+          "bpe_cell_id": "pubchem__smirk_gpe_v512_nmb_minfreq_4",
+          "delta_fertility_relative": 0.25096596621036626,
+          "is_default": false,
+          "jaccard": 0.09937888198757763,
+          "unigram_cell_id": "pubchem__smirk_unigram_v512_nmb_sens_anchor",
+          "x": 4.0,
+          "y": 16.0
+        },
+        {
+          "bpe_cell_id": "pubchem__smirk_gpe_v512_nmb_minfreq_4",
+          "delta_fertility_relative": 0.31332788433472697,
+          "is_default": false,
+          "jaccard": 0.08333333333333333,
+          "unigram_cell_id": "pubchem__smirk_unigram_v512_nmb_mpl_4",
+          "x": 4.0,
+          "y": 4.0
+        },
+        {
+          "bpe_cell_id": "pubchem__smirk_gpe_v512_nmb_minfreq_4",
+          "delta_fertility_relative": 0.2665429872421985,
+          "is_default": false,
+          "jaccard": 0.08588957055214724,
+          "unigram_cell_id": "pubchem__smirk_unigram_v512_nmb_mpl_8",
+          "x": 4.0,
+          "y": 8.0
+        },
+        {
+          "bpe_cell_id": "pubchem__smirk_gpe_v512_nmb_minfreq_4",
+          "delta_fertility_relative": 0.2503814757840413,
+          "is_default": false,
+          "jaccard": 0.10452418096723869,
+          "unigram_cell_id": "pubchem__smirk_unigram_v512_nmb_mpl_32",
+          "x": 4.0,
+          "y": 32.0
+        },
+        {
+          "bpe_cell_id": "pubchem__smirk_gpe_v512_nmb_minfreq_4",
+          "delta_fertility_relative": 0.24684792544023376,
+          "is_default": false,
+          "jaccard": 0.11496062992125984,
+          "unigram_cell_id": "pubchem__smirk_unigram_v512_nmb_mpl_64",
+          "x": 4.0,
+          "y": 64.0
+        },
+        {
+          "bpe_cell_id": "pubchem__smirk_gpe_v512_nmb_minfreq_4",
+          "delta_fertility_relative": 0.2443408707992474,
+          "is_default": false,
+          "jaccard": 0.12202852614896989,
+          "unigram_cell_id": "pubchem__smirk_unigram_v512_nmb_mpl_128",
+          "x": 4.0,
+          "y": 128.0
+        },
+        {
+          "bpe_cell_id": "pubchem__smirk_gpe_v512_nmb_minfreq_8",
+          "delta_fertility_relative": 0.25096596621036626,
+          "is_default": false,
+          "jaccard": 0.09937888198757763,
+          "unigram_cell_id": "pubchem__smirk_unigram_v512_nmb_sens_anchor",
+          "x": 8.0,
+          "y": 16.0
+        },
+        {
+          "bpe_cell_id": "pubchem__smirk_gpe_v512_nmb_minfreq_8",
+          "delta_fertility_relative": 0.31332788433472697,
+          "is_default": false,
+          "jaccard": 0.08333333333333333,
+          "unigram_cell_id": "pubchem__smirk_unigram_v512_nmb_mpl_4",
+          "x": 8.0,
+          "y": 4.0
+        },
+        {
+          "bpe_cell_id": "pubchem__smirk_gpe_v512_nmb_minfreq_8",
+          "delta_fertility_relative": 0.2665429872421985,
+          "is_default": false,
+          "jaccard": 0.08588957055214724,
+          "unigram_cell_id": "pubchem__smirk_unigram_v512_nmb_mpl_8",
+          "x": 8.0,
+          "y": 8.0
+        },
+        {
+          "bpe_cell_id": "pubchem__smirk_gpe_v512_nmb_minfreq_8",
+          "delta_fertility_relative": 0.2503814757840413,
+          "is_default": false,
+          "jaccard": 0.10452418096723869,
+          "unigram_cell_id": "pubchem__smirk_unigram_v512_nmb_mpl_32",
+          "x": 8.0,
+          "y": 32.0
+        },
+        {
+          "bpe_cell_id": "pubchem__smirk_gpe_v512_nmb_minfreq_8",
+          "delta_fertility_relative": 0.24684792544023376,
+          "is_default": false,
+          "jaccard": 0.11496062992125984,
+          "unigram_cell_id": "pubchem__smirk_unigram_v512_nmb_mpl_64",
+          "x": 8.0,
+          "y": 64.0
+        },
+        {
+          "bpe_cell_id": "pubchem__smirk_gpe_v512_nmb_minfreq_8",
+          "delta_fertility_relative": 0.2443408707992474,
+          "is_default": false,
+          "jaccard": 0.12202852614896989,
+          "unigram_cell_id": "pubchem__smirk_unigram_v512_nmb_mpl_128",
+          "x": 8.0,
+          "y": 128.0
+        }
+      ],
+      "x_knob": "minfreq",
+      "y_knob": "mpl"
+    },
+    "mpl_typology": {
+      "name": "mpl_typology",
+      "points": [
+        {
+          "bpe_cell_id": "pubchem__smirk_gpe_v512_nmb_sens_anchor",
+          "delta_fertility_relative": 0.25096596621036626,
+          "is_default": true,
+          "jaccard": 0.09937888198757763,
+          "unigram_cell_id": "pubchem__smirk_unigram_v512_nmb_sens_anchor",
+          "x": 16.0,
+          "y": 0.0
+        },
+        {
+          "bpe_cell_id": "pubchem__smirk_gpe_v512_nmb_sens_anchor",
+          "delta_fertility_relative": 0.31332788433472697,
+          "is_default": false,
+          "jaccard": 0.08333333333333333,
+          "unigram_cell_id": "pubchem__smirk_unigram_v512_nmb_mpl_4",
+          "x": 4.0,
+          "y": 0.0
+        },
+        {
+          "bpe_cell_id": "pubchem__smirk_gpe_v512_nmb_sens_anchor",
+          "delta_fertility_relative": 0.2665429872421985,
+          "is_default": false,
+          "jaccard": 0.08588957055214724,
+          "unigram_cell_id": "pubchem__smirk_unigram_v512_nmb_mpl_8",
+          "x": 8.0,
+          "y": 0.0
+        },
+        {
+          "bpe_cell_id": "pubchem__smirk_gpe_v512_nmb_sens_anchor",
+          "delta_fertility_relative": 0.2503814757840413,
+          "is_default": false,
+          "jaccard": 0.10452418096723869,
+          "unigram_cell_id": "pubchem__smirk_unigram_v512_nmb_mpl_32",
+          "x": 32.0,
+          "y": 0.0
+        },
+        {
+          "bpe_cell_id": "pubchem__smirk_gpe_v512_nmb_sens_anchor",
+          "delta_fertility_relative": 0.24684792544023376,
+          "is_default": false,
+          "jaccard": 0.11496062992125984,
+          "unigram_cell_id": "pubchem__smirk_unigram_v512_nmb_mpl_64",
+          "x": 64.0,
+          "y": 0.0
+        },
+        {
+          "bpe_cell_id": "pubchem__smirk_gpe_v512_nmb_sens_anchor",
+          "delta_fertility_relative": 0.2443408707992474,
+          "is_default": false,
+          "jaccard": 0.12202852614896989,
+          "unigram_cell_id": "pubchem__smirk_unigram_v512_nmb_mpl_128",
+          "x": 128.0,
+          "y": 0.0
+        },
+        {
+          "bpe_cell_id": "zinc22__smirk_gpe_v512_nmb_ix_bperef",
+          "delta_fertility_relative": 0.34740079207471375,
+          "is_default": false,
+          "jaccard": 0.286783042394015,
+          "unigram_cell_id": "zinc22__smirk_unigram_v512_nmb_ix_mpl_typ_4",
+          "x": 4.0,
+          "y": 1.0
+        },
+        {
+          "bpe_cell_id": "zinc22__smirk_gpe_v512_nmb_ix_bperef",
+          "delta_fertility_relative": 0.32159563203653413,
+          "is_default": false,
+          "jaccard": 0.07014028056112225,
+          "unigram_cell_id": "zinc22__smirk_unigram_v512_nmb_ix_mpl_typ_8",
+          "x": 8.0,
+          "y": 1.0
+        },
+        {
+          "bpe_cell_id": "zinc22__smirk_gpe_v512_nmb_ix_bperef",
+          "delta_fertility_relative": 0.3214517519815642,
+          "is_default": false,
+          "jaccard": 0.06115107913669065,
+          "unigram_cell_id": "zinc22__smirk_unigram_v512_nmb_ix_mpl_typ_16",
+          "x": 16.0,
+          "y": 1.0
+        },
+        {
+          "bpe_cell_id": "zinc22__smirk_gpe_v512_nmb_ix_bperef",
+          "delta_fertility_relative": 0.3214517519815642,
+          "is_default": false,
+          "jaccard": 0.06115107913669065,
+          "unigram_cell_id": "zinc22__smirk_unigram_v512_nmb_ix_mpl_typ_32",
+          "x": 32.0,
+          "y": 1.0
+        },
+        {
+          "bpe_cell_id": "zinc22__smirk_gpe_v512_nmb_ix_bperef",
+          "delta_fertility_relative": 0.3214517519815642,
+          "is_default": false,
+          "jaccard": 0.06115107913669065,
+          "unigram_cell_id": "zinc22__smirk_unigram_v512_nmb_ix_mpl_typ_64",
+          "x": 64.0,
+          "y": 1.0
+        },
+        {
+          "bpe_cell_id": "zinc22__smirk_gpe_v512_nmb_ix_bperef",
+          "delta_fertility_relative": 0.3214517519815642,
+          "is_default": false,
+          "jaccard": 0.06115107913669065,
+          "unigram_cell_id": "zinc22__smirk_unigram_v512_nmb_ix_mpl_typ_128",
+          "x": 128.0,
+          "y": 1.0
+        },
+        {
+          "bpe_cell_id": "coconut__smirk_gpe_v512_nmb",
+          "delta_fertility_relative": 0.31967397287761345,
+          "is_default": false,
+          "jaccard": 0.24394785847299813,
+          "unigram_cell_id": "coconut__smirk_unigram_v512_nmb_ix_mpl_typ_4",
+          "x": 4.0,
+          "y": 2.0
+        },
+        {
+          "bpe_cell_id": "coconut__smirk_gpe_v512_nmb",
+          "delta_fertility_relative": 0.3154055764733328,
+          "is_default": false,
+          "jaccard": 0.1026936026936027,
+          "unigram_cell_id": "coconut__smirk_unigram_v512_nmb_ix_mpl_typ_8",
+          "x": 8.0,
+          "y": 2.0
+        },
+        {
+          "bpe_cell_id": "coconut__smirk_gpe_v512_nmb",
+          "delta_fertility_relative": 0.3097123174546649,
+          "is_default": false,
+          "jaccard": 0.10108864696734059,
+          "unigram_cell_id": "coconut__smirk_unigram_v512_nmb_ix_mpl_typ_16",
+          "x": 16.0,
+          "y": 2.0
+        },
+        {
+          "bpe_cell_id": "coconut__smirk_gpe_v512_nmb",
+          "delta_fertility_relative": 0.3053709297905705,
+          "is_default": false,
+          "jaccard": 0.11496062992125984,
+          "unigram_cell_id": "coconut__smirk_unigram_v512_nmb_ix_mpl_typ_32",
+          "x": 32.0,
+          "y": 2.0
+        },
+        {
+          "bpe_cell_id": "coconut__smirk_gpe_v512_nmb",
+          "delta_fertility_relative": 0.30536245416446883,
+          "is_default": false,
+          "jaccard": 0.11496062992125984,
+          "unigram_cell_id": "coconut__smirk_unigram_v512_nmb_ix_mpl_typ_64",
+          "x": 64.0,
+          "y": 2.0
+        },
+        {
+          "bpe_cell_id": "coconut__smirk_gpe_v512_nmb",
+          "delta_fertility_relative": 0.30536897388437967,
+          "is_default": false,
+          "jaccard": 0.11496062992125984,
+          "unigram_cell_id": "coconut__smirk_unigram_v512_nmb_ix_mpl_typ_128",
+          "x": 128.0,
+          "y": 2.0
+        }
+      ],
+      "x_knob": "mpl",
+      "y_knob": "typology"
+    },
+    "mpl_v": {
+      "name": "mpl_v",
+      "points": [
+        {
+          "bpe_cell_id": "pubchem__smirk_gpe_v512_nmb_sens_anchor",
+          "delta_fertility_relative": 0.25096596621036626,
+          "is_default": true,
+          "jaccard": 0.09937888198757763,
+          "unigram_cell_id": "pubchem__smirk_unigram_v512_nmb_sens_anchor",
+          "x": 16.0,
+          "y": 512.0
+        },
+        {
+          "bpe_cell_id": "pubchem__smirk_gpe_v512_nmb_sens_anchor",
+          "delta_fertility_relative": 0.31332788433472697,
+          "is_default": false,
+          "jaccard": 0.08333333333333333,
+          "unigram_cell_id": "pubchem__smirk_unigram_v512_nmb_mpl_4",
+          "x": 4.0,
+          "y": 512.0
+        },
+        {
+          "bpe_cell_id": "pubchem__smirk_gpe_v512_nmb_sens_anchor",
+          "delta_fertility_relative": 0.2665429872421985,
+          "is_default": false,
+          "jaccard": 0.08588957055214724,
+          "unigram_cell_id": "pubchem__smirk_unigram_v512_nmb_mpl_8",
+          "x": 8.0,
+          "y": 512.0
+        },
+        {
+          "bpe_cell_id": "pubchem__smirk_gpe_v512_nmb_sens_anchor",
+          "delta_fertility_relative": 0.2503814757840413,
+          "is_default": false,
+          "jaccard": 0.10452418096723869,
+          "unigram_cell_id": "pubchem__smirk_unigram_v512_nmb_mpl_32",
+          "x": 32.0,
+          "y": 512.0
+        },
+        {
+          "bpe_cell_id": "pubchem__smirk_gpe_v512_nmb_sens_anchor",
+          "delta_fertility_relative": 0.24684792544023376,
+          "is_default": false,
+          "jaccard": 0.11496062992125984,
+          "unigram_cell_id": "pubchem__smirk_unigram_v512_nmb_mpl_64",
+          "x": 64.0,
+          "y": 512.0
+        },
+        {
+          "bpe_cell_id": "pubchem__smirk_gpe_v512_nmb_sens_anchor",
+          "delta_fertility_relative": 0.2443408707992474,
+          "is_default": false,
+          "jaccard": 0.12202852614896989,
+          "unigram_cell_id": "pubchem__smirk_unigram_v512_nmb_mpl_128",
+          "x": 128.0,
+          "y": 512.0
+        },
+        {
+          "bpe_cell_id": "pubchem__smirk_gpe_v256_nmb_ix_bperef",
+          "delta_fertility_relative": 0.2878476676659376,
+          "is_default": false,
+          "jaccard": 0.06521739130434782,
+          "unigram_cell_id": "pubchem__smirk_unigram_v256_nmb_ix_mpl_v_4",
+          "x": 4.0,
+          "y": 256.0
+        },
+        {
+          "bpe_cell_id": "pubchem__smirk_gpe_v256_nmb_ix_bperef",
+          "delta_fertility_relative": 0.24253407592357215,
+          "is_default": false,
+          "jaccard": 0.08287292817679558,
+          "unigram_cell_id": "pubchem__smirk_unigram_v256_nmb_ix_mpl_v_8",
+          "x": 8.0,
+          "y": 256.0
+        },
+        {
+          "bpe_cell_id": "pubchem__smirk_gpe_v256_nmb_ix_bperef",
+          "delta_fertility_relative": 0.22725833709308638,
+          "is_default": false,
+          "jaccard": 0.10734463276836158,
+          "unigram_cell_id": "pubchem__smirk_unigram_v256_nmb_ix_mpl_v_16",
+          "x": 16.0,
+          "y": 256.0
+        },
+        {
+          "bpe_cell_id": "pubchem__smirk_gpe_v256_nmb_ix_bperef",
+          "delta_fertility_relative": 0.2268427459464502,
+          "is_default": false,
+          "jaccard": 0.11363636363636363,
+          "unigram_cell_id": "pubchem__smirk_unigram_v256_nmb_ix_mpl_v_32",
+          "x": 32.0,
+          "y": 256.0
+        },
+        {
+          "bpe_cell_id": "pubchem__smirk_gpe_v256_nmb_ix_bperef",
+          "delta_fertility_relative": 0.2236232925732203,
+          "is_default": false,
+          "jaccard": 0.1329479768786127,
+          "unigram_cell_id": "pubchem__smirk_unigram_v256_nmb_ix_mpl_v_64",
+          "x": 64.0,
+          "y": 256.0
+        },
+        {
+          "bpe_cell_id": "pubchem__smirk_gpe_v256_nmb_ix_bperef",
+          "delta_fertility_relative": 0.22071788920587337,
+          "is_default": false,
+          "jaccard": 0.14619883040935672,
+          "unigram_cell_id": "pubchem__smirk_unigram_v256_nmb_ix_mpl_v_128",
+          "x": 128.0,
+          "y": 256.0
+        },
+        {
+          "bpe_cell_id": "pubchem__smirk_gpe_v1024_nmb_ix_bperef",
+          "delta_fertility_relative": 0.31787330911066897,
+          "is_default": false,
+          "jaccard": 0.20855148342059338,
+          "unigram_cell_id": "pubchem__smirk_unigram_v1024_nmb_ix_mpl_v_4",
+          "x": 4.0,
+          "y": 1024.0
+        },
+        {
+          "bpe_cell_id": "pubchem__smirk_gpe_v1024_nmb_ix_bperef",
+          "delta_fertility_relative": 0.2717811519119943,
+          "is_default": false,
+          "jaccard": 0.11352133044107014,
+          "unigram_cell_id": "pubchem__smirk_unigram_v1024_nmb_ix_mpl_v_8",
+          "x": 8.0,
+          "y": 1024.0
+        },
+        {
+          "bpe_cell_id": "pubchem__smirk_gpe_v1024_nmb_ix_bperef",
+          "delta_fertility_relative": 0.25628257994242587,
+          "is_default": false,
+          "jaccard": 0.09828788839568801,
+          "unigram_cell_id": "pubchem__smirk_unigram_v1024_nmb_ix_mpl_v_16",
+          "x": 16.0,
+          "y": 1024.0
+        },
+        {
+          "bpe_cell_id": "pubchem__smirk_gpe_v1024_nmb_ix_bperef",
+          "delta_fertility_relative": 0.2560817708722393,
+          "is_default": false,
+          "jaccard": 0.10459183673469388,
+          "unigram_cell_id": "pubchem__smirk_unigram_v1024_nmb_ix_mpl_v_32",
+          "x": 32.0,
+          "y": 1024.0
+        },
+        {
+          "bpe_cell_id": "pubchem__smirk_gpe_v1024_nmb_ix_bperef",
+          "delta_fertility_relative": 0.2524102266595552,
+          "is_default": false,
+          "jaccard": 0.10954516335682254,
+          "unigram_cell_id": "pubchem__smirk_unigram_v1024_nmb_ix_mpl_v_64",
+          "x": 64.0,
+          "y": 1024.0
+        },
+        {
+          "bpe_cell_id": "pubchem__smirk_gpe_v1024_nmb_ix_bperef",
+          "delta_fertility_relative": 0.24984391734471686,
+          "is_default": false,
+          "jaccard": 0.11025641025641025,
+          "unigram_cell_id": "pubchem__smirk_unigram_v1024_nmb_ix_mpl_v_128",
+          "x": 128.0,
+          "y": 1024.0
+        }
+      ],
+      "x_knob": "mpl",
+      "y_knob": "V"
+    },
+    "subiter_shrink": {
+      "name": "subiter_shrink",
+      "points": [
+        {
+          "bpe_cell_id": "pubchem__smirk_gpe_v512_nmb_sens_anchor",
+          "delta_fertility_relative": 0.25096596621036626,
+          "is_default": true,
+          "jaccard": 0.09937888198757763,
+          "unigram_cell_id": "pubchem__smirk_unigram_v512_nmb_sens_anchor",
+          "x": 2.0,
+          "y": 0.75
+        },
+        {
+          "bpe_cell_id": "pubchem__smirk_gpe_v512_nmb_sens_anchor",
+          "delta_fertility_relative": 0.3109335281489621,
+          "is_default": false,
+          "jaccard": 0.08256880733944955,
+          "unigram_cell_id": "pubchem__smirk_unigram_v512_nmb_subiter_1",
+          "x": 1.0,
+          "y": 0.75
+        },
+        {
+          "bpe_cell_id": "pubchem__smirk_gpe_v512_nmb_sens_anchor",
+          "delta_fertility_relative": 0.23354732953562482,
+          "is_default": false,
+          "jaccard": 0.11320754716981132,
+          "unigram_cell_id": "pubchem__smirk_unigram_v512_nmb_subiter_3",
+          "x": 3.0,
+          "y": 0.75
+        },
+        {
+          "bpe_cell_id": "pubchem__smirk_gpe_v512_nmb_sens_anchor",
+          "delta_fertility_relative": 0.23274770354440072,
+          "is_default": false,
+          "jaccard": 0.12025316455696203,
+          "unigram_cell_id": "pubchem__smirk_unigram_v512_nmb_subiter_4",
+          "x": 4.0,
+          "y": 0.75
+        },
+        {
+          "bpe_cell_id": "pubchem__smirk_gpe_v512_nmb_sens_anchor",
+          "delta_fertility_relative": 0.25091580486186577,
+          "is_default": false,
+          "jaccard": 0.10108864696734059,
+          "unigram_cell_id": "pubchem__smirk_unigram_v512_nmb_shrink_0_5",
+          "x": 2.0,
+          "y": 0.5
+        },
+        {
+          "bpe_cell_id": "pubchem__smirk_gpe_v512_nmb_sens_anchor",
+          "delta_fertility_relative": 0.2509381744673149,
+          "is_default": false,
+          "jaccard": 0.102803738317757,
+          "unigram_cell_id": "pubchem__smirk_unigram_v512_nmb_shrink_0_6",
+          "x": 2.0,
+          "y": 0.6
+        },
+        {
+          "bpe_cell_id": "pubchem__smirk_gpe_v512_nmb_sens_anchor",
+          "delta_fertility_relative": 0.25150671260028606,
+          "is_default": false,
+          "jaccard": 0.09259259259259259,
+          "unigram_cell_id": "pubchem__smirk_unigram_v512_nmb_shrink_0_9",
+          "x": 2.0,
+          "y": 0.9
+        },
+        {
+          "bpe_cell_id": "pubchem__smirk_gpe_v512_nmb_sens_anchor",
+          "delta_fertility_relative": 0.2515256800860394,
+          "is_default": false,
+          "jaccard": 0.09090909090909091,
+          "unigram_cell_id": "pubchem__smirk_unigram_v512_nmb_shrink_0_95",
+          "x": 2.0,
+          "y": 0.95
+        },
+        {
+          "bpe_cell_id": "pubchem__smirk_gpe_v512_nmb_sens_anchor",
+          "delta_fertility_relative": 0.3106717763784881,
+          "is_default": false,
+          "jaccard": 0.09090909090909091,
+          "unigram_cell_id": "pubchem__smirk_unigram_v512_nmb_ix_subiter_shrink_si1_sf0_5",
+          "x": 1.0,
+          "y": 0.5
+        },
+        {
+          "bpe_cell_id": "pubchem__smirk_gpe_v512_nmb_sens_anchor",
+          "delta_fertility_relative": 0.31073374427124895,
+          "is_default": false,
+          "jaccard": 0.08755760368663594,
+          "unigram_cell_id": "pubchem__smirk_unigram_v512_nmb_ix_subiter_shrink_si1_sf0_6",
+          "x": 1.0,
+          "y": 0.6
+        },
+        {
+          "bpe_cell_id": "pubchem__smirk_gpe_v512_nmb_sens_anchor",
+          "delta_fertility_relative": 0.3110567889277553,
+          "is_default": false,
+          "jaccard": 0.07926829268292683,
+          "unigram_cell_id": "pubchem__smirk_unigram_v512_nmb_ix_subiter_shrink_si1_sf0_9",
+          "x": 1.0,
+          "y": 0.9
+        },
+        {
+          "bpe_cell_id": "pubchem__smirk_gpe_v512_nmb_sens_anchor",
+          "delta_fertility_relative": 0.31102328906054116,
+          "is_default": false,
+          "jaccard": 0.0776255707762557,
+          "unigram_cell_id": "pubchem__smirk_unigram_v512_nmb_ix_subiter_shrink_si1_sf0_95",
+          "x": 1.0,
+          "y": 0.95
+        },
+        {
+          "bpe_cell_id": "pubchem__smirk_gpe_v512_nmb_sens_anchor",
+          "delta_fertility_relative": 0.2334844094390796,
+          "is_default": false,
+          "jaccard": 0.1167192429022082,
+          "unigram_cell_id": "pubchem__smirk_unigram_v512_nmb_ix_subiter_shrink_si3_sf0_5",
+          "x": 3.0,
+          "y": 0.5
+        },
+        {
+          "bpe_cell_id": "pubchem__smirk_gpe_v512_nmb_sens_anchor",
+          "delta_fertility_relative": 0.23367453889500753,
+          "is_default": false,
+          "jaccard": 0.11496062992125984,
+          "unigram_cell_id": "pubchem__smirk_unigram_v512_nmb_ix_subiter_shrink_si3_sf0_6",
+          "x": 3.0,
+          "y": 0.6
+        },
+        {
+          "bpe_cell_id": "pubchem__smirk_gpe_v512_nmb_sens_anchor",
+          "delta_fertility_relative": 0.23354318109585312,
+          "is_default": false,
+          "jaccard": 0.11320754716981132,
+          "unigram_cell_id": "pubchem__smirk_unigram_v512_nmb_ix_subiter_shrink_si3_sf0_9",
+          "x": 3.0,
+          "y": 0.9
+        },
+        {
+          "bpe_cell_id": "pubchem__smirk_gpe_v512_nmb_sens_anchor",
+          "delta_fertility_relative": 0.23354041545851356,
+          "is_default": false,
+          "jaccard": 0.11320754716981132,
+          "unigram_cell_id": "pubchem__smirk_unigram_v512_nmb_ix_subiter_shrink_si3_sf0_95",
+          "x": 3.0,
+          "y": 0.95
+        },
+        {
+          "bpe_cell_id": "pubchem__smirk_gpe_v512_nmb_sens_anchor",
+          "delta_fertility_relative": 0.23286880068977053,
+          "is_default": false,
+          "jaccard": 0.12738853503184713,
+          "unigram_cell_id": "pubchem__smirk_unigram_v512_nmb_ix_subiter_shrink_si4_sf0_5",
+          "x": 4.0,
+          "y": 0.5
+        },
+        {
+          "bpe_cell_id": "pubchem__smirk_gpe_v512_nmb_sens_anchor",
+          "delta_fertility_relative": 0.2327795364019542,
+          "is_default": false,
+          "jaccard": 0.12202852614896989,
+          "unigram_cell_id": "pubchem__smirk_unigram_v512_nmb_ix_subiter_shrink_si4_sf0_6",
+          "x": 4.0,
+          "y": 0.6
+        },
+        {
+          "bpe_cell_id": "pubchem__smirk_gpe_v512_nmb_sens_anchor",
+          "delta_fertility_relative": 0.23267849772362195,
+          "is_default": false,
+          "jaccard": 0.12025316455696203,
+          "unigram_cell_id": "pubchem__smirk_unigram_v512_nmb_ix_subiter_shrink_si4_sf0_9",
+          "x": 4.0,
+          "y": 0.9
+        },
+        {
+          "bpe_cell_id": "pubchem__smirk_gpe_v512_nmb_sens_anchor",
+          "delta_fertility_relative": 0.23268057397710948,
+          "is_default": false,
+          "jaccard": 0.12025316455696203,
+          "unigram_cell_id": "pubchem__smirk_unigram_v512_nmb_ix_subiter_shrink_si4_sf0_95",
+          "x": 4.0,
+          "y": 0.95
+        }
+      ],
+      "x_knob": "subiter",
+      "y_knob": "shrink"
+    }
+  },
+  "ladders": {
+    "minfreq": {
+      "default_x": 2.0,
+      "knob": "minfreq",
+      "label": "BPE merge frequency",
+      "points": [
+        {
+          "bpe_cell_id": "pubchem__smirk_gpe_v512_nmb_minfreq_0",
+          "delta_fertility_relative": 0.25096596621036626,
+          "is_default": false,
+          "jaccard": 0.09937888198757763,
+          "unigram_cell_id": "pubchem__smirk_unigram_v512_nmb_sens_anchor",
+          "x": 0.0
+        },
+        {
+          "bpe_cell_id": "pubchem__smirk_gpe_v512_nmb_minfreq_1",
+          "delta_fertility_relative": 0.25096596621036626,
+          "is_default": false,
+          "jaccard": 0.09937888198757763,
+          "unigram_cell_id": "pubchem__smirk_unigram_v512_nmb_sens_anchor",
+          "x": 1.0
+        },
+        {
+          "bpe_cell_id": "pubchem__smirk_gpe_v512_nmb_sens_anchor",
+          "delta_fertility_relative": 0.25096596621036626,
+          "is_default": true,
+          "jaccard": 0.09937888198757763,
+          "unigram_cell_id": "pubchem__smirk_unigram_v512_nmb_sens_anchor",
+          "x": 2.0
+        },
+        {
+          "bpe_cell_id": "pubchem__smirk_gpe_v512_nmb_minfreq_4",
+          "delta_fertility_relative": 0.25096596621036626,
+          "is_default": false,
+          "jaccard": 0.09937888198757763,
+          "unigram_cell_id": "pubchem__smirk_unigram_v512_nmb_sens_anchor",
+          "x": 4.0
+        },
+        {
+          "bpe_cell_id": "pubchem__smirk_gpe_v512_nmb_minfreq_8",
+          "delta_fertility_relative": 0.25096596621036626,
+          "is_default": false,
+          "jaccard": 0.09937888198757763,
+          "unigram_cell_id": "pubchem__smirk_unigram_v512_nmb_sens_anchor",
+          "x": 8.0
+        }
+      ],
+      "swept_arm": "bpe"
+    },
+    "mpl": {
+      "default_x": 16.0,
+      "knob": "mpl",
+      "label": "Unigram max piece length",
+      "points": [
+        {
+          "bpe_cell_id": "pubchem__smirk_gpe_v512_nmb_sens_anchor",
+          "delta_fertility_relative": 0.31332788433472697,
+          "is_default": false,
+          "jaccard": 0.08333333333333333,
+          "unigram_cell_id": "pubchem__smirk_unigram_v512_nmb_mpl_4",
+          "x": 4.0
+        },
+        {
+          "bpe_cell_id": "pubchem__smirk_gpe_v512_nmb_sens_anchor",
+          "delta_fertility_relative": 0.2665429872421985,
+          "is_default": false,
+          "jaccard": 0.08588957055214724,
+          "unigram_cell_id": "pubchem__smirk_unigram_v512_nmb_mpl_8",
+          "x": 8.0
+        },
+        {
+          "bpe_cell_id": "pubchem__smirk_gpe_v512_nmb_sens_anchor",
+          "delta_fertility_relative": 0.25096596621036626,
+          "is_default": true,
+          "jaccard": 0.09937888198757763,
+          "unigram_cell_id": "pubchem__smirk_unigram_v512_nmb_sens_anchor",
+          "x": 16.0
+        },
+        {
+          "bpe_cell_id": "pubchem__smirk_gpe_v512_nmb_sens_anchor",
+          "delta_fertility_relative": 0.2503814757840413,
+          "is_default": false,
+          "jaccard": 0.10452418096723869,
+          "unigram_cell_id": "pubchem__smirk_unigram_v512_nmb_mpl_32",
+          "x": 32.0
+        },
+        {
+          "bpe_cell_id": "pubchem__smirk_gpe_v512_nmb_sens_anchor",
+          "delta_fertility_relative": 0.24684792544023376,
+          "is_default": false,
+          "jaccard": 0.11496062992125984,
+          "unigram_cell_id": "pubchem__smirk_unigram_v512_nmb_mpl_64",
+          "x": 64.0
+        },
+        {
+          "bpe_cell_id": "pubchem__smirk_gpe_v512_nmb_sens_anchor",
+          "delta_fertility_relative": 0.2443408707992474,
+          "is_default": false,
+          "jaccard": 0.12202852614896989,
+          "unigram_cell_id": "pubchem__smirk_unigram_v512_nmb_mpl_128",
+          "x": 128.0
+        }
+      ],
+      "swept_arm": "unigram"
+    },
+    "seed": {
+      "default_x": 1000000.0,
+      "knob": "seed",
+      "label": "Unigram seed pool",
+      "points": [
+        {
+          "bpe_cell_id": "pubchem__smirk_gpe_v512_nmb_sens_anchor",
+          "delta_fertility_relative": 0.25096596621036626,
+          "is_default": false,
+          "jaccard": 0.09937888198757763,
+          "unigram_cell_id": "pubchem__smirk_unigram_v512_nmb_seedsweep_250000",
+          "x": 250000.0
+        },
+        {
+          "bpe_cell_id": "pubchem__smirk_gpe_v512_nmb_sens_anchor",
+          "delta_fertility_relative": 0.25096596621036626,
+          "is_default": false,
+          "jaccard": 0.09937888198757763,
+          "unigram_cell_id": "pubchem__smirk_unigram_v512_nmb_seedsweep_500000",
+          "x": 500000.0
+        },
+        {
+          "bpe_cell_id": "pubchem__smirk_gpe_v512_nmb_sens_anchor",
+          "delta_fertility_relative": 0.25096596621036626,
+          "is_default": true,
+          "jaccard": 0.09937888198757763,
+          "unigram_cell_id": "pubchem__smirk_unigram_v512_nmb_sens_anchor",
+          "x": 1000000.0
+        },
+        {
+          "bpe_cell_id": "pubchem__smirk_gpe_v512_nmb_sens_anchor",
+          "delta_fertility_relative": 0.25096596621036626,
+          "is_default": false,
+          "jaccard": 0.09937888198757763,
+          "unigram_cell_id": "pubchem__smirk_unigram_v512_nmb_seedsweep_2000000",
+          "x": 2000000.0
+        },
+        {
+          "bpe_cell_id": "pubchem__smirk_gpe_v512_nmb_sens_anchor",
+          "delta_fertility_relative": 0.25096596621036626,
+          "is_default": false,
+          "jaccard": 0.09937888198757763,
+          "unigram_cell_id": "pubchem__smirk_unigram_v512_nmb_seedsweep_4000000",
+          "x": 4000000.0
+        },
+        {
+          "bpe_cell_id": "pubchem__smirk_gpe_v512_nmb_sens_anchor",
+          "delta_fertility_relative": 0.25096596621036626,
+          "is_default": false,
+          "jaccard": 0.09937888198757763,
+          "unigram_cell_id": "pubchem__smirk_unigram_v512_nmb_seedsweep_8000000",
+          "x": 8000000.0
+        }
+      ],
+      "swept_arm": "unigram"
+    },
+    "shrink": {
+      "default_x": 0.75,
+      "knob": "shrink",
+      "label": "Unigram shrinking factor",
+      "points": [
+        {
+          "bpe_cell_id": "pubchem__smirk_gpe_v512_nmb_sens_anchor",
+          "delta_fertility_relative": 0.25091580486186577,
+          "is_default": false,
+          "jaccard": 0.10108864696734059,
+          "unigram_cell_id": "pubchem__smirk_unigram_v512_nmb_shrink_0_5",
+          "x": 0.5
+        },
+        {
+          "bpe_cell_id": "pubchem__smirk_gpe_v512_nmb_sens_anchor",
+          "delta_fertility_relative": 0.2509381744673149,
+          "is_default": false,
+          "jaccard": 0.102803738317757,
+          "unigram_cell_id": "pubchem__smirk_unigram_v512_nmb_shrink_0_6",
+          "x": 0.6
+        },
+        {
+          "bpe_cell_id": "pubchem__smirk_gpe_v512_nmb_sens_anchor",
+          "delta_fertility_relative": 0.25096596621036626,
+          "is_default": true,
+          "jaccard": 0.09937888198757763,
+          "unigram_cell_id": "pubchem__smirk_unigram_v512_nmb_sens_anchor",
+          "x": 0.75
+        },
+        {
+          "bpe_cell_id": "pubchem__smirk_gpe_v512_nmb_sens_anchor",
+          "delta_fertility_relative": 0.25150671260028606,
+          "is_default": false,
+          "jaccard": 0.09259259259259259,
+          "unigram_cell_id": "pubchem__smirk_unigram_v512_nmb_shrink_0_9",
+          "x": 0.9
+        },
+        {
+          "bpe_cell_id": "pubchem__smirk_gpe_v512_nmb_sens_anchor",
+          "delta_fertility_relative": 0.2515256800860394,
+          "is_default": false,
+          "jaccard": 0.09090909090909091,
+          "unigram_cell_id": "pubchem__smirk_unigram_v512_nmb_shrink_0_95",
+          "x": 0.95
+        }
+      ],
+      "swept_arm": "unigram"
+    },
+    "subiter": {
+      "default_x": 2.0,
+      "knob": "subiter",
+      "label": "Unigram EM sub-iterations",
+      "points": [
+        {
+          "bpe_cell_id": "pubchem__smirk_gpe_v512_nmb_sens_anchor",
+          "delta_fertility_relative": 0.3109335281489621,
+          "is_default": false,
+          "jaccard": 0.08256880733944955,
+          "unigram_cell_id": "pubchem__smirk_unigram_v512_nmb_subiter_1",
+          "x": 1.0
+        },
+        {
+          "bpe_cell_id": "pubchem__smirk_gpe_v512_nmb_sens_anchor",
+          "delta_fertility_relative": 0.25096596621036626,
+          "is_default": true,
+          "jaccard": 0.09937888198757763,
+          "unigram_cell_id": "pubchem__smirk_unigram_v512_nmb_sens_anchor",
+          "x": 2.0
+        },
+        {
+          "bpe_cell_id": "pubchem__smirk_gpe_v512_nmb_sens_anchor",
+          "delta_fertility_relative": 0.23354732953562482,
+          "is_default": false,
+          "jaccard": 0.11320754716981132,
+          "unigram_cell_id": "pubchem__smirk_unigram_v512_nmb_subiter_3",
+          "x": 3.0
+        },
+        {
+          "bpe_cell_id": "pubchem__smirk_gpe_v512_nmb_sens_anchor",
+          "delta_fertility_relative": 0.23274770354440072,
+          "is_default": false,
+          "jaccard": 0.12025316455696203,
+          "unigram_cell_id": "pubchem__smirk_unigram_v512_nmb_subiter_4",
+          "x": 4.0
+        }
+      ],
+      "swept_arm": "unigram"
+    }
+  },
+  "schema_version": 1
+}

@@ -1,0 +1,31 @@
+{
+  "algo": "unigram",
+  "arm": "unigram",
+  "boundary": "nmb",
+  "canonical_digest": {
+    "algo": "unigram",
+    "log_probs_sha": "1500e7443d8d0f6a20abb5d32679cb737cfec3d4645cdaf4599334a8f6f94523",
+    "merges_txt_sha": null,
+    "piece_set_sha": "de7d7ab36f950f201479b7d7aef062ceb116f7537173e812f2ada59b1123db7f",
+    "tokenizer_json_sha": "77cb292b400b789b8eac22b706f740b6cf7bd19b469a2baccec2f10e241d6d04",
+    "vocab_order_sha": "7d8a2d6b451ec4143b0ab4d39f1ea35b067e1f11ab482d56028e8a51a3e7fc78"
+  },
+  "cell_id": "coconut__smirk_unigram_v512_nmb",
+  "corpus": "coconut",
+  "deterministic": true,
+  "expected_failure": false,
+  "mismatch_kind": null,
+  "rerun_digest": {
+    "algo": "unigram",
+    "log_probs_sha": "1500e7443d8d0f6a20abb5d32679cb737cfec3d4645cdaf4599334a8f6f94523",
+    "merges_txt_sha": null,
+    "piece_set_sha": "de7d7ab36f950f201479b7d7aef062ceb116f7537173e812f2ada59b1123db7f",
+    "tokenizer_json_sha": "77cb292b400b789b8eac22b706f740b6cf7bd19b469a2baccec2f10e241d6d04",
+    "vocab_order_sha": "7d8a2d6b451ec4143b0ab4d39f1ea35b067e1f11ab482d56028e8a51a3e7fc78"
+  },
+  "rerun_spread": 0,
+  "schema_version": 1,
+  "tier": "headline",
+  "training_corpus_sha": "178da507a91243087b03cbd8e9c67409",
+  "vocab_size": 512
+}

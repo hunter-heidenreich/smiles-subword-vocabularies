@@ -1,0 +1,7 @@
+# canon_dedup_v1 on CycPeptMPDB (raw_v1 -> RDKit isomeric canon + dedup).
+# OOD eval corpus: the full canon output is the eval set (no train/test split),
+# read directly by the OOD-eval runner. single_pass is fine for ~8K rows.
+name: cycpeptmpdb
+input_dir: data/processed/cycpeptmpdb/raw_v1
+output_dir: data/processed/cycpeptmpdb/canon_dedup_v1
+mode: single_pass

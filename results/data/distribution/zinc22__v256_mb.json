@@ -1,0 +1,79 @@
+{
+  "abs_delta_d": 0.10923322308931016,
+  "boundary": "mb",
+  "bpe": {
+    "arm": "bpe",
+    "bootstrap_seed": 1435324692,
+    "boundary": "mb",
+    "cell_id": "zinc22__smirk_gpe_v256_mb",
+    "d": 0.7965631500459645,
+    "d_ci": [
+      0.7964258484642578,
+      0.7967096839107508
+    ],
+    "eta": 0.5686006510745215,
+    "eta_ci": [
+      0.5684671217615961,
+      0.568733366822373
+    ],
+    "eval_split_sha": "730dc2ddc8c4edd981244fa27433a1ea",
+    "live_token_count": 127,
+    "n_molecules": 499545,
+    "n_resamples": 1000,
+    "renyi": 0.42575275981049493,
+    "renyi_ci": [
+      0.4256377147583765,
+      0.4258727626703376
+    ],
+    "total_tokens": 14807126,
+    "training_corpus_sha": "2604e603ded8e77654016cd7b3f38cec",
+    "v_effective": 256,
+    "vocab_size": 257
+  },
+  "corpus": "zinc22",
+  "delta_d": -0.10923322308931016,
+  "delta_d_exceeds_threshold": true,
+  "delta_eta": 0.0936482183302223,
+  "delta_renyi": 0.0211917457198057,
+  "extras_kind": null,
+  "extras_label": null,
+  "missing_arm": null,
+  "near_reference_threshold": false,
+  "pair_key": "zinc22__v256_mb",
+  "pair_status": "matched",
+  "schema_version": 1,
+  "tier": "headline",
+  "unigram": {
+    "arm": "unigram",
+    "bootstrap_seed": 2332965818,
+    "boundary": "mb",
+    "cell_id": "zinc22__smirk_unigram_v256_mb",
+    "d": 0.9057963731352746,
+    "d_ci": [
+      0.905739715207418,
+      0.9058567423511908
+    ],
+    "eta": 0.4749524327442992,
+    "eta_ci": [
+      0.4748672651305369,
+      0.47503614258537946
+    ],
+    "eval_split_sha": "730dc2ddc8c4edd981244fa27433a1ea",
+    "live_token_count": 131,
+    "n_molecules": 499545,
+    "n_resamples": 1000,
+    "renyi": 0.40456101409068923,
+    "renyi_ci": [
+      0.4044479197887439,
+      0.40466827046644954
+    ],
+    "total_tokens": 21207408,
+    "training_corpus_sha": "2604e603ded8e77654016cd7b3f38cec",
+    "v_effective": 256,
+    "vocab_size": 256
+  },
+  "unpaired_reason": null,
+  "v_effective_consistent": true,
+  "v_effective_delta": 0,
+  "vocab_size": 256
+}

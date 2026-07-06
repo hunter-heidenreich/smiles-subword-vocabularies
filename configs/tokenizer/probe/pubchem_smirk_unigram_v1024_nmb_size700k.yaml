@@ -1,0 +1,15 @@
+name: pubchem_smirk_unigram_v1024_nmb_size700k
+kind: smirk_unigram
+vocab_size: 1024
+min_frequency: 2
+corpus: pubchem
+training_input: data/processed/pubchem/canon_dedup_v1_extras/size_700k
+output_dir: artifacts/tokenizer/pubchem/pubchem_smirk_unigram_v1024_nmb_size700k
+ref_artifact_dir: null
+merge_brackets: false
+split_structure: true
+seed_size: null
+max_piece_length: null
+n_sub_iterations: null
+shrinking_factor: null
+scaffold_log: false

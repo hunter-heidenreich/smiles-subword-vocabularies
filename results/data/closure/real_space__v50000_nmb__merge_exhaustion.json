@@ -1,0 +1,30 @@
+{
+  "boundary": "nmb",
+  "bpe": {
+    "arm": "bpe",
+    "boundary": "nmb",
+    "c_bin": 1.0,
+    "c_full": 0.5283064909712054,
+    "c_orph": 0.0,
+    "cell_id": "real_space__smirk_gpe_v50000_nmb_merge_exhaustion",
+    "n_bin_closed": 4172,
+    "n_bracket_nonclosed": 0,
+    "n_full_closed": 2165,
+    "n_ge3": 4098,
+    "n_multi": 4172,
+    "n_orphan": 0,
+    "training_corpus_sha": "140534c1544cd9f2ce760709417f23dd",
+    "vocab_size": 50000
+  },
+  "corpus": "real_space",
+  "extras_kind": "merge_exhaustion",
+  "extras_label": "merge_exhaustion",
+  "missing_arm": "unigram",
+  "pair_key": "real_space__v50000_nmb__merge_exhaustion",
+  "pair_status": "single_arm",
+  "present_arm": "bpe",
+  "schema_version": 1,
+  "tier": "extras_merge_exhaustion",
+  "unpaired_reason": "extras_single_arm_knob",
+  "vocab_size": 50000
+}

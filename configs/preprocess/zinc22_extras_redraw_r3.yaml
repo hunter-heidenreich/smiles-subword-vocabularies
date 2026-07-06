@@ -1,0 +1,11 @@
+# Training-subsample spot-check, ZINC redraw r3. Independent ~5M draw paired
+# with r1 / r2 to bound subsample noise on the (V=512, ZINC-22, NMB) contrast
+# triple.
+#
+# Source: the headline ZINC-22 `canon_dedup_v1/train` (test-set-disjoint by
+# construction). Distinct `hash_domain` per redraw → independent.
+name: zinc22
+input_dir: data/processed/zinc22/canon_dedup_v1/train
+output_dir: data/processed/zinc22/canon_dedup_v1_extras/redraw_r3
+target_n: 5000000
+hash_domain: canon_dedup_v1.redraw.r3

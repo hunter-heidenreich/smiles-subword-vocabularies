@@ -1,0 +1,32 @@
+\providecommand{\bndtok}[1]{\textcolor{black!50}{#1}}
+\begin{table}[htbp]
+  \centering
+  \caption{Growth of the BPE\,$\cap$\,Unigram-LM shared core for the PubChem matched pair under each boundary policy, as the target vocabulary grows $V \in \{256, 512, 1024, 2048\}$. The core is strictly nested (no piece ever leaves), so each row lists only the pieces \emph{newly} shared at that $V$, and the cumulative core at a given $V$ is that row plus all above it. Cumulative core size grows $10 \to 50 \to 128 \to 311$ at overlap $J = 0.054,\, 0.076,\, 0.080,\, 0.090$ (NMB) and $13 \to 59 \to 158 \to 345$ at overlap $J = 0.071,\, 0.091,\, 0.100,\, 0.100$ (MB). Pieces also in the other boundary's shared core (\emph{boundary-robust}: shared under both) are \bndtok{grayed}, leaving the boundary-specific shared pieces plain; pieces are ordered by glyph count then alphabetically. Layers larger than 18 pieces are abridged to their first 14 and last 4 (the parenthetical gives the full layer size); complete lists are in the data deposit.}
+  \label{tab:shared-core-growth}
+  \footnotesize
+  \begin{tabular}{@{}l p{0.79\linewidth}@{}}
+    \toprule
+    Entered at & Newly shared pieces \\
+    \midrule
+    \multicolumn{2}{@{}l}{\emph{no-merge-brackets (NMB)}} \\
+    \addlinespace[2pt]
+    Core, $V\le256$ (10) & \bndtok{\texttt{C\#}}, \bndtok{\texttt{CCCC}}, \bndtok{\texttt{CCCN}}, \bndtok{\texttt{CCNC}}, \bndtok{\texttt{CCOC}}, \bndtok{\texttt{CCCCC}}, \bndtok{\texttt{CCOCC}}, \bndtok{\texttt{CCCCCCC}}, \bndtok{\texttt{CCCCCCCC}}, \bndtok{\texttt{CCCCCCCCCCCCCCCC}} \\
+    \addlinespace[3pt]
+    New at $V{=}512$ (40) & \bndtok{\texttt{OP}}, \bndtok{\texttt{COP}}, \bndtok{\texttt{N\#C}}, \bndtok{\texttt{O=P}}, \bndtok{\texttt{O=S}}, \texttt{SiH2}, \bndtok{\texttt{nnn}}, \bndtok{\texttt{noc}}, \bndtok{\texttt{C\#CC}}, \bndtok{\texttt{CCCS}}, \bndtok{\texttt{CCNS}}, \bndtok{\texttt{CCSC}}, \bndtok{\texttt{CN=C}}, \bndtok{\texttt{NCCN}}, \textellipsis~(22 more), \bndtok{\texttt{CCCCCCCCCCCC}}, \bndtok{\texttt{CCCCCCCCCCCCC}}, \bndtok{\texttt{CCCCCCCCCCCCCC}}, \bndtok{\texttt{CCCCCCCCCCCCCCC}} \\
+    \addlinespace[3pt]
+    New at $V{=}1024$ (78) & \texttt{Au+}, \texttt{Cu+}, \bndtok{\texttt{II}}, \bndtok{\texttt{PP}}, \texttt{18F}, \bndtok{\texttt{=NP}}, \texttt{AlH3}, \bndtok{\texttt{N=P}}, \texttt{SiH3}, \bndtok{\texttt{CCSS}}, \bndtok{\texttt{CSSC}}, \bndtok{\texttt{N=NN}}, \bndtok{\texttt{NN=C}}, \bndtok{\texttt{SCCN}}, \textellipsis~(60 more), \bndtok{\texttt{CCCCCCCCCCOC}}, \bndtok{\texttt{CCCCCCCCCCCCOC}}, \bndtok{\texttt{=C=C=C=C=C=C=C=C}}, \bndtok{\texttt{=S=S=S=S=S=S=S=S}} \\
+    \addlinespace[3pt]
+    New at $V{=}2048$ (183) & \texttt{Al+}, \texttt{AlH}, \texttt{AsH}, \texttt{Hg+}, \bndtok{\texttt{PI}}, \texttt{Pd+}, \texttt{Ru+}, \texttt{Sn+}, \texttt{Zn+}, \bndtok{\texttt{op}}, \texttt{pH}, \texttt{AlH2}, \texttt{AsH2}, \bndtok{\texttt{B=B}}, \textellipsis~(165 more), \bndtok{\texttt{CCOCCOCCOCCOCCNC}}, \bndtok{\texttt{NCCCOCCOCCOCCCNC}}, \bndtok{\texttt{NCCOCCOCCOCCOCCC}}, \bndtok{\texttt{OCCOCCOCCOCCOCCO}} \\
+    \midrule
+    \multicolumn{2}{@{}l}{\emph{merge-brackets (MB)}} \\
+    \addlinespace[2pt]
+    Core, $V\le256$ (13) & \bndtok{\texttt{C\#}}, \texttt{[Si}, \texttt{[C@}, \texttt{[C@@}, \bndtok{\texttt{CCCC}}, \bndtok{\texttt{CCCN}}, \bndtok{\texttt{CCNC}}, \bndtok{\texttt{CCOC}}, \bndtok{\texttt{CCCCC}}, \bndtok{\texttt{CCOCC}}, \texttt{ccccc}, \bndtok{\texttt{CCCCCCCC}}, \bndtok{\texttt{CCCCCCCCCCCCCCCC}} \\
+    \addlinespace[3pt]
+    New at $V{=}512$ (46) & \bndtok{\texttt{OP}}, \texttt{[Ir}, \texttt{[K}, \texttt{[Li}, \texttt{[Na}, \texttt{[Pt}, \texttt{[Sn}, \texttt{[Y}, \bndtok{\texttt{COP}}, \bndtok{\texttt{N\#C}}, \bndtok{\texttt{O=P}}, \bndtok{\texttt{O=S}}, \texttt{[SiH}, \bndtok{\texttt{nnn}}, \textellipsis~(28 more), \bndtok{\texttt{CCCCCCCCCCCC}}, \bndtok{\texttt{CCCCCCCCCCCCC}}, \bndtok{\texttt{CCCCCCCCCCCCCC}}, \bndtok{\texttt{CCCCCCCCCCCCCCC}} \\
+    \addlinespace[3pt]
+    New at $V{=}1024$ (99) & \texttt{[Ag}, \texttt{[Al}, \texttt{[As}, \texttt{[Au}, \texttt{[Ba}, \texttt{[Bi}, \texttt{[Ca}, \texttt{[Co}, \texttt{[Cr}, \texttt{[Cs}, \texttt{[Cu}, \texttt{[Fe}, \texttt{[Ge}, \texttt{[Hf}, \textellipsis~(81 more), \bndtok{\texttt{OCCOCCOCCOC}}, \bndtok{\texttt{CCCCCCCCCCCCOC}}, \bndtok{\texttt{=C=C=C=C=C=C=C=C}}, \bndtok{\texttt{=S=S=S=S=S=S=S=S}} \\
+    \addlinespace[3pt]
+    New at $V{=}2048$ (187) & \bndtok{\texttt{II}}, \bndtok{\texttt{PI}}, \bndtok{\texttt{PP}}, \texttt{[Be}, \texttt{[Cd}, \texttt{[Ce}, \texttt{[Eu}, \texttt{[Ga}, \texttt{[Gd}, \texttt{[Hg}, \texttt{[In}, \texttt{[La}, \texttt{[Nb}, \texttt{[Nd}, \textellipsis~(169 more), \bndtok{\texttt{CCOCCOCCOCCOCCNC}}, \bndtok{\texttt{NCCCOCCOCCOCCCNC}}, \bndtok{\texttt{NCCOCCOCCOCCOCCC}}, \bndtok{\texttt{OCCOCCOCCOCCOCCO}} \\
+    \bottomrule
+  \end{tabular}
+\end{table}

@@ -1,0 +1,68 @@
+{
+  "agree_cut_rate": 0.6403457559805262,
+  "agree_merge_rate": 0.017969370264003432,
+  "bootstrap_seed": 1423134535,
+  "boundary": "mb",
+  "boundary_jaccard": 0.6520629159527062,
+  "boundary_jaccard_ci": [
+    0.6519296503205673,
+    0.6521886517019289
+  ],
+  "bpe_cell_id": "real_space__smirk_gpe_v1024_mb",
+  "bpe_training_corpus_sha": "140534c1544cd9f2ce760709417f23dd",
+  "conflict_rate": 5.5304808994203304e-05,
+  "conflict_rate_ci": [
+    5.310866959290651e-05,
+    5.753700352557186e-05
+  ],
+  "conflict_share_of_disagreement": 0.00016185910832500783,
+  "corpus": "real_space",
+  "cut_rate_by_class": {
+    "aromatic": null,
+    "bracket": 0.0,
+    "heteroatom": 0.085971813772295,
+    "sat-C": null,
+    "unsat-C": 0.009775137300956789
+  },
+  "cut_through_by_class": {
+    "aromatic": 0,
+    "bracket": 0,
+    "heteroatom": 2251,
+    "sat-C": 0,
+    "unsat-C": 283
+  },
+  "emitted_by_class": {
+    "aromatic": 0,
+    "bracket": 302092,
+    "heteroatom": 26183,
+    "sat-C": 0,
+    "unsat-C": 28951
+  },
+  "eval_split_sha": "6cbe68f87c92fb2a253f536715b5ec69",
+  "extras_kind": null,
+  "extras_label": null,
+  "missing_arm": null,
+  "n_agree_cut": 29884063,
+  "n_agree_merge": 838606,
+  "n_conflict": 2581,
+  "n_length_mismatch": 0,
+  "n_molecules": 1000352,
+  "n_nest": 15943386,
+  "n_nested_molecules": 997820,
+  "n_positions": 46668636,
+  "n_resamples": 1000,
+  "nest_rate": 0.34162956894647617,
+  "nested_molecule_fraction": 0.9974688909503855,
+  "nested_molecule_fraction_ci": [
+    0.9973689261379994,
+    0.9975638575221522
+  ],
+  "pair_key": "real_space__v1024_mb",
+  "pair_status": "matched",
+  "schema_version": 1,
+  "tier": "anchor",
+  "unigram_cell_id": "real_space__smirk_unigram_v1024_mb",
+  "unigram_training_corpus_sha": "140534c1544cd9f2ce760709417f23dd",
+  "unpaired_reason": null,
+  "vocab_size": 1024
+}

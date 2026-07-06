@@ -1,0 +1,32 @@
+{
+  "any_arm_unsafe": true,
+  "both_arms_unsafe": false,
+  "boundary": "mb",
+  "bpe": {
+    "arm": "bpe",
+    "cell_id": "zinc22__smirk_gpe_v2048_mb",
+    "clearance_by_n": {
+      "100": 0.5246161990471149,
+      "200": 0.42032821598729486,
+      "50": 0.6500794070937004
+    },
+    "embedding_tail_unsafe": true,
+    "headline_clearance": 0.5246161990471149,
+    "n_non_atomic": 1889,
+    "training_corpus_sha": "2604e603ded8e77654016cd7b3f38cec",
+    "v_observed": 2056
+  },
+  "corpus": "zinc22",
+  "delta_fp": null,
+  "extras_kind": null,
+  "extras_label": null,
+  "headline_delta_f": null,
+  "missing_arm": "unigram",
+  "pair_key": "zinc22__v2048_mb",
+  "pair_status": "single_arm",
+  "schema_version": 1,
+  "tier": "conditional",
+  "unigram": null,
+  "unpaired_reason": "conditional_negative_branch",
+  "vocab_size": 2048
+}
