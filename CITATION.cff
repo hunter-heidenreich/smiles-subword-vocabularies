@@ -25,4 +25,9 @@ preferred-citation:
       given-names: Hunter
       orcid: "https://orcid.org/0009-0001-0335-4803"
   year: 2026
-  notes: "Preprint; arXiv identifier to be added on posting."
+  url: "https://arxiv.org/abs/2607.05691"
+  identifiers:
+    - type: other
+      value: "arXiv:2607.05691"
+      description: "arXiv preprint"
+  notes: "Preprint on arXiv:2607.05691 (cs.CL)."
