@@ -2,8 +2,9 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21228245.svg)](https://doi.org/10.5281/zenodo.21228245)
+[![arXiv](https://img.shields.io/badge/arXiv-2607.05691-b31b1b.svg)](https://arxiv.org/abs/2607.05691)
 
-<!-- arXiv + ChemRxiv badges to be added once those identifiers are assigned. -->
+<!-- ChemRxiv badge to be added once that identifier is assigned. -->
 
 Code and paper for a controlled comparison of how subword tokenizers build their
 **vocabularies** over chemistry SMILES. Holding the corpus, the OpenSMILES glyph
@@ -67,7 +68,7 @@ header documents the exact per-corpus command sequence; corpus provenance is in
 ## Artifacts
 
 Trained tokenizers and full measurement deposits are archived on Zenodo ([10.5281/zenodo.21228245](https://doi.org/10.5281/zenodo.21228245)).
-Preprint: ChemRxiv + arXiv (TBD).
+Preprint: [arXiv:2607.05691](https://arxiv.org/abs/2607.05691) (ChemRxiv TBD).
 
 ## Citation
 
@@ -75,17 +76,19 @@ If you use this work, please cite the paper:
 
 ```bibtex
 @misc{heidenreich2026neardisjoint,
-  title  = {{Where to cut, how deep: BPE and Unigram-LM on chemistry SMILES}},
-  author = {Heidenreich, Hunter},
-  year   = {2026},
-  note   = {Preprint; arXiv identifier to follow},
-  doi    = {10.5281/zenodo.21228245},
-  url    = {https://github.com/hunter-heidenreich/smiles-subword-vocabularies}
+  title        = {{Where to cut, how deep: BPE and Unigram-LM on chemistry SMILES}},
+  author       = {Heidenreich, Hunter},
+  year         = {2026},
+  eprint       = {2607.05691},
+  archivePrefix = {arXiv},
+  primaryClass = {cs.CL},
+  doi          = {10.5281/zenodo.21228245},
+  url          = {https://arxiv.org/abs/2607.05691}
 }
 ```
 
 `CITATION.cff` carries the same metadata for GitHub's "Cite this repository"
-button. Update both with the arXiv ID once assigned.
+button.
 
 ## License
 
