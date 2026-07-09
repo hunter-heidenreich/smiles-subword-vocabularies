@@ -25,6 +25,9 @@ htmlcov/
 # Dispatch caches written by the grid/extras runners
 **/.dispatch_cache*/
 
+# Assembled static-demo site (build output of demo/build_web.py)
+/demo/_site/
+
 # LaTeX build artifacts
 paper/*.aux
 paper/*.log

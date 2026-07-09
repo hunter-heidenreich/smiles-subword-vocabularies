@@ -96,6 +96,15 @@ runtime-evaluated-decorators = [
 "scripts/**" = ["T201"]
 # Renderers: print is their output channel; untyped matplotlib Axes params (ANN).
 "results/build/**" = ["T201", "ANN001", "ANN201", "ANN202"]
+# Standalone interactive demo (not part of the wheel): print is its output
+# channel; docstrings optional; `import analysis as A` alias; the faithful BPE
+# merge loop is inherently branchy (C901); path-bootstrap import order (E402);
+# embedded HTML/CSS string literals exceed the line limit (E501); broad excepts
+# keep the UI alive on bad input / optional-dep absence (BLE001).
+"demo/**" = [
+    "T201", "D", "N812", "C901", "E402", "E501", "BLE001",
+    "ANN001", "ANN201", "ANN202", "ANN204",
+]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]

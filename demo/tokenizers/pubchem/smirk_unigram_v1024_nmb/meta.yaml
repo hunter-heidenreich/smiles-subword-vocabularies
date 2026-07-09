@@ -1,0 +1,12 @@
+name: smirk_unigram_v1024_nmb
+base_kind: smirk_unigram
+vocab_size: 1024
+training_corpus_sha: d471aba7d34c2d2875e958d3df2abfcc
+n_merges: null
+merge_brackets: false
+split_structure: true
+seed_size: 1000000
+max_piece_length: 16
+n_sub_iterations: 2
+shrinking_factor: 0.75
+scaffold_log_sha: null

@@ -1,0 +1,12 @@
+name: smirk_gpe_v2048_mb
+base_kind: smirk_gpe
+vocab_size: 2050
+training_corpus_sha: d471aba7d34c2d2875e958d3df2abfcc
+n_merges: 1891
+merge_brackets: true
+split_structure: true
+seed_size: null
+max_piece_length: null
+n_sub_iterations: null
+shrinking_factor: null
+scaffold_log_sha: 2a6b821dc01b278b8564c28edfd575131d09b59e95b27ec23ba1a938f04a70bd

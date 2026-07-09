@@ -1,0 +1,36 @@
+{
+  "pubchem": {
+    "vocab_sizes": [
+      256,
+      512,
+      1024,
+      2048
+    ],
+    "boundaries": [
+      "mb",
+      "nmb"
+    ]
+  },
+  "zinc22": {
+    "vocab_sizes": [
+      256,
+      512,
+      1024
+    ],
+    "boundaries": [
+      "mb",
+      "nmb"
+    ]
+  },
+  "coconut": {
+    "vocab_sizes": [
+      256,
+      512,
+      1024
+    ],
+    "boundaries": [
+      "mb",
+      "nmb"
+    ]
+  }
+}
