@@ -3,8 +3,8 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21228245.svg)](https://doi.org/10.5281/zenodo.21228245)
 [![arXiv](https://img.shields.io/badge/arXiv-2607.05691-b31b1b.svg)](https://arxiv.org/abs/2607.05691)
-
-<!-- ChemRxiv badge to be added once that identifier is assigned. -->
+[![ChemRxiv](https://img.shields.io/badge/ChemRxiv-10.26434%2Fchemrxiv.15005925-2a9d8f.svg)](https://doi.org/10.26434/chemrxiv.15005925/v1)
+[![Demo](https://img.shields.io/badge/%F0%9F%A4%97%20Demo-Spaces-ffb000.svg)](https://huggingface.co/spaces/hheiden/smiles-subword-vocabularies)
 
 Code and paper for a controlled comparison of how subword tokenizers build their
 **vocabularies** over chemistry SMILES. Holding the corpus, the OpenSMILES glyph
@@ -14,6 +14,10 @@ the same pieces.
 
 The study trains **no language models**. Every result is a property of the
 tokenizers and the corpora; the comparison is therefore exactly controlled.
+
+**Interactive demo:** [huggingface.co/spaces/hheiden/smiles-subword-vocabularies](https://huggingface.co/spaces/hheiden/smiles-subword-vocabularies)
+— for any molecule, aligns both arms on the shared glyph stream and surfaces the
+paper's membership/granularity/compatibility contrasts live (source in `demo/`).
 
 ## Layout
 
@@ -30,6 +34,7 @@ results/            # the generation surface (standalone; decoupled from the man
   figures/          # rendered vector-PDF figures
 tests/              # unit + property tests for the above
 paper/              # paper.tex, refs.bib (downstream consumer; `make paper` syncs results/ in)
+demo/               # interactive Gradio/Pyodide demo (deployed to HF Spaces)
 ```
 
 ## Setup
@@ -68,7 +73,7 @@ header documents the exact per-corpus command sequence; corpus provenance is in
 ## Artifacts
 
 Trained tokenizers and full measurement deposits are archived on Zenodo ([10.5281/zenodo.21228245](https://doi.org/10.5281/zenodo.21228245)).
-Preprint: [arXiv:2607.05691](https://arxiv.org/abs/2607.05691) (ChemRxiv TBD).
+Preprint: [arXiv:2607.05691](https://arxiv.org/abs/2607.05691) · [ChemRxiv:10.26434/chemrxiv.15005925](https://doi.org/10.26434/chemrxiv.15005925/v1).
 
 ## Citation
 
@@ -83,7 +88,8 @@ If you use this work, please cite the paper:
   archivePrefix = {arXiv},
   primaryClass = {cs.CL},
   doi          = {10.5281/zenodo.21228245},
-  url          = {https://arxiv.org/abs/2607.05691}
+  url          = {https://arxiv.org/abs/2607.05691},
+  note         = {Also on ChemRxiv: 10.26434/chemrxiv.15005925}
 }
 ```
 

@@ -30,4 +30,7 @@ preferred-citation:
     - type: other
       value: "arXiv:2607.05691"
       description: "arXiv preprint"
-  notes: "Preprint on arXiv:2607.05691 (cs.CL)."
+    - type: doi
+      value: "10.26434/chemrxiv.15005925/v1"
+      description: "ChemRxiv preprint"
+  notes: "Preprint on arXiv:2607.05691 (cs.CL) and ChemRxiv (10.26434/chemrxiv.15005925)."
